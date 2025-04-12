@@ -6,8 +6,8 @@ dependencies {
     implementation "CraftTweaker2:ZenScript:" + project.version_crafttweaker
     implementation "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-" + project.version_crafttweaker
 
-    implementation rfg.deobf("curse.maven:had-enough-items-557549:5471944")
-    implementation("com.cleanroommc:groovyscript:1.1.3") { transitive = false } // so it doesn't installs JEI
+    implementation "mezz:jei:4.26.1"
+    implementation("com.cleanroommc:groovyscript:1.2.0-hotfix1") { transitive = false } // so it doesn't installs JEI
 
     // Debug dependencies
     compileOnly rfg.deobf("curse.maven:mantle-74924:2713386")
@@ -15,22 +15,22 @@ dependencies {
             || project.debug_tconstruct.toBoolean()
             || project.debug_embersconstruct.toBoolean()
             || project.debug_tinkeringwithembers.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:mantle-74924:2713386")
+        runtimeOnly "curse.maven:mantle-74924:2713386"
     }
 
     if (project.debug_tconstruct.toBoolean()
             || project.debug_embersconstruct.toBoolean()
             || project.debug_tinkeringwithembers.toBoolean()) {
-        runtimeOnly rfg.deobf("slimeknights:TConstruct:1.12.2-2.13.0.190")
-        runtimeOnly rfg.deobf("curse.maven:constructs-armory-287683:3174535")
+        runtimeOnly "slimeknights:TConstruct:1.12.2-2.13.0.190"
+        runtimeOnly "curse.maven:constructs-armory-287683:3174535"
     }
 
     if (project.debug_inspirations.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:inspirations-284007:2843007")
+        runtimeOnly "curse.maven:inspirations-284007:2843007"
     }
 
     if (project.debug_immersiveengineering.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:immersive-engineering-231951:2974106")
+        runtimeOnly "curse.maven:immersive-engineering-231951:2974106"
     }
 
     compileOnly "com.azanor.baubles:Baubles:1.12-1.5.2"
@@ -47,12 +47,12 @@ dependencies {
     if (project.debug_mysticalmechanics.toBoolean()
             || project.debug_mysticalgears.toBoolean()
             || project.debug_mechanicalcrafting.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:mysticalmechanics-300742:3006392")
+        runtimeOnly "curse.maven:mysticalmechanics-300742:3006392"
     }
 
     compileOnly rfg.deobf("curse.maven:mechanical-crafting-359671:3273914")
     if (project.debug_mechanicalcrafting.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:mechanical-crafting-359671:3273914")
+        runtimeOnly "curse.maven:mechanical-crafting-359671:3273914"
     }
 
     compileOnly 'com.enderio:endercore:0.5.78'
@@ -67,35 +67,36 @@ dependencies {
     }
 
     if (project.debug_unidict.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:wanionlib-253043:4623135")
-        runtimeOnly rfg.deobf("curse.maven:unidict-244258:3553627")
+        runtimeOnly "curse.maven:wanionlib-253043:4623135"
+        runtimeOnly "curse.maven:unidict-244258:3553627"
     }
 
     compileOnly rfg.deobf("curse.maven:mystical-gears-317915:3206298")
     if (project.debug_mysticalgears.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:mystical-gears-317915:3206298")
+        runtimeOnly "curse.maven:mystical-gears-317915:3206298"
     }
 
-    compileOnly rfg.deobf("curse.maven:jaopca-266936:" + project.version_jaopca)
+    compileOnly rfg.deobf("curse.maven:jaopca-266936:3487112") // v2.2.x
+    compileOnly rfg.deobf("curse.maven:jaopca-266936:5560140") // v2.3.x
     if (project.debug_jaopca.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:wrapup-275153:2486198")
-        runtimeOnly rfg.deobf("curse.maven:jaopca-266936:" + project.version_jaopca)
+        runtimeOnly "curse.maven:wrapup-275153:2486198"
+        runtimeOnly "curse.maven:jaopca-266936:" + project.version_jaopca
     }
 
     compileOnly rfg.deobf("curse.maven:aetherworks-extended-life-1003576:5628247")
     if (project.debug_aetherworks.toBoolean()
             || project.debug_aetheriumashenarmor.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:aetherworks-extended-life-1003576:5628247")
+        runtimeOnly "curse.maven:aetherworks-extended-life-1003576:5628247"
     }
 
     compileOnly rfg.deobf("curse.maven:aetherium-ashen-armor-359467:3022388")
     if (project.debug_aetheriumashenarmor.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:aetherium-ashen-armor-359467:3022388")
+        runtimeOnly "curse.maven:aetherium-ashen-armor-359467:3022388"
     }
 
     compileOnly rfg.deobf("curse.maven:ore-stone-variants-287538:3320887")
     if (project.debug_orestonevariants.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:ore-stone-variants-287538:3320887")
+        runtimeOnly "curse.maven:ore-stone-variants-287538:3320887"
     }
 
     compileOnly rfg.deobf("curse.maven:thaumcraft-223628:2629023")
@@ -103,39 +104,39 @@ dependencies {
             || project.debug_thaumicperiphery.toBoolean()
             || project.debug_polymancy.toBoolean()
             || project.debug_planarartifice.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:thaumcraft-223628:2629023")
-        runtimeOnly rfg.deobf("curse.maven:thaumic-jei-285492:2705304")
+        runtimeOnly "curse.maven:thaumcraft-223628:2629023"
+        runtimeOnly "curse.maven:thaumic-jei-285492:2705304"
     }
 
     compileOnly rfg.deobf("curse.maven:thaumic-periphery-293505:2766866")
     if (project.debug_thaumicperiphery.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:thaumic-periphery-293505:2766866")
+        runtimeOnly "curse.maven:thaumic-periphery-293505:2766866"
     }
 
     compileOnly rfg.deobf("curse.maven:polymancy-394626:3065950")
     if (project.debug_polymancy.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:thaumic-wands-393922:5053794")
-        runtimeOnly rfg.deobf("curse.maven:polymancy-394626:3065950")
+        runtimeOnly "curse.maven:thaumic-wands-393922:5053794"
+        runtimeOnly "curse.maven:polymancy-394626:3065950"
     }
 
     compileOnly rfg.deobf("curse.maven:embersified-303584:2621911")
     if (project.debug_embersified.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:embersified-303584:2621911")
+        runtimeOnly "curse.maven:embersified-303584:2621911"
     }
 
     compileOnly rfg.deobf("curse.maven:soot-extended-life-982730:5156451")
     if (project.debug_soot.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:soot-extended-life-982730:5156451")
+        runtimeOnly "curse.maven:soot-extended-life-982730:5156451"
     }
 
     compileOnly rfg.deobf("curse.maven:embersconstruct-359414:" + project.version_embersconstruct)
     if (project.debug_embersconstruct.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:embersconstruct-359414:" + project.version_embersconstruct)
+        runtimeOnly "curse.maven:embersconstruct-359414:" + project.version_embersconstruct
     }
 
     compileOnly rfg.deobf("curse.maven:tinkering-with-embers-306685:2636808")
     if (project.debug_tinkeringwithembers.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:tinkering-with-embers-306685:2636808")
+        runtimeOnly "curse.maven:tinkering-with-embers-306685:2636808"
     }
 
     compileOnly rfg.deobf("curse.maven:planar-artifice-409849:3668551")
@@ -145,74 +146,74 @@ dependencies {
 
     compileOnly rfg.deobf("curse.maven:embersified-extended-984998:5184690")
     if (project.debug_embersifiedextended.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:embersified-extended-984998:5184690")
+        runtimeOnly "curse.maven:embersified-extended-984998:5184690"
     }
 
     compileOnly rfg.deobf("curse.maven:more-climate-551276:4293417")
     if (project.debug_moreclimate.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:more-climate-551276:4293417")
+        runtimeOnly "curse.maven:more-climate-551276:4293417"
     }
 
     compileOnly rfg.deobf("curse.maven:gedgetry-core-282775:2633658")
     compileOnly rfg.deobf("curse.maven:gedgetry-machines-282776:2634495")
     compileOnly rfg.deobf("curse.maven:gedgetry-transmission-282777:2633660")
     if (project.debug_gadgetry.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:gedgetry-core-282775:2633658")
-        runtimeOnly rfg.deobf("curse.maven:gedgetry-machines-282776:2634495")
-        runtimeOnly rfg.deobf("curse.maven:gedgetry-transmission-282777:2633660")
+        runtimeOnly "curse.maven:gedgetry-core-282775:2633658"
+        runtimeOnly "curse.maven:gedgetry-machines-282776:2634495"
+        runtimeOnly "curse.maven:gedgetry-transmission-282777:2633660"
     }
 
     compileOnly rfg.deobf("curse.maven:spartan-weaponry-278141:4467344")
     compileOnly rfg.deobf("curse.maven:spartan-weaponry-arcana-unofficial-620760:3836926")
     if (project.debug_spartanweaponry.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:spartan-weaponry-278141:4467344")
-        runtimeOnly rfg.deobf("curse.maven:spartan-weaponry-arcana-unofficial-620760:3836926")
+        runtimeOnly "curse.maven:spartan-weaponry-278141:4467344"
+        runtimeOnly "curse.maven:spartan-weaponry-arcana-unofficial-620760:3836926"
     }
 
     compileOnly rfg.deobf("curse.maven:emberforged-887375:5582901")
     compileOnly rfg.deobf("curse.maven:minefantasy-reforged-431996:4666619")
     compileOnly rfg.deobf("curse.maven:codechicken-lib-1-8-242818:2779848")
     if (project.debug_emberforged.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:codechicken-lib-1-8-242818:2779848")
-        runtimeOnly rfg.deobf("curse.maven:emberforged-887375:5582901")
-        runtimeOnly rfg.deobf("curse.maven:minefantasy-reforged-431996:4666619")
+        runtimeOnly "curse.maven:codechicken-lib-1-8-242818:2779848"
+        runtimeOnly "curse.maven:emberforged-887375:5582901"
+        runtimeOnly "curse.maven:minefantasy-reforged-431996:4666619"
     }
 
     compileOnly rfg.deobf("curse.maven:ae2-extended-life-570458:5411078")
     if (project.debug_ae2.toBoolean() || project.debug_appliedintegrations.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:ae2-extended-life-570458:5411078")
+        runtimeOnly "curse.maven:ae2-extended-life-570458:5411078"
     }
 
     compileOnly rfg.deobf("curse.maven:applied-integrations-301924:2866504")
     if (project.debug_appliedintegrations.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:applied-integrations-301924:2866504")
+        runtimeOnly "curse.maven:applied-integrations-301924:2866504"
     }
 
     compileOnly rfg.deobf("curse.maven:dynaores-1056043:5541366")
     if (project.debug_rawores.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:dynaores-1056043:5541366")
+        runtimeOnly "curse.maven:dynaores-1056043:5541366"
     }
 
     compileOnly rfg.deobf("curse.maven:ic2-classic-242942:5800761")
     if (project.debug_ic2classic.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:ic2-classic-242942:5800761")
+        runtimeOnly "curse.maven:ic2-classic-242942:5800761"
     }
 
     compileOnly rfg.deobf("curse.maven:simpledifficulty-360779:3613814")
     compileOnly rfg.deobf("curse.maven:survival-tools-1120531:5807832")
     if (project.debug_survivaltools.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:simpledifficulty-360779:3613814")
-        runtimeOnly rfg.deobf("curse.maven:survival-tools-1120531:5807832")
+        runtimeOnly "curse.maven:simpledifficulty-360779:3613814"
+        runtimeOnly "curse.maven:survival-tools-1120531:5807832"
     }
 
     compileOnly rfg.deobf("curse.maven:valkyrielib-245480:2691542")
     compileOnly rfg.deobf("curse.maven:valkyriecompat-289532:2691540")
     compileOnly rfg.deobf("curse.maven:environmental-tech-245453:2691536")
     if (project.debug_environmentaltech.toBoolean()) {
-        runtimeOnly rfg.deobf("curse.maven:valkyrielib-245480:2691542")
-        runtimeOnly rfg.deobf("curse.maven:environmental-tech-245453:2691536")
+        runtimeOnly "curse.maven:valkyrielib-245480:2691542"
+        runtimeOnly "curse.maven:environmental-tech-245453:2691536"
         if (project.debug_ic2classic.toBoolean()) {
-             runtimeOnly rfg.deobf("curse.maven:valkyriecompat-289532:2691540")
+             runtimeOnly "curse.maven:valkyriecompat-289532:2691540"
         }
     }
 

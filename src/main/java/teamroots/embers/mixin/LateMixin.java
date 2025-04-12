@@ -1,57 +1,51 @@
 package teamroots.embers.mixin;
 
 import com.Lenvill.EmberforgedMain;
-import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableMap;
 import com.invadermonky.survivaltools.SurvivalTools;
 import net.minecraftforge.fml.common.Loader;
-import teamroots.embers.Embers;
+import thelm.jaopca.JAOPCA;
 import zone.rong.mixinbooter.ILateMixinLoader;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Map;
+import java.util.function.BooleanSupplier;
 
 public class LateMixin implements ILateMixinLoader {
-    public static final List<String> modMixins = ImmutableList.of(
-            "aetheriumashenarmor",
-            "appliedenergistics2",
-            "appliedintegrations",
-            "dynaores",
-            "emberforged",
-            "embersconstruct",
-            "embersified",
-            "embersifiedextended",
-            "environmentaltech",
-            "jaopca",
-            "moreclimate",
-            "mystgears",
-            "osv",
-            "planarartifice",
-            "polymancy",
-            "spartanweaponryarcana",
-            "survivaltools",
-            "thaumicperiphery",
-            "valkyrielib"
-    );
+    private static final Map<String, BooleanSupplier> emberMixins = ImmutableMap.copyOf(new HashMap<String, BooleanSupplier>(){
+        {
+            put("mixins.embers.aetheriumashenarmor.json", () -> Loader.isModLoaded("aetheriumashenarmor"));
+            put("mixins.embers.appliedenergistics2.json", () -> Loader.isModLoaded("appliedenergistics2"));
+            put("mixins.embers.appliedintegrations.json", () -> Loader.isModLoaded("appliedintegrations"));
+            put("mixins.embers.dynaores.json", () -> Loader.isModLoaded("dynaores"));
+            put("mixins.embers.emberforged.json", () -> Loader.isModLoaded("emberforged") && EmberforgedMain.VERSION.split("-")[1].split("\\.")[0].equals("1"));
+            put("mixins.embers.embersconstruct.json", () -> Loader.isModLoaded("embersconstruct"));
+            put("mixins.embers.embersified.json", () -> Loader.isModLoaded("embersified"));
+            put("mixins.embers.embersifiedextended.json", () -> Loader.isModLoaded("embersifiedextended"));
+            put("mixins.embers.environmentaltech.json", () -> Loader.isModLoaded("environmentaltech"));
+            put("mixins.embers.jaopca.json", () -> Loader.isModLoaded("jaopca") && JAOPCA.VERSION.split("-")[1].split("\\.")[1].equals("3"));
+            put("mixins.embers.jaopca_legacy.json", () -> Loader.isModLoaded("jaopca") && JAOPCA.VERSION.split("-")[1].split("\\.")[1].equals("2"));
+            put("mixins.embers.moreclimate.json", () -> Loader.isModLoaded("moreclimate"));
+            put("mixins.embers.mystgears.json", () -> Loader.isModLoaded("mystgears"));
+            put("mixins.embers.osv.json", () -> Loader.isModLoaded("osv"));
+            put("mixins.embers.planarartifice.json", () -> Loader.isModLoaded("planarartifice"));
+            put("mixins.embers.polymancy.json", () -> Loader.isModLoaded("polymancy"));
+            put("mixins.embers.spartanweaponryarcana.json", () -> Loader.isModLoaded("spartanweaponryarcana"));
+            put("mixins.embers.survivaltools.json", () -> Loader.isModLoaded("survivaltools") && SurvivalTools.VERSION.equals("1.12.2-1.0.0"));
+            put("mixins.embers.thaumicperiphery.json", () -> Loader.isModLoaded("thaumicperiphery"));
+            put("mixins.embers.valkyrielib.json", () -> Loader.isModLoaded("valkyrielib"));
+        }
+    });
 
     @Override
     public List<String> getMixinConfigs() {
-        return modMixins.stream().filter(this::checkMod).map(mod -> "mixin."+ Embers.MODID +"." + mod + ".json").collect(Collectors.toList());
+        return new ArrayList<>(emberMixins.keySet());
     }
 
-    private boolean checkMod(String modid) {
-        boolean check = false;
-        switch (modid) {
-            case "survivaltools":
-                check = Loader.isModLoaded(modid) && SurvivalTools.VERSION.equals("1.12.2-1.0.0");
-                break;
-            case "emberforged":
-                check = Loader.isModLoaded(modid) && !EmberforgedMain.VERSION.equals("1.12.2-2.0.0");
-                break;
-            default:
-                check = Loader.isModLoaded(modid);
-                break;
-        }
-        Embers.LOG.debug("Checking for mod {}. Load Mixins: {}", modid, check);
-        return check;
+    @Override
+    public boolean shouldMixinConfigQueue(String config) {
+        return emberMixins.get(config).getAsBoolean();
     }
 }

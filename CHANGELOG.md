@@ -2,6 +2,13 @@
 
 A dwarven magic mod
 
+## v1.25.2 - Fixing Soot
+### Bugfixes
+- fixed an issue with the Mixer where it didn't look for upgrades in the top part of the block
+- fixed the Alchemical Recombulator (Soot) not working at all
+- made Embers mixins compatible with both versions of JAOPCA
+- refactored the way I load the mixins to avoid issues with other mods
+
 ## v1.25.1 - Ember Bore Block Blacklist
 ### Changes
 - added a new config option for the Ember Bore

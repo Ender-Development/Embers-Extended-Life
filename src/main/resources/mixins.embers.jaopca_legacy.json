@@ -1,0 +1,10 @@
+{
+  "package": "teamroots.embers.mixin.jaopca",
+  "refmap": "mixins.embers.refmap.json",
+  "minVersion": "0.8.5",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ModuleEmbersMixin"
+  ]
+}
