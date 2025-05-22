@@ -25,8 +25,8 @@ public class LateMixin implements ILateMixinLoader {
             put("mixins.embers.embersified.json", () -> Loader.isModLoaded("embersified"));
             put("mixins.embers.embersifiedextended.json", () -> Loader.isModLoaded("embersifiedextended"));
             put("mixins.embers.environmentaltech.json", () -> Loader.isModLoaded("environmentaltech"));
-            put("mixins.embers.jaopca.json", () -> Loader.isModLoaded("jaopca") && JAOPCA.VERSION.split("-")[1].split("\\.")[1].equals("3"));
-            put("mixins.embers.jaopca_legacy.json", () -> Loader.isModLoaded("jaopca") && JAOPCA.VERSION.split("-")[1].split("\\.")[1].equals("2"));
+            put("mixins.embers.jaopca.json", () -> Loader.isModLoaded("jaopca"));
+            put("mixins.embers.jaopca_legacy.json", () -> Loader.isModLoaded("jaopca"));
             put("mixins.embers.moreclimate.json", () -> Loader.isModLoaded("moreclimate"));
             put("mixins.embers.mystgears.json", () -> Loader.isModLoaded("mystgears"));
             put("mixins.embers.osv.json", () -> Loader.isModLoaded("osv"));
