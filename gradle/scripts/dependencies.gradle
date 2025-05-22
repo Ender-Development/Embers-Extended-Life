@@ -1,13 +1,82 @@
-dependencies {
-    // implementation 'com.github.jbredwards:fluidlogged-api:47f153989e'
+apply from: 'gradle/scripts/helpers.gradle'
 
-    // Dependencies
+repositories {
+    // Other repositories described by default:
+    // CleanroomMC: https://maven.cleanroommc.com
+    exclusiveContent {
+		forRepository {
+			maven {
+				name 'CurseMaven'
+				url 'https://curse.cleanroommc.com'
+			}
+		}
+		filter {
+			includeGroup 'curse.maven'
+		}
+	}
+	exclusiveContent {
+		forRepository {
+			maven {
+				name 'Modrinth'
+				url 'https://api.modrinth.com/maven'
+			}
+		}
+		filter {
+			includeGroup 'maven.modrinth'
+		}
+	}
+	maven {
+		url = 'https://maven.blamejared.com/'
+	}
+	mavenLocal() // Must be last for caching to work
+}
+
+dependencies {
+    // Include StripLatestForgeRequirements by default for the dev env, saves everyone a hassle
+    runtimeOnly 'com.cleanroommc:strip-latest-forge-requirements:1.0'
+    // Include OSXNarratorBlocker by default for the dev env, for M1+ Macs
+    runtimeOnly 'com.cleanroommc:osxnarratorblocker:1.0'
+
+    // Example - Dependency descriptor:
+    // 'com.google.code.gson:gson:2.8.6' << group: com.google.code.gson, name:gson, version:2.8.6
+    // 'group:name:version:classifier' where classifier is optional
+
+    // Example - Deobfuscating dependencies:
+    // rfg.deobf('curse.maven:had-enough-items-557549:4543375')
+    // By wrapping a dependency descriptor in rfg.deobf() method call, the dependency is queued for deobfuscation
+    // When deobfuscating, RFG respects the mapping_channel + mapping_version stated in gradle.properties
+
+    // Example - CurseMaven dependencies:
+    // 'curse.maven:had-enough-items-557549:4543375' << had-enough-items = project slug, 557549 = project id, 4543375 = file id
+    // Full documentation: https://cursemaven.com/
+
+    // Example - Modrinth dependencies:
+    // 'maven.modrinth:jei:4.16.1.1000' << jei = project name, 4.16.1.1000 = file version
+    // Full documentation: https://docs.modrinth.com/docs/tutorials/maven/
+
+    // Common dependency types (configuration):
+    // implementation = dependency available at both compile time and runtime
+    // runtimeOnly = runtime dependency
+    // compileOnly = compile time dependency
+    // annotationProcessor = annotation processing dependencies
+    // embed = bundle dependencies into final output artifact (no relocation)
+
+    // Transitive dependencies:
+    // (Dependencies that your dependency depends on)
+    // If you wish to exclude transitive dependencies in the described dependencies
+    // Use a closure as such:
+    // implementation ('com.google.code.gson:gson:2.8.6') {
+    //     transitive = false
+    // }
+    compileOnlyApi 'org.jetbrains:annotations:24.1.0'
+    annotationProcessor 'org.jetbrains:annotations:24.1.0'
+
     implementation "CraftTweaker2:CraftTweaker2-API:" + project.version_crafttweaker
     implementation "CraftTweaker2:ZenScript:" + project.version_crafttweaker
     implementation "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-" + project.version_crafttweaker
 
-    implementation "mezz:jei:4.26.1"
-    implementation("com.cleanroommc:groovyscript:1.2.0-hotfix1") { transitive = false } // so it doesn't installs JEI
+    implementation "mezz:jei:4.27.3"
+    implementation("com.cleanroommc:groovyscript:1.2.4") { transitive = false } // so it doesn't installs JEI
 
     // Debug dependencies
     compileOnly rfg.deobf("curse.maven:mantle-74924:2713386")
@@ -33,14 +102,14 @@ dependencies {
         runtimeOnly "curse.maven:immersive-engineering-231951:2974106"
     }
 
-    compileOnly "com.azanor.baubles:Baubles:1.12-1.5.2"
+    compileOnly rfg.deobf("curse.maven:bubbles-a-baubles-fork-995393:6539774")
     if (project.debug_baubles.toBoolean()
             || project.debug_thaumcraft.toBoolean()
             || project.debug_thaumicperiphery.toBoolean()
             || project.debug_aetherworks.toBoolean()
             || project.debug_polymancy.toBoolean()
             || project.debug_planarartifice.toBoolean()) {
-        runtimeOnly "com.azanor.baubles:Baubles:1.12-1.5.2"
+        runtimeOnly "curse.maven:bubbles-a-baubles-fork-995393:6539774"
     }
 
     compileOnly rfg.deobf("curse.maven:mysticalmechanics-300742:3006392")
@@ -55,15 +124,11 @@ dependencies {
         runtimeOnly "curse.maven:mechanical-crafting-359671:3273914"
     }
 
-    compileOnly 'com.enderio:endercore:0.5.78'
-    compileOnly('crazypants:enderio:5.3.72') {
-        transitive = false
-    }
+    compileOnly rfg.deobf("curse.maven:endercore-231868:4671384")
+    compileOnly rfg.deobf("curse.maven:ender-io-64578:4674244")
     if (project.debug_enderio.toBoolean()) {
-        runtimeOnly "com.enderio:endercore:0.5.78"
-        runtimeOnly("crazypants:enderio:5.3.72") {
-            transitive = false
-        }
+        runtimeOnly "curse.maven:endercore-231868:4671384"
+        runtimeOnly "curse.maven:ender-io-64578:4674244"
     }
 
     if (project.debug_unidict.toBoolean()) {
@@ -220,15 +285,4 @@ dependencies {
     // Runtime dependencies
     runtimeOnly rfg.deobf("curse.maven:the-one-probe-community-edition-885670:5824252")
     runtimeOnly rfg.deobf("curse.maven:topalldependents-1120632:5808089") // updated version of the one probe addons
-    runtimeOnly rfg.deobf("curse.maven:vintagefix-871198:5010926")
-    // runtimeOnly rfg.deobf("curse.maven:startup-timer-782070:5001902")
-    runtimeOnly rfg.deobf("curse.maven:modern-splash-629058:5282442")
-    // runtimeOnly rfg.deobf("curse.maven:raw-mouse-input-blessed-edition-940930:5235456") // doesn't work in my dev environment
-
-    runtimeOnly "com.cleanroommc:configanytime:3.0"
-    runtimeOnly rfg.deobf("curse.maven:red-core-873867:5618189")
-    runtimeOnly rfg.deobf("curse.maven:alfheim-lighting-engine-910715:5637644")
-    runtimeOnly rfg.deobf("curse.maven:valkyrie-874067:5235356")
-    // runtimeOnly rfg.deobf("curse.maven:carbon-config-898104:4952983") // will be used later
-    // runtimeOnly rfg.deobf("curse.maven:lolasm-460609:4800875") // causes a mapping error, thus making baubles unusable
 }

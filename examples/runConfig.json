@@ -3,9 +3,6 @@
   "packId": "embers_groovyscript",
   "version": "1.0.0",
   "debug": true,
-  "classes": {
-    "preInit": []
-  },
   "loaders": {
     "preInit": [
       "preInit/"

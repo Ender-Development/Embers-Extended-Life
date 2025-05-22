@@ -2,6 +2,10 @@
 
 A dwarven magic mod
 
+## v1.25.3 - Fixing JAOPCA legacy
+### Bugfixes
+- fix crash with legacy version of JAOPCA
+
 ## v1.25.2 - Fixing Soot
 ### Bugfixes
 - fixed an issue with the Mixer where it didn't look for upgrades in the top part of the block
