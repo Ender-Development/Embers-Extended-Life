@@ -3,8 +3,12 @@
 A dwarven magic mod
 
 ## v1.25.3 - Fixing JAOPCA legacy
+### Changes
+- updated build scripts
+
 ### Bugfixes
-- fix crash with legacy version of JAOPCA
+- fixed crash with legacy version of JAOPCA
+- fixed embersifiedextended mixins not applying
 
 ## v1.25.2 - Fixing Soot
 ### Bugfixes
