@@ -111,8 +111,8 @@ We use GitHub packages. If you need our mod as a dependency:
 ```groovy
 repositories {
     maven {
-        name "GitHubPackages.Ender-Development.Embers-Extended-Life"
-        url "https://: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@maven.pkg.github.com/Ender-Development/Embers-Extended-Life"
+        name "Ender-Development"
+        url "https://maven.ender-development.org/"
     }
 }
 
@@ -121,4 +121,18 @@ dependencies {
 }
 ```
 
-See https://github.com/Ender-Development/Embers-Extended-Life/packages/
+### Internal Notice
+
+To push the package to Maven, please set the following properties in your home directory:
+`~/.gradle/gradle.properties`:
+
+```properties
+mavenUser=myUserName
+mavenPassword=myPassword
+```
+
+And run the gradle `publish` task
+
+To modify the repo manually, connect via WebDAV.
+
+
