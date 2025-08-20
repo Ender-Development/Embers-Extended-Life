@@ -117,7 +117,7 @@ repositories {
 }
 
 dependencies {
-    implementation "teamroots.embers:embers_extended_life:1.x.x:dev"
+    implementation "teamroots:embers:1.25.3:dev"
 }
 ```
 
