@@ -13,8 +13,8 @@ if (propertyBool('publish_to_maven')) {
                 name propertyString('maven_name').replaceAll("\\s", "")
                 url propertyString('maven_url')
                 credentials {
-                    username "${mavenUser ?: ""}"
-                    password "${mavenPassword ?: ""}"
+                    username propertyString("mavenUser")
+                    password propertyString("mavenPassword")
                 }
             }
         }
