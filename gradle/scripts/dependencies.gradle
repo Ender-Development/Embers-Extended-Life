@@ -76,7 +76,7 @@ dependencies {
     implementation "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-" + project.version_crafttweaker
 
     implementation "mezz:jei:4.27.3"
-    implementation("com.cleanroommc:groovyscript:1.2.4") { transitive = false } // so it doesn't installs JEI
+    implementation("com.cleanroommc:groovyscript:" + project.groovyscript_version) { transitive = false } // so it doesn't installs JEI
 
     // Debug dependencies
     compileOnly rfg.deobf("curse.maven:mantle-74924:2713386")
@@ -90,7 +90,7 @@ dependencies {
     if (project.debug_tconstruct.toBoolean()
             || project.debug_embersconstruct.toBoolean()
             || project.debug_tinkeringwithembers.toBoolean()) {
-        runtimeOnly "slimeknights:TConstruct:1.12.2-2.13.0.190"
+        runtimeOnly "curse.maven:tinkers-antique-1242239:6752868"
         runtimeOnly "curse.maven:constructs-armory-287683:3174535"
     }
 
@@ -148,15 +148,9 @@ dependencies {
         runtimeOnly "curse.maven:jaopca-266936:" + project.version_jaopca
     }
 
-    compileOnly rfg.deobf("curse.maven:aetherworks-extended-life-1003576:5628247")
-    if (project.debug_aetherworks.toBoolean()
-            || project.debug_aetheriumashenarmor.toBoolean()) {
-        runtimeOnly "curse.maven:aetherworks-extended-life-1003576:5628247"
-    }
-
-    compileOnly rfg.deobf("curse.maven:aetherium-ashen-armor-359467:3022388")
-    if (project.debug_aetheriumashenarmor.toBoolean()) {
-        runtimeOnly "curse.maven:aetherium-ashen-armor-359467:3022388"
+    compileOnly rfg.deobf("curse.maven:aetherworks-extended-life-1003576:6210095")
+    if (project.debug_aetherworks.toBoolean()) {
+        runtimeOnly "curse.maven:aetherworks-extended-life-1003576:6210095"
     }
 
     compileOnly rfg.deobf("curse.maven:ore-stone-variants-287538:3320887")
