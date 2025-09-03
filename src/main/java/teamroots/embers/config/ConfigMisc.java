@@ -71,4 +71,8 @@ public class ConfigMisc {
     @Config.Name("Nugget to Fluid ratio")
     @Config.Comment("What is the liquid equivalent to a nugget in mb?")
     public static int nuggetFluidAmount = 16;
+
+    @Config.Name("Inflictor Gems can only be applied to cloaks")
+    @Config.Comment("If true, inflictor gems can only be applied to cloaks. If false, they can be applied to any armor piece.")
+    public static boolean inflictorGemsOnlyCloaks = false;
 }

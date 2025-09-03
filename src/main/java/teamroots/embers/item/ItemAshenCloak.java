@@ -19,6 +19,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import teamroots.embers.api.item.IInflictorGem;
 import teamroots.embers.api.item.IInflictorGemHolder;
 import teamroots.embers.api.item.IInfoGoggles;
+import teamroots.embers.config.ConfigMisc;
 import teamroots.embers.model.ModelAshenArmor;
 
 import javax.annotation.Nonnull;
@@ -64,7 +65,11 @@ public class ItemAshenCloak extends ItemArmorBase implements IInflictorGemHolder
 
 	@Override
 	public boolean canAttachGem(ItemStack holder, ItemStack gem) {
-		return gem.getItem() instanceof IInflictorGem;
+		if (!ConfigMisc.inflictorGemsOnlyCloaks) {
+			return gem.getItem() instanceof IInflictorGem;
+		}
+		String holderName = Objects.requireNonNull(holder.getItem().getRegistryName()).toString();
+		return gem.getItem() instanceof IInflictorGem && (holderName.equalsIgnoreCase("aetherworks:aetherium_ashen_cloak_chest") || holderName.equalsIgnoreCase("embers:ashen_cloak"));
 	}
 
 	@Override
