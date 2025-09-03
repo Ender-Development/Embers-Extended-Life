@@ -72,6 +72,10 @@ public class BlockRegister implements IRegistrable<Block> {
     public static final Block BLOCK_MOLTEN_NICKEL = new BlockMolten(FluidRegister.FLUID_MOLTEN_NICKEL);
     public static final Block BLOCK_MOLTEN_SILVER = new BlockMolten(FluidRegister.FLUID_MOLTEN_SILVER);
     public static final Block BLOCK_MOLTEN_TIN = new BlockMolten(FluidRegister.FLUID_MOLTEN_TIN);
+    public static final Block BLOCK_FLUID_STEAM = new BlockMolten(FluidRegister.FLUID_STEAM);
+    public static final Block BLOCK_FLUID_CRUDE_OIL = new BlockMolten(FluidRegister.FLUID_CRUDE_OIL);
+    public static final Block BLOCK_FLUID_OIL = new BlockMolten(FluidRegister.FLUID_OIL);
+    public static final Block BLOCK_FLUID_GAS = new BlockMolten(FluidRegister.FLUID_GAS);
     public static final Block BLOCK_NICKEL = new BlockBase(Material.ROCK, "block_nickel", true).setBeaconBase(true).setHarvestProperties("pickaxe", 1).setHardness(2.2f).setLightOpacity(16).setCreativeTab(Embers.resource_tab);
     public static final Block BLOCK_SILVER = new BlockBase(Material.ROCK, "block_silver", true).setBeaconBase(true).setHarvestProperties("pickaxe", 2).setHardness(1.6f).setLightOpacity(16).setCreativeTab(Embers.resource_tab);
     public static final Block BLOCK_TANK = new BlockTank(Material.ROCK, "block_tank", true).setIsFullCube(false).setIsOpaqueCube(false).setHarvestProperties("pickaxe", 0).setHardness(1.6f);
@@ -207,6 +211,10 @@ public class BlockRegister implements IRegistrable<Block> {
             BLOCK_MOLTEN_NICKEL,
             BLOCK_MOLTEN_SILVER,
             BLOCK_MOLTEN_TIN,
+            BLOCK_FLUID_STEAM,
+            BLOCK_FLUID_CRUDE_OIL,
+            BLOCK_FLUID_OIL,
+            BLOCK_FLUID_GAS,
             BLOCK_TANK,
             BOILER,
             BREAKER,

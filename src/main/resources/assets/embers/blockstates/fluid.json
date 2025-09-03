@@ -87,6 +87,34 @@
                     "fluid": "alchemical_redstone"
                 }
             }
+        ],
+        "steam": [
+            {
+                "custom": {
+                    "fluid": "steam"
+                }
+            }
+        ],
+        "oil_soul": [
+            {
+                "custom": {
+                    "fluid": "oil_soul"
+                }
+            }
+        ],
+        "oil_dwarf": [
+            {
+                "custom": {
+                    "fluid": "oil_dwarf"
+                }
+            }
+        ],
+        "gas_dwarf": [
+            {
+                "custom": {
+                    "fluid": "gas_dwarf"
+                }
+            }
         ]
     }
 }
