@@ -92,12 +92,13 @@ public class RegistryManager {
         }
         biomes.addAll(BiomeManager.oceanBiomes);
 
-        EntityRegistry.addSpawn(EntityAncientGolem.class, ConfigMob.EMBER_GOLEM.spawnWeight, 1, 1, EnumCreatureType.MONSTER, biomes.toArray(new Biome[biomes.size()]));
+        if (ConfigMob.EMBER_GOLEM.enableSpawning) {
+            EntityRegistry.addSpawn(EntityAncientGolem.class, ConfigMob.EMBER_GOLEM.spawnWeight, 1, 1, EnumCreatureType.MONSTER, biomes.toArray(new Biome[biomes.size()]));
+        }
 
         world_gen_ores = new WorldGenOres();
         GameRegistry.registerWorldGenerator(world_gen_ores, 1);
-        int weight = 400;
-        GameRegistry.registerWorldGenerator(world_gen_small_ruin = new WorldGenSmallRuin(), weight++);
+        GameRegistry.registerWorldGenerator(world_gen_small_ruin = new WorldGenSmallRuin(), 400);
 
         //GameRegistry.register(biomeCave = new BiomeCave());
 

@@ -22,4 +22,9 @@ public class SmallRuinCategory {
             "A value of 0 will prevent spawning altogether."
     })
     public int chance = 5;
+
+    @Config.RequiresMcRestart
+    @Config.Name("Contain Golem")
+    @Config.Comment("Whether the small ruin structure can contain an Ancient Golem.")
+    public boolean containGolem = true;
 }

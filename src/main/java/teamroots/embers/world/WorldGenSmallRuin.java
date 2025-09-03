@@ -90,7 +90,7 @@ public class WorldGenSmallRuin extends StructureBase implements IWorldGenerator 
     @Override
     public void placeBlock(World world, BlockPos pos, IBlockState state) {
         if (state.getBlock() == BlockRegister.STRUCTURE_MARKER) {
-            if (state.getBlock().getMetaFromState(state) == 0) {
+            if (state.getBlock().getMetaFromState(state) == 0 && ConfigWorld.SMALL_RUIN.containGolem) {
                 EntityAncientGolem golem = new EntityAncientGolem(world);
                 golem.setPosition(pos.getX() + 0.5, pos.getY(), pos.getZ());
                 golem.onInitialSpawn(world.getDifficultyForLocation(pos), null);

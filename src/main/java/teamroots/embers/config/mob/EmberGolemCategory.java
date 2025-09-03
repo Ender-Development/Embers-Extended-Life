@@ -32,4 +32,14 @@ public class EmberGolemCategory {
     @Config.Name("Max Health")
     @Config.Comment("How much health Golems have.")
     public double maxHealth = 40.0;
+
+    @Config.RequiresMcRestart
+    @Config.Name("Enable Building")
+    @Config.Comment("Whether Ancient Golems can be build.")
+    public boolean enableBuilding = true;
+
+    @Config.RequiresMcRestart
+    @Config.Name("Enable Wild Spawning")
+    @Config.Comment("Whether Ancient Golems can spawn naturally in the world.")
+    public boolean enableSpawning = true;
 }
