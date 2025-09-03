@@ -89,7 +89,8 @@ public class AlchemyRecipe implements IHasAspects {
 
 		if (center.getTagCompound() != null) {
 			if (Arrays.stream(centerIngredient.getMatchingStacks()).noneMatch(x -> {
-				assert x.getTagCompound() != null;
+				if (x.getTagCompound() == null)
+					return false;
 				return x.getTagCompound().equals(center.getTagCompound());
 			})) {
 				return false;
@@ -105,7 +106,8 @@ public class AlchemyRecipe implements IHasAspects {
 			if (found.isPresent()) {
 				if (stack.getTagCompound() != null) {
 					if (Arrays.stream(found.get().getMatchingStacks()).noneMatch(x -> {
-						assert x.getTagCompound() != null;
+						if (x.getTagCompound() == null)
+							return false;
 						return x.getTagCompound().equals(stack.getTagCompound());
 					})) {
 						return false;

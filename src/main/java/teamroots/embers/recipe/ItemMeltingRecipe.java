@@ -66,7 +66,8 @@ public class ItemMeltingRecipe {
 
 		if (stack.getTagCompound() != null) {
             return Arrays.stream(input.getMatchingStacks()).anyMatch(x -> {
-                assert x.getTagCompound() != null;
+                if (x.getTagCompound() == null)
+					return false;
                 return x.getTagCompound().equals(stack.getTagCompound());
             });
 		}
