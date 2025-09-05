@@ -3,6 +3,7 @@ package teamroots.embers.config;
 import net.minecraftforge.common.config.Config;
 import teamroots.embers.Embers;
 import teamroots.embers.config.compat.EnvironmentalTechCategory;
+import teamroots.embers.config.compat.ThaumcraftCategory;
 
 @Config(modid = Embers.MODID, category = "compat", name = Embers.CFG_FOLDER + "compat")
 @Config.LangKey("cfg.embers.compat")
@@ -39,6 +40,11 @@ public class ConfigCompat {
     @Config.LangKey("cfg.embers.compat.environmental_tech")
     @Config.Comment("Options about the Environmental Tech integration")
     public static final EnvironmentalTechCategory ENVIRONMENTAL_TECH = new EnvironmentalTechCategory();
+
+    @Config.Name("Thaumcraft")
+    @Config.LangKey("cfg.embers.compat.thaumcraft")
+    @Config.Comment("Options about the Thaumcraft integration")
+    public static final ThaumcraftCategory THAUMCRAFT = new ThaumcraftCategory();
 
     @Config.RequiresMcRestart
     @Config.Name("Enable Mystical Mechanics Integration")

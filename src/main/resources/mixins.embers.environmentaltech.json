@@ -9,5 +9,7 @@
     "BlockModifierLuckMixin",
     "BlockModifierSpeedMixin",
     "TileContVoidMinerBaseMixin"
-  ]
+  ],
+  "server": [],
+  "client": []
 }

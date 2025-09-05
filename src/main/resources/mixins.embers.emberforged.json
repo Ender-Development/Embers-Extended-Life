@@ -10,5 +10,7 @@
     "ResearchInitMixin",
     "SmeltingInitMixin",
     "StampInitMixin"
-  ]
+  ],
+  "server": [],
+  "client": []
 }

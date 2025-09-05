@@ -25,4 +25,16 @@ public final class Util {
     public static boolean isTinkersIntegrationEnabled() {
         return ConfigCompat.enableTinkersIntegration && Loader.isModLoaded("tconstruct");
     }
+
+    public static boolean isThaumcraftIntegrationEnabled() {
+        return ConfigCompat.THAUMCRAFT.enableThaumcraftIntegration && Loader.isModLoaded("thaumcraft");
+    }
+
+    public static boolean isThaumicPeripheryIntegrationEnabled() {
+        return isThaumcraftIntegrationEnabled() && Loader.isModLoaded("thaumicperiphery");
+    }
+
+    public static boolean isThaumicAugmentationIntegrationEnabled() {
+        return isThaumcraftIntegrationEnabled() && Loader.isModLoaded("thaumicaugmentation");
+    }
 }

@@ -10,7 +10,6 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.event.FMLConstructionEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -21,7 +20,7 @@ import teamroots.embers.apiimpl.EmbersAPIImpl;
 import teamroots.embers.compat.BaublesIntegration;
 import teamroots.embers.compat.MysticalMechanicsIntegration;
 import teamroots.embers.compat.Util;
-import teamroots.embers.compat.thaumcraft.ThaumcraftIntegration;
+import teamroots.embers.compat.thaumcraft.AspectHandler;
 import teamroots.embers.gui.GuiHandler;
 import teamroots.embers.network.PacketHandler;
 import teamroots.embers.recipe.RecipeRegistry;
@@ -43,8 +42,8 @@ public class CommonProxy {
 		Fields.init();
 		PacketHandler.registerMessages();
 		RegistryManager.registerAll();
-		if(Loader.isModLoaded("thaumcraft"))
-			MinecraftForge.EVENT_BUS.register(ThaumcraftIntegration.class);
+		if (Util.isThaumcraftIntegrationEnabled())
+			MinecraftForge.EVENT_BUS.register(AspectHandler.class);
 	}
 	
 	public void init(FMLInitializationEvent event){

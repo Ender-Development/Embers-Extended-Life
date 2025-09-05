@@ -6,5 +6,7 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "EmbersCompatMixin"
-  ]
+  ],
+  "server": [],
+  "client": []
 }

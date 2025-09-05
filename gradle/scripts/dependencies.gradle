@@ -168,8 +168,10 @@ dependencies {
     }
 
     compileOnly rfg.deobf("curse.maven:thaumic-periphery-293505:2766866")
+    compileOnly rfg.deobf("curse.maven:thaumic-augmentation-319441:6047659")
     if (project.debug_thaumicperiphery.toBoolean()) {
         runtimeOnly "curse.maven:thaumic-periphery-293505:2766866"
+        runtimeOnly "curse.maven:thaumic-augmentation-319441:6047659"
     }
 
     compileOnly rfg.deobf("curse.maven:polymancy-394626:3065950")
@@ -274,6 +276,13 @@ dependencies {
         if (project.debug_ic2classic.toBoolean()) {
              runtimeOnly "curse.maven:valkyriecompat-289532:2691540"
         }
+    }
+
+    compileOnly rfg.deobf("curse.maven:railcraft-51195:3853491")
+    compileOnly rfg.deobf("curse.maven:railway-depot-worker-1031521:6812208")
+    if (project.debug_railcraft.toBoolean()) {
+        runtimeOnly "curse.maven:railcraft-51195:3853491"
+        runtimeOnly "curse.maven:railway-depot-worker-1031521:6812208"
     }
 
     // Runtime dependencies

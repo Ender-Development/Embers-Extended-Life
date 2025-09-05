@@ -8,5 +8,7 @@
     "ModEventsMixin",
     "TileEmitterMixin",
     "TileReceptorMixin"
-  ]
+  ],
+  "server": [],
+  "client": []
 }

@@ -6,5 +6,7 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "ItemMantleCloakMixin"
-  ]
+  ],
+  "server": [],
+  "client": []
 }

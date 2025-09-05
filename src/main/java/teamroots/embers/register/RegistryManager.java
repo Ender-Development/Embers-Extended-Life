@@ -2,6 +2,7 @@ package teamroots.embers.register;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.entity.Entity;
@@ -12,9 +13,9 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.DimensionType;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.BiomeManager.BiomeEntry;
 import net.minecraftforge.common.BiomeManager.BiomeType;
@@ -32,13 +33,13 @@ import net.minecraftforge.registries.DataSerializerEntry;
 import teamroots.embers.Embers;
 import teamroots.embers.api.power.IEmberCapability;
 import teamroots.embers.api.upgrades.IUpgradeProvider;
-import teamroots.embers.block.BlockAlchemyPedestal;
 import teamroots.embers.block.IBlock;
 import teamroots.embers.block.IModeledBlock;
 import teamroots.embers.compat.BaublesIntegration;
 import teamroots.embers.compat.MysticalMechanicsIntegration;
 import teamroots.embers.compat.environmentaltech.EnvironmentalTechIntegration;
 import teamroots.embers.compat.Util;
+import teamroots.embers.compat.thaumcraft.ThaumcraftIntegration;
 import teamroots.embers.config.ConfigMob;
 import teamroots.embers.entity.EntityAncientGolem;
 import teamroots.embers.item.IModeledItem;
@@ -56,6 +57,9 @@ import teamroots.embers.util.EmbersFuelHandler;
 import teamroots.embers.util.ExtraSerializers;
 import teamroots.embers.world.WorldGenOres;
 import teamroots.embers.world.WorldGenSmallRuin;
+import thaumcraft.api.casters.ICaster;
+import thaumcraft.common.items.casters.ItemFocus;
+import thecodex6824.thaumicaugmentation.api.item.IDyeableItem;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -64,10 +68,6 @@ import java.util.List;
 // I am currently dead!
 
 public class RegistryManager {
-
-    public static Biome biome_cave;
-
-    public static DimensionType dimension_cave;
 
     public static WorldGenOres world_gen_ores;
 
@@ -100,11 +100,6 @@ public class RegistryManager {
         GameRegistry.registerWorldGenerator(world_gen_ores, 1);
         GameRegistry.registerWorldGenerator(world_gen_small_ruin = new WorldGenSmallRuin(), 400);
 
-        //GameRegistry.register(biomeCave = new BiomeCave());
-
-        //dimensionCave = DimensionType.register("cave", "cave", 90, CaveProvider.class, false);
-        //BiomeManager.addBiome(BiomeType.DESERT, new BiomeEntry(biomeCave, 10000));
-
         MinecraftForge.EVENT_BUS.register(EmbersFuelHandler.class);
         UpgradeCatalyticPlug.registerBlacklistedTile(TileEntityBeamCannon.class);
 
@@ -114,6 +109,8 @@ public class RegistryManager {
             MysticalMechanicsIntegration.registerAll();
         if (Util.isEnvironmentalTechIntegrationEnabled())
             EnvironmentalTechIntegration.registerAll();
+        if (Util.isThaumcraftIntegrationEnabled())
+            ThaumcraftIntegration.registerAll();
     }
 
     private static void registerCapabilities() {
@@ -175,6 +172,15 @@ public class RegistryManager {
         Minecraft.getMinecraft().getItemColors().registerItemColorHandler(new ItemEmberJar.ColorHandler(), ItemRegister.EMBER_JAR);
         Minecraft.getMinecraft().getItemColors().registerItemColorHandler(new ItemEmberCartridge.ColorHandler(), ItemRegister.EMBER_CARTRIDGE);
         Minecraft.getMinecraft().getItemColors().registerItemColorHandler(new ItemTyrfing.ColorHandler(), ItemRegister.TYRFING);
+        if (Util.isThaumicAugmentationIntegrationEnabled()) {
+            Minecraft.getMinecraft().getItemColors().registerItemColorHandler((stack, tintIndex) -> {
+                if (tintIndex == 1 && stack.getItem() instanceof ICaster && ((ICaster) stack.getItem()).getFocus(stack) != null) {
+                    return ((ItemFocus) ((ICaster) stack.getItem()).getFocus(stack)).getFocusColor(((ICaster) stack.getItem()).getFocusStack(stack));
+                } else {
+                    return tintIndex == 2 && stack.getItem() instanceof IDyeableItem ? ((IDyeableItem) stack.getItem()).getDyedColor(stack) : -1;
+                }
+            }, ThaumcraftIntegration.TIERED_EMBER_CASTER);
+        }
     }
 
     @SideOnly(Side.CLIENT)
@@ -195,6 +201,14 @@ public class RegistryManager {
         for (Item item : ItemRegister.INSTANCE.load()) {
             if (item instanceof IModeledItem) {
                 ((IModeledItem) item).initModel();
+            }
+        }
+
+        if (Util.isThaumicPeripheryIntegrationEnabled()) {
+            ModelLoader.setCustomModelResourceLocation(ThaumcraftIntegration.EMBER_CASTER, 0, new ModelResourceLocation("thaumicperiphery:caster_ember"));
+            if (Util.isThaumicAugmentationIntegrationEnabled()) {
+                ModelLoader.setCustomModelResourceLocation(ThaumcraftIntegration.TIERED_EMBER_CASTER, 0, new ModelResourceLocation("embers:gauntlet_thaumium"));
+                ModelLoader.setCustomModelResourceLocation(ThaumcraftIntegration.TIERED_EMBER_CASTER, 1, new ModelResourceLocation("embers:gauntlet_void"));
             }
         }
     }

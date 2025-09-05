@@ -2,6 +2,10 @@
 
 A dwarven magic mod
 
+## v1.25.4 - Bugfixes
+### Bugfixes
+
+
 ## v1.25.3 - Fixing JAOPCA legacy
 ### Changes
 - updated build scripts

@@ -7,6 +7,7 @@ cfg.embers.client.tooltip=(Client-only settings)
 cfg.embers.compat=Compatibility
 cfg.embers.compat.tooltip=(Compatibility settings)
 cfg.embers.compat.environmental_tech=Environmental Tech
+cfg.embers.compat.thaumcraft=Thaumcraft
 
 cfg.embers.machine=Machines
 cfg.embers.machine.tooltip=(Tweak various Machine parameters)
@@ -1327,3 +1328,7 @@ item.silver_eye_closed.name=Closed Silver Eye
 item.silver_eye_open.name=Open Silver Eye
 item.truemetal_clump.name=Isolated Materia Clump
 item.sulfur_dust.name=Sulfur Dust
+
+# Compat
+item.embers.tiered_ember_caster.thaumium.name=Thaumium Clockwork Caster's Gauntlet
+item.embers.tiered_ember_caster.void.name=Void Clockwork Caster's Gauntlet

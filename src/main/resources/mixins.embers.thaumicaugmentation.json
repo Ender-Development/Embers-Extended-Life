@@ -1,12 +1,10 @@
 {
-  "package": "teamroots.embers.mixin.spartanweaponryarcana",
+  "package": "teamroots.embers.mixin.thaumicaugmentation",
   "refmap": "mixins.embers.refmap.json",
   "minVersion": "0.8.5",
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [
-    "ItemRegistrySWAMixin"
-  ],
+  "mixins": [],
   "server": [],
-  "client": []
+  "client": ["HUDEventHandlerMixin"]
 }

@@ -7,5 +7,7 @@
   "mixins": [
     "EmbersCompatModuleMixin",
     "EmbersModuleMixin"
-  ]
+  ],
+  "server": [],
+  "client": []
 }

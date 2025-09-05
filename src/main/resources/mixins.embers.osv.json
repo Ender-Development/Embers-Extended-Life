@@ -7,5 +7,7 @@
   "mixins": [
     "CfgMixin",
     "PropertyGroupMixin"
-  ]
+  ],
+  "server": [],
+  "client": []
 }

@@ -1,0 +1,6 @@
+{
+    "parent": "embers:item/caster_gauntlet_focus",
+    "textures": {
+        "1": "embers:items/caster_ember"
+    }
+}

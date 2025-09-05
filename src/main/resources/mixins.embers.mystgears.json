@@ -9,5 +9,7 @@
     "ConfigHandlerMixin",
     "EmbersCompatMixin",
     "ItemGearMixin"
-  ]
+  ],
+  "server": [],
+  "client": []
 }
