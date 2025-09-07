@@ -3,8 +3,19 @@
 A dwarven magic mod
 
 ## v1.25.4 - Bugfixes
-### Bugfixes
+### Changes
+- added an option to disable _building_ an Ancient Golem
+- added more options to the mechanical pump
+- added more options to the Ancient Golem in general
+- improved overall Thaumcraft integration
+- improved Inflictor Gem Armor handling, so now they can only be added to cloaks (it's a config)
+- made all fluids placeable
+- removed unused mixins for AetheriumAshenArmor as the mod is now part of my Aetherworks fork
+- updated dependencies
 
+### Bugfixes
+- fixed crash when a **smart** mod didn't have an iron and gold plate registered
+- fixed NPE crashes when handling NBT recipes in the Alchemy Table or Melter
 
 ## v1.25.3 - Fixing JAOPCA legacy
 ### Changes
