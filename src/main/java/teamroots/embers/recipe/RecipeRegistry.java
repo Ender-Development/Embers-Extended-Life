@@ -40,6 +40,7 @@ import teamroots.embers.compat.EnderioIntegration;
 import teamroots.embers.compat.MysticalMechanicsIntegration;
 import teamroots.embers.compat.Util;
 import teamroots.embers.compat.environmentaltech.EnvironmentalTechIntegration;
+import teamroots.embers.compat.thaumcraft.ThaumcraftIntegration;
 import teamroots.embers.config.ConfigMachine;
 import teamroots.embers.config.ConfigMaterial;
 import teamroots.embers.config.ConfigMisc;
@@ -1069,6 +1070,9 @@ public class RecipeRegistry {
         }
         if (Util.isTinkersIntegrationEnabled() && Util.isEnderIOIntegrationEnabled()) {
             EnderioIntegration.registerRecipes(event);
+        }
+        if (Util.isThaumcraftIntegrationEnabled()) {
+            ThaumcraftIntegration.registerRecipes(event);
         }
 
         Alchemistry.INSTANCE.execute();
