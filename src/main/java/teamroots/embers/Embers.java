@@ -19,7 +19,7 @@ import teamroots.embers.register.ItemRegister;
 import teamroots.embers.register.RegistryManager;
 import teamroots.embers.research.ResearchManager;
 
-@Mod(modid = Embers.MODID, name = Embers.MODNAME, dependencies = Embers.DEPENDENCIES, acceptedMinecraftVersions = Embers.VERSIONS, version = Tags.VERSION)
+@Mod(modid = Embers.MODID, name = Embers.MODNAME, dependencies = Tags.DEPENDENCIES, acceptedMinecraftVersions = Embers.VERSIONS, version = Tags.VERSION)
 public class Embers {
 
 	public static final String MODID = Tags.MOD_ID;
@@ -27,7 +27,6 @@ public class Embers {
 	public static final String CFG_FOLDER = "Embers/";
 	public static final String CFG_ADDONS_FOLDER = String.format("%saddons/", CFG_FOLDER);
 	public static final String VERSIONS = "[1.12.2]";
-	public static final String DEPENDENCIES = "after:mysticalmechanics;after:mixinbooter@[10.6,);after:environmentaltech;";
 
 	public static final Logger LOG = LogManager.getLogger(Embers.MODNAME);
 

@@ -232,12 +232,12 @@ dependencies {
     }
 
     compileOnly rfg.deobf("curse.maven:emberforged-887375:6883958")
-    compileOnly rfg.deobf("curse.maven:minefantasy-reforged-431996:4666619")
+    compileOnly rfg.deobf("curse.maven:minefantasy-reforged-431996:6861487")
     compileOnly rfg.deobf("curse.maven:codechicken-lib-1-8-242818:2779848")
     if (project.debug_emberforged.toBoolean()) {
         runtimeOnly "curse.maven:codechicken-lib-1-8-242818:2779848"
         runtimeOnly "curse.maven:emberforged-887375:6883958"
-        runtimeOnly "curse.maven:minefantasy-reforged-431996:4666619"
+        runtimeOnly "curse.maven:minefantasy-reforged-431996:6861487"
     }
 
     compileOnly rfg.deobf("curse.maven:ae2-extended-life-570458:5411078")

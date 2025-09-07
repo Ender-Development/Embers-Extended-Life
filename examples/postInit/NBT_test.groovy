@@ -15,5 +15,5 @@ mods.embers.melter.recipeBuilder()
 
 mods.embers.melter.recipeBuilder()
     .input(item('minefantasyreforged:bar').withNbt(['mf_custom_materials': ['main_material': 'pig_iron']]))
-    .fluidOutput(fluid('molten_pig_iron') * 144)
+    .fluidOutput(fluid('pig_iron') * 144)
     .register()
