@@ -161,4 +161,8 @@ public class ConfigMachine {
     })
     public static final SteamEngineCategory STEAM_ENGINE = new SteamEngineCategory();
 
+    @Config.Name("Pump")
+    @Config.LangKey("cfg.embers.machine.pump")
+    @Config.Comment("Options about the Pump")
+    public static final PumpCategory PUMP = new PumpCategory();
 }
