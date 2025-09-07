@@ -309,7 +309,7 @@ public class ItemRegister implements IRegistrable<Item> {
             REGISTRY.add(PLATE_BRONZE);
             REGISTRY.add(NUGGET_BRONZE);
         }
-        if (ConfigMaterial.COPPER.isNotOff()) {
+        if (ConfigMaterial.COPPER.mustLoad()) {
             if (ConfigTool.METAL_TOOL.COPPER.register) {
                 REGISTRY.add(PICKAXE_COPPER);
                 REGISTRY.add(AXE_COPPER);
@@ -321,7 +321,7 @@ public class ItemRegister implements IRegistrable<Item> {
             REGISTRY.add(NUGGET_COPPER);
             REGISTRY.add(PLATE_COPPER);
         }
-        if (ConfigMaterial.DAWNSTONE.isNotOff()) {
+        if (ConfigMaterial.DAWNSTONE.mustLoad()) {
             if (ConfigTool.METAL_TOOL.DAWNSTONE.register) {
                 REGISTRY.add(PICKAXE_DAWNSTONE);
                 REGISTRY.add(AXE_DAWNSTONE);
@@ -351,7 +351,7 @@ public class ItemRegister implements IRegistrable<Item> {
         if (ConfigMaterial.IRON.mustLoad()) {
             REGISTRY.add(PLATE_IRON);
         }
-        if (ConfigMaterial.LEAD.isNotOff()) {
+        if (ConfigMaterial.LEAD.mustLoad()) {
             if (ConfigTool.METAL_TOOL.LEAD.register) {
                 REGISTRY.add(PICKAXE_LEAD);
                 REGISTRY.add(AXE_LEAD);
@@ -380,7 +380,7 @@ public class ItemRegister implements IRegistrable<Item> {
             REGISTRY.add(PLATE_NICKEL);
             REGISTRY.add(NUGGET_NICKEL);
         }
-        if (ConfigMaterial.SILVER.isNotOff()) {
+        if (ConfigMaterial.SILVER.mustLoad()) {
             if (ConfigTool.METAL_TOOL.SILVER.register) {
                 REGISTRY.add(PICKAXE_SILVER);
                 REGISTRY.add(AXE_SILVER);

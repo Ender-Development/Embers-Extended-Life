@@ -187,12 +187,14 @@ public class RecipeRegistry {
 
         //event.getRegistry().register(new ShapelessOreRecipe(getRL("iron_nugget"),new ItemStack(RegistryManager.nugget_iron,9),new Object[]{"ingotIron"}).setRegistryName(getRL("iron_nugget")));
 
-
-        event.getRegistry().register(new ShapelessOreRecipe(getRL("plate_gold"), getItemStackFromOreDict("plateGold", 1), new Object[]{
-                "ingotGold", "ingotGold", ItemRegister.TINKER_HAMMER}).setRegistryName(getRL("plate_gold")));
-        event.getRegistry().register(new ShapelessOreRecipe(getRL("plate_iron"), getItemStackFromOreDict("plateIron", 1), new Object[]{
-                "ingotIron", "ingotIron", ItemRegister.TINKER_HAMMER}).setRegistryName(getRL("plate_iron")));
-
+        if (ConfigMaterial.GOLD.mustLoad()) {
+            event.getRegistry().register(new ShapelessOreRecipe(getRL("plate_gold"), getItemStackFromOreDict("plateGold", 1), new Object[]{
+                    "ingotGold", "ingotGold", ItemRegister.TINKER_HAMMER}).setRegistryName(getRL("plate_gold")));
+        }
+        if (ConfigMaterial.IRON.mustLoad()) {
+            event.getRegistry().register(new ShapelessOreRecipe(getRL("plate_iron"), getItemStackFromOreDict("plateIron", 1), new Object[]{
+                    "ingotIron", "ingotIron", ItemRegister.TINKER_HAMMER}).setRegistryName(getRL("plate_iron")));
+        }
 
         RecipeRegistry.registerMaterialSet(event, "Lead",
                 ItemRegister.INGOT_LEAD,
