@@ -2,6 +2,10 @@
 
 A dwarven magic mod
 
+## v1.25.5 - Hotfix
+### Bugfixes
+- fixed crash when Thaumic Periphery is not installed
+
 ## v1.25.4 - Bugfixes
 ### Changes
 - added an option to disable _building_ an Ancient Golem
