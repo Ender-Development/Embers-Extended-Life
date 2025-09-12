@@ -1071,7 +1071,7 @@ public class RecipeRegistry {
         if (Util.isTinkersIntegrationEnabled() && Util.isEnderIOIntegrationEnabled()) {
             EnderioIntegration.registerRecipes(event);
         }
-        if (Util.isThaumcraftIntegrationEnabled()) {
+        if (Util.isThaumcraftIntegrationEnabled() && Util.isThaumicPeripheryIntegrationEnabled()) {
             ThaumcraftIntegration.registerRecipes(event);
         }
 

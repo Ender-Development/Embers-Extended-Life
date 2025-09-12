@@ -109,7 +109,7 @@ public class RegistryManager {
             MysticalMechanicsIntegration.registerAll();
         if (Util.isEnvironmentalTechIntegrationEnabled())
             EnvironmentalTechIntegration.registerAll();
-        if (Util.isThaumcraftIntegrationEnabled())
+        if (Util.isThaumcraftIntegrationEnabled() && Util.isThaumicPeripheryIntegrationEnabled())
             ThaumcraftIntegration.registerAll();
     }
 
@@ -172,7 +172,7 @@ public class RegistryManager {
         Minecraft.getMinecraft().getItemColors().registerItemColorHandler(new ItemEmberJar.ColorHandler(), ItemRegister.EMBER_JAR);
         Minecraft.getMinecraft().getItemColors().registerItemColorHandler(new ItemEmberCartridge.ColorHandler(), ItemRegister.EMBER_CARTRIDGE);
         Minecraft.getMinecraft().getItemColors().registerItemColorHandler(new ItemTyrfing.ColorHandler(), ItemRegister.TYRFING);
-        if (Util.isThaumicAugmentationIntegrationEnabled()) {
+        if (Util.isThaumicAugmentationIntegrationEnabled() && Util.isThaumicPeripheryIntegrationEnabled()) {
             Minecraft.getMinecraft().getItemColors().registerItemColorHandler((stack, tintIndex) -> {
                 if (tintIndex == 1 && stack.getItem() instanceof ICaster && ((ICaster) stack.getItem()).getFocus(stack) != null) {
                     return ((ItemFocus) ((ICaster) stack.getItem()).getFocus(stack)).getFocusColor(((ICaster) stack.getItem()).getFocusStack(stack));

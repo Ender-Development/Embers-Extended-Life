@@ -162,15 +162,19 @@ dependencies {
     if (project.debug_thaumcraft.toBoolean()
             || project.debug_thaumicperiphery.toBoolean()
             || project.debug_polymancy.toBoolean()
+            || project.debug_thaumicaugmentation.toBoolean()
             || project.debug_planarartifice.toBoolean()) {
         runtimeOnly "curse.maven:thaumcraft-223628:2629023"
         runtimeOnly "curse.maven:thaumic-jei-285492:2705304"
     }
 
     compileOnly rfg.deobf("curse.maven:thaumic-periphery-293505:2766866")
-    compileOnly rfg.deobf("curse.maven:thaumic-augmentation-319441:6047659")
     if (project.debug_thaumicperiphery.toBoolean()) {
         runtimeOnly "curse.maven:thaumic-periphery-293505:2766866"
+    }
+
+    compileOnly rfg.deobf("curse.maven:thaumic-augmentation-319441:6047659")
+    if (project.debug_thaumicaugmentation.toBoolean()) {
         runtimeOnly "curse.maven:thaumic-augmentation-319441:6047659"
     }
 
