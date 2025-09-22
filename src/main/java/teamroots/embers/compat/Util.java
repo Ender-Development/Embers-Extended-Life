@@ -31,10 +31,14 @@ public final class Util {
     }
 
     public static boolean isThaumicPeripheryIntegrationEnabled() {
-        return isThaumcraftIntegrationEnabled() && Loader.isModLoaded("thaumicperiphery");
+        return isThaumcraftIntegrationEnabled()
+                && Loader.isModLoaded("thaumicperiphery")
+                && ConfigCompat.THAUMCRAFT.enableThaumicPeripheryIntegration;
     }
 
     public static boolean isThaumicAugmentationIntegrationEnabled() {
-        return isThaumcraftIntegrationEnabled() && Loader.isModLoaded("thaumicaugmentation");
+        return isThaumicPeripheryIntegrationEnabled()
+                && Loader.isModLoaded("thaumicaugmentation")
+                && ConfigCompat.THAUMCRAFT.enableThaumicAugmentationIntegration;
     }
 }

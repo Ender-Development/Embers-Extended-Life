@@ -21,6 +21,8 @@ import teamroots.embers.compat.BaublesIntegration;
 import teamroots.embers.compat.MysticalMechanicsIntegration;
 import teamroots.embers.compat.Util;
 import teamroots.embers.compat.thaumcraft.AspectHandler;
+import teamroots.embers.compat.thaumicaugmentation.TAAspectHandler;
+import teamroots.embers.compat.thaumicperiphery.TPAspectHandler;
 import teamroots.embers.gui.GuiHandler;
 import teamroots.embers.network.PacketHandler;
 import teamroots.embers.recipe.RecipeRegistry;
@@ -44,6 +46,10 @@ public class CommonProxy {
 		RegistryManager.registerAll();
 		if (Util.isThaumcraftIntegrationEnabled())
 			MinecraftForge.EVENT_BUS.register(AspectHandler.class);
+        if (Util.isThaumicPeripheryIntegrationEnabled())
+            MinecraftForge.EVENT_BUS.register(TPAspectHandler.class);
+        if (Util.isThaumicAugmentationIntegrationEnabled())
+            MinecraftForge.EVENT_BUS.register(TAAspectHandler.class);
 	}
 	
 	public void init(FMLInitializationEvent event){

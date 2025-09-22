@@ -8,7 +8,7 @@ import net.minecraftforge.registries.IForgeRegistryEntry;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
-import teamroots.embers.compat.thaumcraft.ThaumcraftIntegration;
+import teamroots.embers.compat.thaumicperiphery.ThaumicPeripheryIntegration;
 import thaumicperiphery.ModContent;
 
 @Mixin(value = ModContent.class, remap = false)
@@ -16,7 +16,7 @@ public class ModContentMixin {
 
     @ModifyArg(method = "registerItems", at = @At(value = "INVOKE", target = "Lnet/minecraftforge/registries/IForgeRegistry;register(Lnet/minecraftforge/registries/IForgeRegistryEntry;)V", ordinal = 0), index = 0)
     private static IForgeRegistryEntry modifyEmberCaster(IForgeRegistryEntry value) {
-        return ThaumcraftIntegration.EMBER_CASTER;
+        return ThaumicPeripheryIntegration.EMBER_CASTER;
     }
 
     @WrapOperation(method = "registerModels", at = @At(value = "INVOKE", target = "Lnet/minecraftforge/client/model/ModelLoader;setCustomModelResourceLocation(Lnet/minecraft/item/Item;ILnet/minecraft/client/renderer/block/model/ModelResourceLocation;)V", ordinal = 0))

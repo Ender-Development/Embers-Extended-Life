@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import teamroots.embers.compat.thaumcraft.ThaumcraftIntegration;
+import teamroots.embers.compat.thaumicperiphery.ThaumicPeripheryIntegration;
 import thaumicperiphery.ThaumicPeriphery;
 
 @Mixin(value = ThaumicPeriphery.class, remap = false)
@@ -24,7 +24,7 @@ public class ThaumicPeripheryMixin {
             @Override
             @SideOnly(Side.CLIENT)
             public @NotNull ItemStack createIcon() {
-                return new ItemStack(ThaumcraftIntegration.EMBER_CASTER);
+                return new ItemStack(ThaumicPeripheryIntegration.EMBER_CASTER);
             }
         };
     }

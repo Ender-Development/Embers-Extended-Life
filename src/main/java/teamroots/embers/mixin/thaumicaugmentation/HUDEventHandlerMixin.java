@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import teamroots.embers.compat.thaumcraft.TieredEmberCaster;
+import teamroots.embers.compat.thaumicaugmentation.TieredEmberCaster;
 import thecodex6824.thaumicaugmentation.client.event.HUDEventHandler;
 
 @Mixin(value = HUDEventHandler.class, remap = false)

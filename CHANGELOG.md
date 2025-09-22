@@ -2,6 +2,13 @@
 
 A dwarven magic mod
 
+## v1.25.6 - Hotfix
+### Changes
+- improved integration handling
+
+### Bugfixes
+- fixed crash when Thaumic Periphery is installed
+
 ## v1.25.5 - Hotfix
 ### Bugfixes
 - fixed crash when Thaumic Periphery is not installed

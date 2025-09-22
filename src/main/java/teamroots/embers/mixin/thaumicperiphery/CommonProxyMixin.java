@@ -4,7 +4,7 @@ import net.minecraft.item.Item;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import teamroots.embers.compat.thaumcraft.ThaumcraftIntegration;
+import teamroots.embers.compat.thaumicperiphery.ThaumicPeripheryIntegration;
 import teamroots.embers.register.ItemRegister;
 import thaumicperiphery.proxy.CommonProxy;
 
@@ -22,6 +22,6 @@ public class CommonProxyMixin {
 
     @Redirect(method = "initResearch", at = @At(value = "FIELD", target = "Lthaumicperiphery/ModContent;caster_ember:Lnet/minecraft/item/Item;"))
     private Item ember_caster() {
-        return ThaumcraftIntegration.EMBER_CASTER;
+        return ThaumicPeripheryIntegration.EMBER_CASTER;
     }
 }

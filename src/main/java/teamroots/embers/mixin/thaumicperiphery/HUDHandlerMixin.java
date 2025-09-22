@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import teamroots.embers.compat.thaumcraft.TieredEmberCaster;
+import teamroots.embers.compat.thaumicaugmentation.TieredEmberCaster;
 import thaumicperiphery.Config;
 import thaumicperiphery.handler.HUDHandler;
 

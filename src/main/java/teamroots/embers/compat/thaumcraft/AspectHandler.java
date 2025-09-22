@@ -26,14 +26,6 @@ public class AspectHandler {
 
         //No equivalent with new api
         ThaumcraftApi.registerEntityTag("ancient_golem", new AspectList().add(Aspect.MECHANISM, 20).add(Aspect.MOTION, 5).add(Aspect.EARTH, 15).add(Aspect.ALCHEMY, 5));
-
-        if (Util.isThaumicPeripheryIntegrationEnabled()) {
-            register.registerComplexObjectTag(new ItemStack(ThaumcraftIntegration.EMBER_CASTER, 1, 0), (new AspectList()).add(Aspect.MAGIC, 5).add(Aspect.METAL, 5).add(Aspect.FIRE, 5));
-            if (Util.isThaumicAugmentationIntegrationEnabled()) {
-                register.registerComplexObjectTag(new ItemStack(ThaumcraftIntegration.TIERED_EMBER_CASTER, 1, 0), (new AspectList()).add(Aspect.MAGIC, 8));
-                register.registerComplexObjectTag(new ItemStack(ThaumcraftIntegration.TIERED_EMBER_CASTER, 1, 1), (new AspectList()).add(Aspect.ELDRITCH, 27).add(Aspect.VOID, 23));
-            }
-        }
     }
 
     private static void registerItemAspects(AspectEventProxy register) {

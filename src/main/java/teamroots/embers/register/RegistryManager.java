@@ -40,6 +40,8 @@ import teamroots.embers.compat.MysticalMechanicsIntegration;
 import teamroots.embers.compat.environmentaltech.EnvironmentalTechIntegration;
 import teamroots.embers.compat.Util;
 import teamroots.embers.compat.thaumcraft.ThaumcraftIntegration;
+import teamroots.embers.compat.thaumicaugmentation.ThaumicAugmentationIntegration;
+import teamroots.embers.compat.thaumicperiphery.ThaumicPeripheryIntegration;
 import teamroots.embers.config.ConfigMob;
 import teamroots.embers.entity.EntityAncientGolem;
 import teamroots.embers.item.IModeledItem;
@@ -109,8 +111,12 @@ public class RegistryManager {
             MysticalMechanicsIntegration.registerAll();
         if (Util.isEnvironmentalTechIntegrationEnabled())
             EnvironmentalTechIntegration.registerAll();
-        if (Util.isThaumcraftIntegrationEnabled() && Util.isThaumicPeripheryIntegrationEnabled())
+        if (Util.isThaumcraftIntegrationEnabled())
             ThaumcraftIntegration.registerAll();
+        if (Util.isThaumicPeripheryIntegrationEnabled())
+            ThaumicPeripheryIntegration.registerAll();
+        if (Util.isThaumicAugmentationIntegrationEnabled())
+            ThaumicAugmentationIntegration.registerAll();
     }
 
     private static void registerCapabilities() {
@@ -179,7 +185,7 @@ public class RegistryManager {
                 } else {
                     return tintIndex == 2 && stack.getItem() instanceof IDyeableItem ? ((IDyeableItem) stack.getItem()).getDyedColor(stack) : -1;
                 }
-            }, ThaumcraftIntegration.TIERED_EMBER_CASTER);
+            }, ThaumicAugmentationIntegration.TIERED_EMBER_CASTER);
         }
     }
 
@@ -205,10 +211,10 @@ public class RegistryManager {
         }
 
         if (Util.isThaumicPeripheryIntegrationEnabled()) {
-            ModelLoader.setCustomModelResourceLocation(ThaumcraftIntegration.EMBER_CASTER, 0, new ModelResourceLocation("thaumicperiphery:caster_ember"));
+            ModelLoader.setCustomModelResourceLocation(ThaumicPeripheryIntegration.EMBER_CASTER, 0, new ModelResourceLocation("thaumicperiphery:caster_ember"));
             if (Util.isThaumicAugmentationIntegrationEnabled()) {
-                ModelLoader.setCustomModelResourceLocation(ThaumcraftIntegration.TIERED_EMBER_CASTER, 0, new ModelResourceLocation("embers:gauntlet_thaumium"));
-                ModelLoader.setCustomModelResourceLocation(ThaumcraftIntegration.TIERED_EMBER_CASTER, 1, new ModelResourceLocation("embers:gauntlet_void"));
+                ModelLoader.setCustomModelResourceLocation(ThaumicAugmentationIntegration.TIERED_EMBER_CASTER, 0, new ModelResourceLocation("embers:gauntlet_thaumium"));
+                ModelLoader.setCustomModelResourceLocation(ThaumicAugmentationIntegration.TIERED_EMBER_CASTER, 1, new ModelResourceLocation("embers:gauntlet_void"));
             }
         }
     }
