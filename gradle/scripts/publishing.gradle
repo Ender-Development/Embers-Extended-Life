@@ -13,9 +13,9 @@ if (propertyBool('publish_to_maven')) {
                 name propertyString('maven_name').replaceAll("\\s", "")
                 url propertyString('maven_url')
                 credentials {
-                    username propertyString("mavenUser")
-                    password propertyString("mavenPassword")
-                }
+                    apply from: 'gradle/scripts/publishing-credentials.gradle'
+                    username getMavenUsername()
+                    password getMavenPassword()
             }
         }
         publications {

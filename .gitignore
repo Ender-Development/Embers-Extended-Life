@@ -22,6 +22,7 @@ eclipse
 run
 classes
 /gradle/gradle.properties
+maven-publishing.credentials
 
 # python
 *.py
