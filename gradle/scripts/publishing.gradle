@@ -16,6 +16,7 @@ if (propertyBool('publish_to_maven')) {
                     apply from: 'gradle/scripts/publishing-credentials.gradle'
                     username getMavenUsername()
                     password getMavenPassword()
+                }
             }
         }
         publications {
