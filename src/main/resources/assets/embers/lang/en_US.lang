@@ -234,6 +234,7 @@ tile.mech_edge.name=Mechanical Edge
 tile.turret.name=Turret
 
 tile.embers.modifier_ember.name=Ember Modifier
+tile.environmentaltech.modifier_ember.name=Ember Modifier
 tooltip.embers.modifier_ember.info=Enables any Void Miner to act as an Ember Bore
 tooltip.environmentaltech.modifier_core.info=Can be used without any effect.
 tooltip.environmentaltech.modifier_core.info2=Won't increase Power Usage.
