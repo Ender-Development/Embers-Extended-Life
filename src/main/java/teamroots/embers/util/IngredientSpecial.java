@@ -1,21 +1,15 @@
 package teamroots.embers.util;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.WeakHashMap;
+import java.util.*;
 import java.util.function.Predicate;
+import java.util.stream.StreamSupport;
 
 public class IngredientSpecial extends Ingredient {
     private static Set<IngredientSpecial> uncachedIngredients = Collections.newSetFromMap(new WeakHashMap<>());
@@ -45,20 +39,36 @@ public class IngredientSpecial extends Ingredient {
     }
 
     private static void cacheMatchingStacks() {
-        //Update all ingredients at once, so we don't have to iterate the registry multiple times
-        Map<IngredientSpecial, List<ItemStack>> matches = new HashMap<>();
-        for (Item item : ForgeRegistries.ITEMS) {
-            CreativeTabs[] tabs = item.getCreativeTabs();
-            for (CreativeTabs tab : tabs) {
-                if (tab == null)
-                    continue;
+
+        //Forge's registries don't have a parallelStream() method, so we have to use StreamSupport
+        Map<IngredientSpecial, List<ItemStack>> matches = StreamSupport.stream(ForgeRegistries.ITEMS.spliterator(), true)
+            .flatMap(item -> {
+                CreativeTabs[] tabs = item.getCreativeTabs();
                 NonNullList<ItemStack> items = NonNullList.create();
-                item.getSubItems(tab, items);
-                for (IngredientSpecial ingredient : uncachedIngredients) {
-                    items.stream().filter(ingredient.matcher).forEach(stack -> matches.computeIfAbsent(ingredient, ingredientSpecial -> new ArrayList<>()).add(stack));
+                for (CreativeTabs tab : tabs) {
+                    if (tab == null)
+                        continue;
+                    item.getSubItems(tab, items);
                 }
-            }
-        }
+                return items.stream();
+            })
+            //We have to use this collect as ConcurrentHashMap adds significant overhead to computeIfAbsent (hashCode)
+            .collect(
+                HashMap::new,
+                (map, stack) -> {
+                    for (IngredientSpecial ingredient : uncachedIngredients) {
+                        if (ingredient.test(stack)) {
+                            map.computeIfAbsent(ingredient, k -> new ArrayList<>()).add(stack);
+                        }
+                    }
+                },
+                (left, right) -> {
+                    right.forEach((key, list) -> {
+                        left.computeIfAbsent(key, k -> new ArrayList<>()).addAll(list);
+                    });
+                }
+            );
+
         for (Map.Entry<IngredientSpecial, List<ItemStack>> entry : matches.entrySet()) {
             entry.getKey().matchingStacks = entry.getValue() == null ? new ItemStack[0] : entry.getValue().toArray(new ItemStack[0]);
             entry.getKey().matchingStacksCached = true;
