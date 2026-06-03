@@ -4,7 +4,7 @@
   "minVersion": "0.8.5",
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
-  "mixins": ["CommonProxyMixin", "ModContentMixin", "MysticalMechanicsCompatMixin", "ThaumicPeripheryMixin"],
+  "mixins": ["CommonProxyMixin", "ModContentMixin", "MysticalMechanicsCompatMixin"],
   "server": [],
-  "client": ["ClientProxyMixin", "HUDHandlerMixin", "ModContentClientMixin"]
+  "client": ["ClientProxyMixin", "HUDHandlerMixin", "ModContentClientMixin", "ThaumicPeripheryMixin"]
 }
