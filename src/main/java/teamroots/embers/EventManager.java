@@ -787,7 +787,7 @@ public class EventManager {
         GlStateManager.pushMatrix();
         for (TileEntity tileEntity : list) {
             if (!(tileEntity instanceof TileEntityAlchemyTablet))
-                return;
+                continue;
             TileEntitySpecialRenderer render = TileEntityRendererDispatcher.instance.getRenderer(tileEntity);
             if (render instanceof ITileEntitySpecialRendererLater) {
                 double x = Minecraft.getMinecraft().player.lastTickPosX + Minecraft.getMinecraft().getRenderPartialTicks() * (Minecraft.getMinecraft().player.posX - Minecraft.getMinecraft().player.lastTickPosX);

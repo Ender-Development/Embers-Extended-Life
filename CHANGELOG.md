@@ -2,6 +2,10 @@
 
 A dwarven magic mod
 
+## v1.26.1 - Hotfix
+### Bugfixes
+- fixed leaking renderer [#76](https://github.com/Ender-Development/Embers-Extended-Life/issues/76) [#77](https://github.com/Ender-Development/Embers-Extended-Life/issues/77)
+
 ## v1.26.0 - Clean up
 ### Changes
 - removed Ember Caster, use Congrea Mystica instead
