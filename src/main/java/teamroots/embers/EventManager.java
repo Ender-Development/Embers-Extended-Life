@@ -84,6 +84,7 @@ import teamroots.embers.register.FluidRegister;
 import teamroots.embers.register.ItemRegister;
 import teamroots.embers.research.ResearchBase;
 import teamroots.embers.tileentity.ITileEntitySpecialRendererLater;
+import teamroots.embers.tileentity.TileEntityAlchemyTablet;
 import teamroots.embers.tileentity.TileEntityExplosionPedestal;
 import teamroots.embers.tileentity.TileEntityMechAccessor;
 import teamroots.embers.util.EmberGenUtil;
@@ -784,13 +785,15 @@ public class EventManager {
         }
         List<TileEntity> list = Minecraft.getMinecraft().world.loadedTileEntityList;
         GlStateManager.pushMatrix();
-        for (int i = 0; i < list.size(); i++) {
-            TileEntitySpecialRenderer render = TileEntityRendererDispatcher.instance.getRenderer(list.get(i));
+        for (TileEntity tileEntity : list) {
+            if (!(tileEntity instanceof TileEntityAlchemyTablet))
+                return;
+            TileEntitySpecialRenderer render = TileEntityRendererDispatcher.instance.getRenderer(tileEntity);
             if (render instanceof ITileEntitySpecialRendererLater) {
                 double x = Minecraft.getMinecraft().player.lastTickPosX + Minecraft.getMinecraft().getRenderPartialTicks() * (Minecraft.getMinecraft().player.posX - Minecraft.getMinecraft().player.lastTickPosX);
                 double y = Minecraft.getMinecraft().player.lastTickPosY + Minecraft.getMinecraft().getRenderPartialTicks() * (Minecraft.getMinecraft().player.posY - Minecraft.getMinecraft().player.lastTickPosY);
                 double z = Minecraft.getMinecraft().player.lastTickPosZ + Minecraft.getMinecraft().getRenderPartialTicks() * (Minecraft.getMinecraft().player.posZ - Minecraft.getMinecraft().player.lastTickPosZ);
-                ((ITileEntitySpecialRendererLater) render).renderLater(list.get(i), list.get(i).getPos().getX() - x, list.get(i).getPos().getY() - y, list.get(i).getPos().getZ() - z, Minecraft.getMinecraft().getRenderPartialTicks());
+                ((ITileEntitySpecialRendererLater) render).renderLater(tileEntity, tileEntity.getPos().getX() - x, tileEntity.getPos().getY() - y, tileEntity.getPos().getZ() - z, Minecraft.getMinecraft().getRenderPartialTicks());
             }
         }
         GlStateManager.popMatrix();
