@@ -2,6 +2,13 @@
 
 A dwarven magic mod
 
+## v1.26.0 - Clean up
+### Changes
+- removed Ember Caster, use Congrea Mystica instead
+- fixed server crash related to thaumic periphery mixins (rozbrajaczpoziomow)
+- improve IngredientSpecial#cacheMatchingStacks (roidrole)
+- improve world rendering overhead [#75](https://github.com/Ender-Development/Embers-Extended-Life/issues/75)
+
 ## v1.25.6 - Hotfix
 ### Changes
 - improved integration handling
