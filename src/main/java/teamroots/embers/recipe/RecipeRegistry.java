@@ -22,7 +22,6 @@ import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidUtil;
 import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.fluids.capability.IFluidHandler;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.items.ItemHandlerHelper;
@@ -41,8 +40,6 @@ import teamroots.embers.compat.MysticalMechanicsIntegration;
 import teamroots.embers.compat.Util;
 import teamroots.embers.compat.environmentaltech.EnvironmentalTechIntegration;
 import teamroots.embers.compat.thaumcraft.ThaumcraftIntegration;
-import teamroots.embers.compat.thaumicaugmentation.ThaumicAugmentationIntegration;
-import teamroots.embers.compat.thaumicperiphery.ThaumicPeripheryIntegration;
 import teamroots.embers.config.ConfigMachine;
 import teamroots.embers.config.ConfigMaterial;
 import teamroots.embers.config.ConfigMisc;
@@ -1075,12 +1072,6 @@ public class RecipeRegistry {
         }
         if (Util.isThaumcraftIntegrationEnabled()) {
             ThaumcraftIntegration.registerRecipes(event);
-        }
-        if (Util.isThaumicAugmentationIntegrationEnabled()) {
-            ThaumicAugmentationIntegration.registerRecipes(event);
-        }
-        if (Util.isThaumicPeripheryIntegrationEnabled()) {
-            ThaumicPeripheryIntegration.registerRecipes(event);
         }
 
         Alchemistry.INSTANCE.execute();

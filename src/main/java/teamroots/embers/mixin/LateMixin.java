@@ -34,7 +34,6 @@ public class LateMixin implements ILateMixinLoader {
             put("mixins.embers.polymancy.json", () -> Loader.isModLoaded("polymancy"));
             put("mixins.embers.spartanweaponryarcana.json", () -> Loader.isModLoaded("spartanweaponryarcana"));
             put("mixins.embers.survivaltools.json", () -> Loader.isModLoaded("survivaltools") && SurvivalTools.VERSION.equals("1.12.2-1.0.0"));
-            put("mixins.embers.thaumicaugmentation.json", () -> Loader.isModLoaded("thaumicaugmentation"));
             put("mixins.embers.thaumicperiphery.json", () -> Loader.isModLoaded("thaumicperiphery"));
             put("mixins.embers.valkyrielib.json", () -> Loader.isModLoaded("valkyrielib"));
         }
