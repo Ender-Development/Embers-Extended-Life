@@ -4,31 +4,36 @@ repositories {
     // Other repositories described by default:
     // CleanroomMC: https://maven.cleanroommc.com
     exclusiveContent {
-		forRepository {
-			maven {
-				name 'CurseMaven'
-				url 'https://curse.cleanroommc.com'
-			}
-		}
-		filter {
-			includeGroup 'curse.maven'
-		}
-	}
-	exclusiveContent {
-		forRepository {
-			maven {
-				name 'Modrinth'
-				url 'https://api.modrinth.com/maven'
-			}
-		}
-		filter {
-			includeGroup 'maven.modrinth'
-		}
-	}
-	maven {
-		url = 'https://maven.blamejared.com/'
-	}
-	mavenLocal() // Must be last for caching to work
+        forRepository {
+            maven {
+                name 'CleanroomMC CurseMaven'
+                url 'https://curse.cleanroommc.com'
+            }
+        }
+        filter {
+            includeGroup 'curse.maven'
+        }
+    }
+    exclusiveContent {
+        forRepository {
+            maven {
+                name 'Modrinth'
+                url 'https://api.modrinth.com/maven'
+            }
+        }
+        filter {
+            includeGroup 'maven.modrinth'
+        }
+    }
+    maven {
+        url = 'https://maven.blamejared.com/'
+    }
+    mavenLocal() // Must be last for caching to work
+}
+
+configurations {
+    shade
+    implementation.extendsFrom shade
 }
 
 dependencies {
@@ -46,6 +51,11 @@ dependencies {
     // By wrapping a dependency descriptor in rfg.deobf() method call, the dependency is queued for deobfuscation
     // When deobfuscating, RFG respects the mapping_channel + mapping_version stated in gradle.properties
 
+    // Example - Shading dependencies:
+    // Using the shadow plugin, by using the "shade" configuration, the dependency will be shaded into your output jar
+    // shade 'mezz:jei:4.31.2' << will shade HadEnoughItems 4.31.2 directly into your jar
+    // For more configuration options: see the bottom of this file and: https://gradleup.com/shadow/configuration/
+
     // Example - CurseMaven dependencies:
     // 'curse.maven:had-enough-items-557549:4543375' << had-enough-items = project slug, 557549 = project id, 4543375 = file id
     // Full documentation: https://cursemaven.com/
@@ -59,7 +69,7 @@ dependencies {
     // runtimeOnly = runtime dependency
     // compileOnly = compile time dependency
     // annotationProcessor = annotation processing dependencies
-    // embed = bundle dependencies into final output artifact (no relocation)
+    // shade = includes dependency in output
 
     // Transitive dependencies:
     // (Dependencies that your dependency depends on)
@@ -68,6 +78,7 @@ dependencies {
     // implementation ('com.google.code.gson:gson:2.8.6') {
     //     transitive = false
     // }
+
     compileOnlyApi 'org.jetbrains:annotations:24.1.0'
     annotationProcessor 'org.jetbrains:annotations:24.1.0'
 
@@ -228,7 +239,7 @@ dependencies {
         runtimeOnly "curse.maven:gedgetry-transmission-282777:2633660"
     }
 
-    compileOnly rfg.deobf("curse.maven:spartan-weaponry-278141:4467344")
+    //compileOnly rfg.deobf("curse.maven:spartan-weaponry-278141:4467344")
     compileOnly rfg.deobf("curse.maven:spartan-weaponry-arcana-unofficial-620760:3836926")
     if (project.debug_spartanweaponry.toBoolean()) {
         runtimeOnly "curse.maven:spartan-weaponry-278141:4467344"
@@ -278,7 +289,7 @@ dependencies {
         runtimeOnly "curse.maven:valkyrielib-245480:2691542"
         runtimeOnly "curse.maven:environmental-tech-245453:2691536"
         if (project.debug_ic2classic.toBoolean()) {
-             runtimeOnly "curse.maven:valkyriecompat-289532:2691540"
+            runtimeOnly "curse.maven:valkyriecompat-289532:2691540"
         }
     }
 
@@ -292,4 +303,22 @@ dependencies {
     // Runtime dependencies
     runtimeOnly rfg.deobf("curse.maven:the-one-probe-community-edition-885670:5824252")
     runtimeOnly rfg.deobf("curse.maven:topalldependents-1120632:5808089") // updated version of the one probe addons
+}
+
+// Need reobfJar to use uber jars, so dependencies that are shaded in are present
+// Only redirect reobfJar through shadowJar when there's actually something to shade
+if (!configurations.shade.dependencies.empty) {
+    tasks.named('reobfJar').configure {
+        inputJar.set(tasks.named('shadowJar').flatMap({ it.archiveFile }))
+    }
+}
+
+// By default, it will use a "uberdev" suffix, and only pack shade configuration dependencies
+// Uberdev: dev jar w/ dependencies, NOT a reobfuscated artifact!
+// The end result (reobfJar) will have a non-suffixed name, as unlike normal shading envs, reobfJar is the end task
+tasks.shadowJar {
+    // Shadow wires shadowJar into the assemble task, so it runs even when nothing is shaded
+    enabled = !project.configurations.shade.dependencies.empty
+    archiveClassifier = 'uberdev'
+    configurations = [ project.configurations.shade ]
 }

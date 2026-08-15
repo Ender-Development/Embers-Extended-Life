@@ -2,6 +2,10 @@
 
 A dwarven magic mod
 
+## v1.26.2 - Hotfix II
+### Bugfixes
+- fixed issues with Nuclearcraft [#78](https://github.com/Ender-Development/Embers-Extended-Life/issues/78)
+
 ## v1.26.1 - Hotfix
 ### Bugfixes
 - fixed leaking renderer [#76](https://github.com/Ender-Development/Embers-Extended-Life/issues/76) [#77](https://github.com/Ender-Development/Embers-Extended-Life/issues/77)
