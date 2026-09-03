@@ -2,9 +2,10 @@ package teamroots.embers.config;
 
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Config;
 import teamroots.embers.Embers;
+import teamroots.embers.Tags;
 
 @Config(modid = Embers.MODID, category = "seed", name = Embers.CFG_FOLDER + "seed")
 @Config.LangKey("cfg.embers.seed")
@@ -67,17 +68,30 @@ public class ConfigSeed {
     public static class Seed {
         @Config.Name("Drop")
         @Config.Comment({
-                "The item dropped from the seed.",
-                "Format: modid:itemname"
+                "The item dropped from the seed. If modid isn't defined, we default to embers.",
+                "Format: modid:itemname#meta"
         })
         public String drop;
 
         private Seed(String drop) {
-            this.drop = new ResourceLocation(Embers.MODID,drop).toString();
+            this.drop = drop;
         }
 
         private Seed(Item drop) {
             this.drop = drop.getRegistryName().toString();
+        }
+
+        public ItemStack getDrop(){
+            String[] splitMeta = drop.split("#");
+            int meta = 0;
+            if (splitMeta.length == 2)
+                meta = Integer.parseInt(splitMeta[1]);
+            String[] splitMod = splitMeta[0].split(":");
+            String mod = splitMod[0];
+            if (splitMod.length == 1)
+                mod = Tags.MOD_ID +  ":" + splitMod[0];
+
+            return new ItemStack(Item.getByNameOrId(mod), meta);
         }
     }
 }

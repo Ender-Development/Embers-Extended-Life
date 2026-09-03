@@ -5,8 +5,10 @@ A dwarven magic mod
 ## v1.26.2 - Hotfix II
 ### Bugfixes
 - fixed issues with Nuclearcraft [#78](https://github.com/Ender-Development/Embers-Extended-Life/issues/78)
+- fixed crystal seeds not dropping anything, when nuggets are disabled
+- fixed aspects not respecting nbt entries
 
-## v1.26.1 - Hotfix
+## v1.26.1 - Hotfix I
 ### Bugfixes
 - fixed leaking renderer [#76](https://github.com/Ender-Development/Embers-Extended-Life/issues/76) [#77](https://github.com/Ender-Development/Embers-Extended-Life/issues/77)
 

@@ -12,6 +12,7 @@ import teamroots.embers.block.BlockAlchemyPedestal;
 import teamroots.embers.tileentity.TileEntityAlchemyPedestal;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -82,7 +83,17 @@ public class AlchemyUtil {
 
         public boolean matches(ItemStack stack)
         {
-            return matcher.apply(stack);
+            if (!matcher.apply(stack))
+                return false;
+
+            if (stack.getTagCompound() != null) {
+                return Arrays.stream(matcher.getMatchingStacks()).anyMatch(x -> {
+                    if (x.getTagCompound() == null)
+                        return false;
+                    return x.getTagCompound().equals(stack.getTagCompound());
+                });
+            }
+            return true;
         }
 
         public ItemStack[] getStacks()

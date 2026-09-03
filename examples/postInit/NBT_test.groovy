@@ -1,3 +1,4 @@
+// mods_loaded: minefantasyreforged
 // mods.embers.alchemy.removeAll()
 mods.embers.alchemy.recipeBuilder()
     .input(

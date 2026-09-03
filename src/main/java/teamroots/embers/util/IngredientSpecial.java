@@ -7,7 +7,7 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
-import org.jetbrains.annotations.NotNull;
+import teamroots.embers.config.ConfigMisc;
 
 import javax.annotation.Nullable;
 import java.util.*;
@@ -43,7 +43,7 @@ public class IngredientSpecial extends Ingredient {
 
     private static void cacheMatchingStacks() {
         // yes, we need to check for nuclearcraft as it has problems with the threaded approach provided by roidrole.
-        Map<IngredientSpecial, List<ItemStack>> matches = (Loader.isModLoaded("nuclearcraft")) ? cacheLegacy() : cacheThreaded();
+        Map<IngredientSpecial, List<ItemStack>> matches = (ConfigMisc.multithreadIngredient && !Loader.isModLoaded("nuclearcraft")) ? cacheThreaded() : cacheLegacy();
 
         for (Map.Entry<IngredientSpecial, List<ItemStack>> entry : matches.entrySet()) {
             entry.getKey().matchingStacks = entry.getValue() == null ? new ItemStack[0] : entry.getValue().toArray(new ItemStack[0]);

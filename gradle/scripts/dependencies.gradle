@@ -113,14 +113,14 @@ dependencies {
         runtimeOnly "curse.maven:immersive-engineering-231951:2974106"
     }
 
-    compileOnly rfg.deobf("curse.maven:bubbles-a-baubles-fork-995393:6539774")
+    compileOnly rfg.deobf("curse.maven:bubbles-a-baubles-fork-995393:7736064")
     if (project.debug_baubles.toBoolean()
             || project.debug_thaumcraft.toBoolean()
             || project.debug_thaumicperiphery.toBoolean()
             || project.debug_aetherworks.toBoolean()
             || project.debug_polymancy.toBoolean()
             || project.debug_planarartifice.toBoolean()) {
-        runtimeOnly "curse.maven:bubbles-a-baubles-fork-995393:6539774"
+        runtimeOnly "curse.maven:bubbles-a-baubles-fork-995393:7736064"
     }
 
     compileOnly rfg.deobf("curse.maven:mysticalmechanics-300742:3006392")
@@ -247,12 +247,12 @@ dependencies {
     }
 
     compileOnly rfg.deobf("curse.maven:emberforged-887375:6883958")
-    compileOnly rfg.deobf("curse.maven:minefantasy-reforged-431996:6861487")
+    compileOnly rfg.deobf("curse.maven:minefantasy-reforged-431996:7180520")
     compileOnly rfg.deobf("curse.maven:codechicken-lib-1-8-242818:2779848")
     if (project.debug_emberforged.toBoolean()) {
         runtimeOnly "curse.maven:codechicken-lib-1-8-242818:2779848"
         runtimeOnly "curse.maven:emberforged-887375:6883958"
-        runtimeOnly "curse.maven:minefantasy-reforged-431996:6861487"
+        runtimeOnly "curse.maven:minefantasy-reforged-431996:7180520"
     }
 
     compileOnly rfg.deobf("curse.maven:ae2-extended-life-570458:5411078")

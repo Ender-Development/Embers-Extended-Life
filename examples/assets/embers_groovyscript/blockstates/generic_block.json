@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "embers_groovyscript:generic_block"
+    }
+  }
+}

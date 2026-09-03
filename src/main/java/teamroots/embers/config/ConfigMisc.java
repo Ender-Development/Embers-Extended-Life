@@ -75,4 +75,8 @@ public class ConfigMisc {
     @Config.Name("Inflictor Gems can only be applied to cloaks")
     @Config.Comment("If true, inflictor gems can only be applied to cloaks. If false, they can be applied to any armor piece.")
     public static boolean inflictorGemsOnlyCloaks = false;
+
+    @Config.Name("Multithread Ingredient Cache")
+    @Config.Comment("Small performance load time improvement. May be incompatible with some mods, e.g. Nuclearcraft")
+    public static boolean multithreadIngredient = false;
 }
