@@ -2,6 +2,13 @@
 
 A dwarven magic mod
 
+## v1.26.3 - Hotfix III
+### Changes
+- put the multithread caching behind a config option
+
+### Bugfixes
+- fixed crash on start
+
 ## v1.26.2 - Hotfix II
 ### Bugfixes
 - fixed issues with Nuclearcraft [#78](https://github.com/Ender-Development/Embers-Extended-Life/issues/78)
