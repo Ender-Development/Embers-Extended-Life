@@ -61,18 +61,8 @@ public class ItemMeltingRecipe {
 	}
 
 	public boolean matches(ItemStack stack){
-		if (!input.apply(stack))
-			return false;
-
-		if (stack.getTagCompound() != null) {
-            return Arrays.stream(input.getMatchingStacks()).anyMatch(x -> {
-                if (x.getTagCompound() == null)
-					return false;
-                return x.getTagCompound().equals(stack.getTagCompound());
-            });
-		}
-		return true;
-	}
+        return input.apply(stack);
+    }
 
 	public FluidStack getResult(TileEntity tile, ItemStack input){
 		return fluid.copy();
