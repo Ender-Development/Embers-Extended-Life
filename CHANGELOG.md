@@ -2,6 +2,10 @@
 
 A dwarven magic mod
 
+## v1.27.0 - Drop Ingredient NBT
+### Changes
+- remove NBT checking for melter and alchemy recipes [#80](https://github.com/Ender-Development/Embers-Extended-Life/pull/80)
+
 ## v1.26.3 - Hotfix III
 ### Changes
 - put the multithread caching behind a config option
