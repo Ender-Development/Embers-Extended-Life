@@ -1,0 +1,1323 @@
+itemGroup.embers=Embers
+itemGroup.embers_resources=Embers (Металлы)
+
+cfg.embers.client=Клиент
+cfg.embers.client.tooltip=(Настройки только для клиента)
+
+cfg.embers.compat=Совместимость
+cfg.embers.compat.tooltip=(Настройки совместимости)
+cfg.embers.compat.environmental_tech=Environmental Tech
+cfg.embers.compat.thaumcraft=Thaumcraft
+
+cfg.embers.machine=Машины
+cfg.embers.machine.tooltip=(Настройка различных параметров машин)
+cfg.embers.machine.ember_conduit=Проводник Эмбера
+cfg.embers.machine.melter=Плавильня
+cfg.embers.machine.stamper=Пресс
+cfg.embers.machine.inferno_forge=Адская кузня
+cfg.embers.machine.geo_separator=Геологический сепаратор
+cfg.embers.machine.dawnstone_anvil=Заритовая наковальня
+cfg.embers.machine.charger=Зарядник
+cfg.embers.machine.cinder_plinth=Пепельный постамент
+cfg.embers.machine.tank=Жидкостный резервуар
+cfg.embers.machine.reservoir=Большой резервуар
+cfg.embers.machine.mini_boiler=Мини-бойлер
+cfg.embers.machine.ember_bore=Эмбер-бур
+cfg.embers.machine.copper_cell=Медный накопитель
+cfg.embers.machine.creative_ember_source=Творческий источник Эмбера
+cfg.embers.machine.ember_funnel=Воронка Эмбера
+cfg.embers.machine.emitter=Излучатель Эмбера
+cfg.embers.machine.receiver=Приёмник Эмбера
+cfg.embers.machine.combustor=Камера сгорания
+cfg.embers.machine.catalyzer=Каталитическая камера
+cfg.embers.machine.reactor=Огненный реактор
+cfg.embers.machine.pulser=Толкатель эмбера
+cfg.embers.machine.catalytic_plug=Каталитическая заглушка
+cfg.embers.machine.beam_cannon=Лучевая пушка
+cfg.embers.machine.crystal_cell=Кристаллический накопитель
+cfg.embers.machine.activator=Активатор Эмбера
+cfg.embers.machine.boiler=Напорный очиститель
+cfg.embers.machine.mixer=Смесительная центрифуга
+cfg.embers.machine.heat_coil=Очаговая спираль
+cfg.embers.machine.steam_engine=Паровой двигатель
+cfg.embers.machine.reaction_chamber=Реакционная камера
+cfg.embers.machine.pump=Механическая помпа
+
+cfg.embers.material=Материалы
+cfg.embers.material.tooltip=(Настройка металлов и инструментов)
+cfg.embers.material.copper=Медь
+cfg.embers.material.silver=Серебро
+cfg.embers.material.lead=Свинец
+cfg.embers.material.aluminum=Алюминий
+cfg.embers.material.bronze=Бронза
+cfg.embers.material.electrum=Электрум
+cfg.embers.material.nickel=Никель
+cfg.embers.material.tin=Олово
+cfg.embers.material.iron=Железо
+cfg.embers.material.gold=Золото
+cfg.embers.material.dawnstone=Зарит
+cfg.embers.material.mithril=Мифрил
+cfg.embers.material.astralite=Астралит
+cfg.embers.material.umber_steel=Умбер-сталь
+
+cfg.embers.misc=Разное
+cfg.embers.misc.tooltip=(Настройка прочих параметров)
+
+cfg.embers.mob=Мобы
+cfg.embers.mob.tooltip=(Настройки, связанные с мобами)
+cfg.embers.mob.ember_golem=Эмбер-голем
+
+cfg.embers.seed=Семена
+cfg.embers.seed.tooltip=(Настройка выпадения семян)
+cfg.embers.seed.alchemic=Алхимическое семя
+cfg.embers.seed.aluminum=Алюминиевое семя
+cfg.embers.seed.copper=Медное семя
+cfg.embers.seed.dawnstone=Семя зарита
+cfg.embers.seed.gold=Золотое семя
+cfg.embers.seed.iron=Железное семя
+cfg.embers.seed.lead=Свинцовое семя
+cfg.embers.seed.mithril=Мифриловое семя
+cfg.embers.seed.nickel=Никелевое семя
+cfg.embers.seed.silver=Серебряное семя
+cfg.embers.seed.tin=Оловянное семя
+
+cfg.embers.tool=Инструменты
+cfg.embers.tool.tooltip=(Настройка параметров инструментов)
+cfg.embers.tool.blazing_ray=Пламенный луч
+cfg.embers.tool.cinder_staff=Пепельный посох
+cfg.embers.tool.shifting_scales=Подвижные чешуйки
+cfg.embers.tool.metal=Металлические инструменты
+cfg.embers.tool.metal.copper=Медные инструменты
+cfg.embers.tool.metal.silver=Серебряные инструменты
+cfg.embers.tool.metal.lead=Свинцовые инструменты
+cfg.embers.tool.metal.aluminum=Алюминиевые инструменты
+cfg.embers.tool.metal.bronze=Бронзовые инструменты
+cfg.embers.tool.metal.electrum=Инструменты из электрума
+cfg.embers.tool.metal.nickel=Никелевые инструменты
+cfg.embers.tool.metal.tin=Оловянные инструменты
+cfg.embers.tool.metal.dawnstone=Заритовые инструменты
+cfg.embers.tool.metal.tyrfing=Тирфинг
+
+cfg.embers.world=Мир
+cfg.embers.world.tooltip=(Настройки генерации мира)
+cfg.embers.world.small_ruin=Малые руины
+cfg.embers.world.ore=Генерация руд
+cfg.embers.world.transmutation=Трансмутация
+cfg.embers.world.ore_aluminum=Алюминиевая руда
+cfg.embers.world.ore_copper=Медная руда
+cfg.embers.world.ore_lead=Свинцовая руда
+cfg.embers.world.ore_nickel=Никелевая руда
+cfg.embers.world.ore_quartz=Кварцевая руда
+cfg.embers.world.ore_silver=Серебряная руда
+cfg.embers.world.ore_tin=Оловянная руда
+
+tile.block_copper.name=Медный блок
+tile.block_lead.name=Свинцовый блок
+tile.block_dawnstone.name=Заритовый блок
+tile.block_silver.name=Серебряный блок
+tile.block_mithril.name=Мифриловый блок
+tile.ore_copper.name=Медная руда
+tile.ore_lead.name=Свинцовая руда
+tile.ore_silver.name=Серебряная руда
+tile.block_tank.name=Резервуар для жидкости
+tile.block_caminite_brick.name=Каминитовые кирпичи
+tile.pipe.name=Жидкостная труба
+tile.pump.name=Экстрактор жидкостей
+tile.block_furnace.name=Плавильня
+tile.ember_receiver.name=Приёмник Эмбера
+tile.ember_emitter.name=Излучатель Эмбера
+tile.deep_line.name=Глубинная скважина
+tile.copper_cell.name=Медный накопитель
+tile.item_pipe.name=Предметная труба
+tile.item_pump.name=Экстрактор предметов
+tile.bin.name=Урна
+tile.stamper.name=Штамповщик
+tile.stamper_base.name=Матрица штамповщика
+tile.ember_bore.name=Эмбер-бур
+tile.mech_accessor.name=Механический аксессор
+tile.mech_core.name=Механическое ядро
+tile.stairs_caminite_brick.name=Ступеньки из каминитового кирпича
+tile.wall_caminite_brick.name=Ограда из каминитового кирпича
+tile.ember_activator.name=Эмбер-активатор
+tile.mixer.name=Смесительная центрифуга
+tile.heat_coil.name=Очаговая спираль
+tile.item_dropper.name=Раздатчик предметов
+tile.fluid_dropper.name=Раздатчик жидкостей
+tile.large_tank.name=Большой резервуар
+tile.fluid_gauge.name=Счетчик жидкости
+tile.ember_gauge.name=Счетчик эмбера
+tile.item_gauge.name=Счетчик предметов
+tile.block_lantern.name=Эмбер-фонарь
+tile.stone_edge.name=Каминитовое кольцо
+tile.beam_splitter.name=Разделитель луча
+tile.ember_relay.name=Эмбер-реле
+tile.crystal_cell.name=Кристаллический накопитель
+tile.charger.name=Медный зарядник
+tile.block_caminite_brick_slab.name=Плита из каминитового кирпича
+tile.block_caminite_brick_slab_double.name=Двойная плита из каминитового кирпича
+tile.block_caminite_large_brick.name=Большой каминитовый кирпич
+tile.ashen_stone.name=Пепельный камень
+tile.ashen_stone_slab.name=Плита из пепельного камня
+tile.ashen_stone_slab_double.name=Двойная плита из пепельного камня
+tile.stairs_ashen_stone.name=Ступеньки из пепельного камня
+tile.wall_ashen_stone.name=Ограда из пепельного камня
+tile.ashen_brick.name=Пепельный кирпич
+tile.ashen_brick_slab.name=Плита из пепельного кирпича
+tile.ashen_brick_slab_double.name=Двойная плита из пепельного кирпича
+tile.stairs_ashen_brick.name=Ступеньки из пепельного кирпича
+tile.wall_ashen_brick.name=Ограда из пепельного кирпича
+tile.ashen_tile.name=Пепельная плитка
+tile.ashen_tile_slab.name=Плита из пепельной плитки
+tile.ashen_tile_slab_double.name=Двойная плита из пепельной плитки
+tile.stairs_ashen_tile.name=Ступеньки из пепельной плитки
+tile.wall_ashen_tile.name=Ограда из пепельной плитки
+tile.cinder_plinth.name=Пепельный постамент
+tile.knowledge_table.name=Исследовательский стол
+tile.alchemy_pedestal.name=Алхимический пьедестал
+tile.alchemy_tablet.name=Плита обмена
+tile.item_transfer.name=Передатчик предметов
+tile.fluid_transfer.name=Передатчик жидкостей
+tile.core_stone.name=Центральный камень
+tile.beam_cannon.name=Лучевая пушка
+tile.archaic_bricks.name=Архаичные кирпичи
+tile.archaic_light.name=Архаичный свет
+tile.dawnstone_anvil.name=Заритовая наковальня
+tile.auto_hammer.name=Автоматический молот
+tile.ore_quartz.name=Кварцевая руда
+tile.sealed_planks.name=Герметичные доски
+tile.wrapped_sealed_planks.name=Укрепленные герметичные доски
+tile.vacuum.name=Предметный вакуум
+tile.breaker.name=Автоматический разрушитель
+tile.ember_injector.name=Инжектор Эмбера
+tile.seed_iron.name=Семя железного кристалла
+tile.seed_gold.name=Семя золотого кристалла
+tile.seed_copper.name=Семя медного кристалла
+tile.seed_lead.name=Семя свинцового кристалла
+tile.seed_silver.name=Семя серебряного кристалла
+tile.seed_aluminum.name=Семя алюминиевого кристалла
+tile.seed_nickel.name=Семя никелевого кристалла
+tile.seed_tin.name=Семя оловянного кристалла
+tile.seed_dawnstone.name=Семя заритового кристалла
+tile.boiler.name=Напорный очиститель
+tile.archaic_edge.name=Архаичная кладка
+tile.archaic_tile.name=Архаичная плитка
+tile.combustor.name=Камера сгорания
+tile.catalyzer.name=Каталитическая камера
+tile.reactor.name=Огненный реактор
+tile.field_chart.name=Полевая карта
+tile.ember_pulser.name=Толкатель Эмбера
+tile.inferno_forge.name=Адская кузня
+tile.axle_iron.name=Железная ось
+tile.creative_mech_source.name=Творческий источник механической энергии
+tile.creative_ember_source.name=Творческий источник Эмбера
+tile.gearbox_frame.name=Корпус коробки передач
+tile.steam_engine.name=Паровой двигатель
+tile.mechanical_pump.name=Механическая помпа
+tile.caminite_lever.name=Каминитовый рычаг
+tile.catalytic_plug.name=Каталитическая заглушка
+tile.ember_funnel.name=Эмбер-воронка
+tile.mini_boiler.name=Мини-бойлер
+tile.mech_actuator_single.name=Механический привод
+tile.mech_actuator.name=Механический редуктор
+tile.ember_siphon.name=Эмбер-сифон
+tile.stirling.name=Двигатель дикого огня
+tile.clockwork_attenuator.name=Счетчик частоты
+tile.explosion_pedestal.name=Пьедестал амулета взрыва
+tile.stone_valve.name=Каминитовый вентиль
+tile.geo_separator.name=Геологический сепаратор
+tile.item_request.name=Запрос предметов
+tile.reaction_chamber.name=Реакционная камера
+tile.ember_pipe.name=Нестабильный проводник Эмбера
+tile.advanced_edge.name=Край кристаллического накопителя
+tile.inferno_forge_edge.name=Край адской кузни
+tile.mech_edge.name=Механический край
+tile.turret.name=Турель
+
+tile.embers.modifier_ember.name=Модификатор Эмбера
+tile.environmentaltech.modifier_ember.name=Модификатор Эмбера
+tooltip.embers.modifier_ember.info=Позволяет любому пустотному карьеру работать в качестве Эмбер-бура
+tooltip.environmentaltech.modifier_core.info=Может использоваться без каких-либо эффектов.
+tooltip.environmentaltech.modifier_core.info2=Не увеличивает потребление энергии.
+
+fluid.iron=Расплавленное железо
+fluid.gold=Расплавленное золото
+fluid.copper=Расплавленная медь
+fluid.lead=Расплавленный свинец
+fluid.silver=Расплавленное серебро
+fluid.astralite=Расплавленный астралит
+fluid.dawnstone=Расплавленный зарит
+fluid.umber_steel=Расплавленная умбер-сталь
+fluid.alchemical_redstone=Алхимическая суспензия
+fluid.steam=Пар
+fluid.oil_soul=Духовный сырец
+fluid.oil_dwarf=Гномье масло
+fluid.gas_dwarf=Гномий горючий газ
+
+item.ingot_copper.name=Медный слиток
+item.ingot_silver.name=Серебряный слиток
+item.ingot_lead.name=Свинцовый слиток
+item.ingot_mithril.name=Мифриловый слиток
+item.nugget_copper.name=Медный кусочек
+item.nugget_silver.name=Серебряный кусочек
+item.nugget_lead.name=Свинцовый кусочек
+item.nugget_dawnstone.name=Кусочек зарита
+item.brick_caminite.name=Каминитовый кирпич
+item.blend_caminite.name=Каминитовая смесь
+item.plate_caminite.name=Каминитовая пластина
+item.plate_caminite_raw.name=Сырая каминитовая пластина
+item.plate_gold.name=Золотая пластина
+item.plate_iron.name=Железная пластина
+item.plate_dawnstone.name=Заритовая пластина
+item.plate_copper.name=Медная пластина
+item.plate_lead.name=Свинцовая пластина
+item.plate_silver.name=Серебряная пластина
+item.plate_mithril.name=Мифриловая пластина
+item.ember_detector.name=Атмосферный датчик
+item.tinker_hammer.name=Молот инженера
+item.stamp_bar.name=Штамп слитков
+item.stamp_flat.name=Плоский штамп
+item.stamp_plate.name=Штамп пластин
+item.stamp_gear.name=Штамп шестерён
+item.stamp_bar_raw.name=Сырой штамп слитков
+item.stamp_flat_raw.name=Сырой плоский штамп
+item.stamp_plate_raw.name=Сырой штамп пластин
+item.stamp_gear_raw.name=Сырой штамп шестерён
+item.stamp_rod_raw.name=Сырой штамп стержней
+item.stamp_rod.name=Штамп стержней
+item.stamp_round_raw.name=Сырой круглый штамп
+item.stamp_round.name=Круглый штамп
+item.dust_ember.name=Песок Эмбера
+item.shard_ember.name=Осколок Эмбера
+item.crystal_ember.name=Кристалл Эмбера
+item.ingot_dawnstone.name=Слиток зарита
+item.nugget_iron.name=Железный кусочек
+item.nugget_mithril.name=Мифриловый кусочек
+item.pickaxe_clockwork.name=Заводная кирка
+item.axe_clockwork.name=Заводной боевой топор
+item.pickaxe_copper.name=Медная кирка
+item.axe_copper.name=Медный топор
+item.shovel_copper.name=Медная лопата
+item.hoe_copper.name=Медная мотыга
+item.sword_copper.name=Медный меч
+item.pickaxe_dawnstone.name=Заритовая кирка
+item.axe_dawnstone.name=Заритовый топор
+item.shovel_dawnstone.name=Заритовая лопата
+item.hoe_dawnstone.name=Заритовая мотыга
+item.sword_dawnstone.name=Заритовый меч
+item.pickaxe_lead.name=Свинцовая кирка
+item.axe_lead.name=Свинцовый топор
+item.shovel_lead.name=Свинцовая лопата
+item.hoe_lead.name=Свинцовая мотыга
+item.sword_lead.name=Свинцовый меч
+item.pickaxe_silver.name=Серебряная кирка
+item.axe_silver.name=Серебряный топор
+item.shovel_silver.name=Серебряная лопата
+item.hoe_silver.name=Серебряная мотыга
+item.sword_silver.name=Серебряный меч
+item.ember_jar.name=Эмбер-батарея
+item.ember_cartridge.name=Эмбер-картридж
+item.ignition_cannon.name=Пламенный луч
+item.staff_ember.name=Пепельный посох
+item.grandhammer.name=Великий молот
+item.dust_ash.name=Кучка пепла
+item.golems_eye.name=Око Древних
+item.aspectus_iron.name=Железный аспект
+item.aspectus_dawnstone.name=Заритовый аспект
+item.aspectus_copper.name=Медный аспект
+item.aspectus_silver.name=Серебряный аспект
+item.aspectus_lead.name=Свинцовый аспект
+item.alchemic_waste.name=Алхимические отходы
+item.inflictor_gem.name=Самоцвет наложения
+item.ashen_cloak_head.name=Пепельные очки
+item.ashen_cloak_chest.name=Пепельный плащ
+item.ashen_cloak_legs.name=Пепельные поножи
+item.ashen_cloak_boots.name=Пепельные ботинки
+item.glimmer_shard.name=Мерцающий кристалл
+item.glimmer_lamp.name=Мерцающая лампа
+item.ashen_cloth.name=Пепельная ткань
+item.archaic_brick.name=Архаичный кирпич
+item.ancient_motive_core.name=Древнее движущее ядро
+item.isolated_materia.name=Изолированная материя
+item.tyrfing.name=Тирфинг
+item.adhesive.name=Клей
+item.ember_cluster.name=Кластер Эмбер-кристаллов
+item.wildfire_core.name=Ядро дикого огня
+item.codex.name=Древний кодекс
+item.superheater.name=Перегреватель
+item.inferno_forge.name=Адская кузня
+item.jet_augment.name=Реактивное сопло
+item.blasting_core.name=Взрывное ядро
+item.caster_orb.name=Сфера заклинателя
+item.resonating_bell.name=Резонирующий колокол
+item.flame_barrier.name=Пламенный барьер
+item.eldritch_insignia.name=Жуткая эмблема
+item.intelligent_apparatus.name=Разумный аппарат
+item.archaic_circuit.name=Архаичная схема
+item.ember_ring.name=Кольцо Эмбера
+item.ember_belt.name=Пояс Эмбера
+item.ember_amulet.name=Амулет Эмбера
+item.ember_bulb.name=Лампа мантии
+item.gear_iron.name=Железная шестерня
+item.gear_dawnstone.name=Заритовая шестерня
+item.dust_metallurgic.name=Металлургическая пыль
+item.diffraction_barrel.name=Дифракционный барабан
+item.focal_lens.name=Фокусирующая линза
+item.explosion_charm.name=Талисман взрывов
+item.nonbeliever_amulet.name=Амулет неверующего
+item.ashen_amulet.name=Пепельный амулет
+item.dawnstone_mail.name=Кольчуга из зарита
+item.rocket_booster.name=Ракетный ускоритель
+item.climbers_belt.name=Пояс альпиниста
+item.crystal_lenses.name=Кристаллические линзы
+item.tinker_lens.name=Линза инженера
+item.anti_tinker_lens.name=Дымчатая линза инженера
+item.shifting_scales.name=Подвижные чешуйки
+item.winding_gears.name=Подвижные шестерни
+item.core_stone.name=Центральный камень
+item.spark_plug.name=Свеча зажигания
+item.creative_heat.name=Творческий модификатор тепла
+
+tile.block_aluminum.name=Алюминиевый блок
+tile.ore_aluminum.name=Алюминиевая руда
+item.ingot_aluminum.name=Алюминиевый слиток
+item.nugget_aluminum.name=Алюминиевый кусочек
+item.plate_aluminum.name=Алюминиевая пластина
+item.pickaxe_aluminum.name=Алюминиевая кирка
+item.axe_aluminum.name=Алюминиевый топор
+item.hoe_aluminum.name=Алюминиевая мотыга
+item.shovel_aluminum.name=Алюминиевая лопата
+item.sword_aluminum.name=Алюминиевый меч
+fluid.aluminum=Расплавленный алюминий
+
+tile.block_bronze.name=Бронзовый блок
+tile.ore_bronze.name=Бронзовая руда
+item.ingot_bronze.name=Бронзовый слиток
+item.nugget_bronze.name=Бронзовый кусочек
+item.plate_bronze.name=Бронзовая пластина
+item.pickaxe_bronze.name=Бронзовая кирка
+item.axe_bronze.name=Бронзовый топор
+item.hoe_bronze.name=Бронзовая мотыга
+item.shovel_bronze.name=Бронзовая лопата
+item.sword_bronze.name=Бронзовый меч
+fluid.bronze=Расплавленная бронза
+
+tile.block_electrum.name=Блок из электрума
+tile.ore_electrum.name=Руда электрума
+item.ingot_electrum.name=Слиток электрума
+item.nugget_electrum.name=Кусочек электрума
+item.plate_electrum.name=Пластина из электрума
+item.pickaxe_electrum.name=Кирка из электрума
+item.axe_electrum.name=Топор из электрума
+item.hoe_electrum.name=Мотыга из электрума
+item.shovel_electrum.name=Лопата из электрума
+item.sword_electrum.name=Меч из электрума
+fluid.electrum=Расплавленный электрум
+
+tile.block_nickel.name=Никелевый блок
+tile.ore_nickel.name=Никелевая руда
+item.ingot_nickel.name=Никелевый слиток
+item.nugget_nickel.name=Никелевый кусочек
+item.plate_nickel.name=Никелевая пластина
+item.pickaxe_nickel.name=Никелевая кирка
+item.axe_nickel.name=Никелевый топор
+item.hoe_nickel.name=Никелевая мотыга
+item.shovel_nickel.name=Никелевая лопата
+item.sword_nickel.name=Никелевый меч
+fluid.nickel=Расплавленный никель
+
+tile.block_tin.name=Оловянный блок
+tile.ore_tin.name=Оловянная руда
+item.ingot_tin.name=Оловянный слиток
+item.nugget_tin.name=Оловянный кусочек
+item.plate_tin.name=Оловянная пластина
+item.pickaxe_tin.name=Оловянная кирка
+item.axe_tin.name=Оловянный топор
+item.hoe_tin.name=Оловянная мотыга
+item.shovel_tin.name=Оловянная лопата
+item.sword_tin.name=Оловянный меч
+fluid.tin=Расплавленное олово
+
+embers.aspect.iron=Железо
+embers.aspect.copper=Медь
+embers.aspect.dawnstone=Зарит
+embers.aspect.lead=Свинец
+embers.aspect.silver=Серебро
+
+embers.decimal_format.ember=0.0
+embers.decimal_format.mechanical_multiplier=0.##x
+embers.decimal_format.speed_multiplier=0.##x
+embers.decimal_format.ember_multiplier=0.##x
+embers.decimal_format.inaccuracy=0
+embers.decimal_format.heat=0.00
+embers.decimal_format.item_amount=0x
+embers.decimal_format.attenuator_multiplier=0.##x
+
+embers.tooltip.goggles.input=§9⬊§r %s
+embers.tooltip.goggles.output=§6⬉§r %s
+embers.tooltip.goggles.storage=• %s
+
+embers.tooltip.goggles.item=Предметы
+embers.tooltip.goggles.fluid=Жидкости
+embers.tooltip.goggles.ember=Эмбер
+embers.tooltip.goggles.mechanical=Механическая энергия
+embers.tooltip.goggles.filter=%s (%s)
+
+embers.tooltip.goggles.item.any=Любой
+embers.tooltip.goggles.item.fuel=Топливо
+embers.tooltip.goggles.item.ember=Эмбер
+embers.tooltip.goggles.item.stamp=Штамп
+embers.tooltip.goggles.item.ember_storage=Хранилище Эмбера
+embers.tooltip.goggles.item.combustion=Горючее
+embers.tooltip.goggles.item.catalysis=Катализаторы
+embers.tooltip.goggles.item.ash=Пепел
+embers.tooltip.goggles.fluid.any=Любая
+embers.tooltip.goggles.fluid.metal=Расплавленные металлы
+embers.tooltip.goggles.fluid.water=Вода
+embers.tooltip.goggles.fluid.steam=Пар
+embers.tooltip.goggles.fluid.water_or_steam=Вода или пар
+embers.tooltip.goggles.fluid.redstone=Алхимическая суспензия
+
+embers.tooltip.goggles.upgrade_slot=• Слот улучшения машины
+embers.tooltip.goggles.upgrade=• Улучшение машины
+embers.tooltip.goggles.accessor_slot=• Слот доступа к машине
+embers.tooltip.goggles.actuator_slot=• Слот привода
+
+embers.tooltip.crystal.level=Уровень %s
+embers.tooltip.crystal.xp=Очищение %s/%s
+
+embers.tooltip.atmosEmber=Атмосферный Эмбер:
+embers.tooltip.targetingBlock=Цель: %s
+embers.tooltip.itemdial.slot=Слот %s: %s
+embers.tooltip.itemdial.item=%s %s
+embers.tooltip.itemdial.noitem=НЕТ
+embers.tooltip.emberdial.ember=Эмбер: %s/%s
+embers.tooltip.fluiddial.fluid=%s: %s/%s
+embers.tooltip.fluiddial.nofluid=0/%s
+embers.tooltip.side.center=Центр
+embers.tooltip.side.north=Север
+embers.tooltip.side.east=Восток
+embers.tooltip.side.south=Юг
+embers.tooltip.side.west=Запад
+embers.tooltip.side.up=Верх
+embers.tooltip.side.down=Низ
+embers.tooltip.accuracy=%s Неточность: %s
+embers.tooltip.inflictor=Настраиваемый урон: 
+embers.tooltip.tyrfing=Наносит урон в зависимости от брони цели.
+embers.tooltip.heat_amount=Тепло:
+embers.tooltip.heat_level=Уровень:
+embers.tooltip.modifiers=Модификаторы:
+embers.tooltip.upgrade.actuator=Механическая скорость: %s
+embers.tooltip.upgrade.actuator.other=Эффективность производства механического Эмбера: %s
+embers.tooltip.upgrade.catalytic_plug=Скорость каталитической заглушки: %s
+embers.tooltip.dial.ember_multiplier=Множитель производства: %s
+embers.tooltip.dial.heat=Тепло: %s/%s
+embers.tooltip.item.ember=Эмбер: %s/%s
+embers.tooltip.attenuator.on=При активации: %s Скорость
+embers.tooltip.attenuator.off=При деактивации: %s Скорость
+embers.tooltip.forge.cannot_start=Недостаточно Эмбера для розжига кузни.
+embers.tooltip.broken=Сломано
+embers.tooltip.item_request.linked=Связано с %s (%s,%s,%s)
+embers.tooltip.item_request.filter=Требуется %2$sx %1$s
+embers.tooltip.item_request.order=§aОжидание предметов: %s
+embers.tooltip.item_request.order.none=
+
+embers.filter.any=Что угодно
+embers.filter.existing=Существующие
+embers.filter.not_existing=Не существующие
+embers.filter.and=%s и %s
+embers.filter.or=%s или %s
+embers.filter.invert=не %s
+embers.filter.strict=%s
+embers.filter.normal=%s (Игнорирует NBT)
+embers.filter.item=%s (Игнорирует метаданные)
+embers.filter.metadata=Предметы с метаданными %s
+embers.filter.nbt=Предметы с определенным NBT
+embers.filter.nbt.fuzzy=Предметы с NBT
+embers.filter.name=Предметы с именем "%s"
+embers.filter.mod=Предметы из %s
+embers.filter.durability=Предметы с прочностью %s-%s
+embers.filter.durability.strict=Предметы с прочностью %s
+embers.filter.durability.fuzzy=Разрушаемые предметы
+embers.filter.fuel=Топливо ценностью %s-%s
+embers.filter.fuel.strict=Топливо ценностью %s
+embers.filter.fuel.fuzzy=Топливо
+embers.filter.has_fluid=Контейнеры для жидкостей
+embers.filter.has_ember=Контейнеры мантии
+embers.filter.has_forge_energy=Батареи
+embers.filter.fluid=Предметы с %s-%s mb %3$s
+embers.filter.fluid.strict=Предметы с %s mb %3$s
+embers.filter.fluid.fuzzy=Предметы с %3$s
+embers.filter.ember=Предметы с %s-%s Эмбера
+embers.filter.ember.strict=Предметы с %s Эмбера
+embers.filter.ember.fuzzy=Предметы с Эмбером
+embers.filter.ember_fuel=Топливо Эмбера ценностью %s-%s
+embers.filter.ember_fuel.strict=Топливо Эмбера ценностью %s
+embers.filter.ember_fuel.fuzzy=Топливо Эмбера
+embers.filter.forge_energy=Предметы с %s-%s FE
+embers.filter.forge_energy.strict=Предметы с %s FE
+embers.filter.forge_energy.fuzzy=Предметы с FE
+
+embers.tooltip.liquid_fuel.power=Производит %s энергии
+embers.tooltip.liquid_fuel.time=в течение %s тиков
+
+embers.tooltip.modifier.superheater=Перегрев %s
+embers.tooltip.modifier.jet_augment=Пепельная струя %s
+embers.tooltip.modifier.blasting_core=Взрывной %s
+embers.tooltip.modifier.resonating_bell=Резонирующий %s
+embers.tooltip.modifier.caster_orb=Проекция Эмбера %s
+embers.tooltip.modifier.flame_barrier=Пламенный барьер %s
+embers.tooltip.modifier.eldritch_insignia=Жуткий %s
+embers.tooltip.modifier.intelligent_apparatus=Разумный %s
+embers.tooltip.modifier.diffraction=Дифракционный %s
+embers.tooltip.modifier.focal_lens=Фокусированный %s
+embers.tooltip.modifier.tinker_lens=Зрение инженера
+embers.tooltip.modifier.anti_tinker_lens=Слепота инженера
+embers.tooltip.modifier.shifting_scales=Чешуйчатый %s
+embers.tooltip.modifier.winding_gears=Заводной %s
+embers.tooltip.modifier.core_stone=Глубинно-чувствительный %s
+
+embers.tooltip.num1=I
+embers.tooltip.num2=II
+embers.tooltip.num3=III
+embers.tooltip.num4=IV
+embers.tooltip.num5=V
+embers.tooltip.num6=VI
+embers.tooltip.num7=VII
+embers.tooltip.numstop=Хватит уже
+
+embers.jei.recipe.stamp=Рецепт штамповки
+embers.jei.recipe.melter=Рецепт плавления
+embers.jei.recipe.mixer=Рецепт смешивания
+embers.jei.recipe.alchemy=Рецепт алхимии
+embers.jei.recipe.dawnstone_anvil=Рецепт заритовой наковальни
+embers.jei.recipe.geologic_separator=Бонус геологического сепаратора
+embers.jei.recipe.boiler=Бойлер
+embers.jei.recipe.steam_engine=Паровой двигатель
+embers.jei.recipe.reaction_chamber=Реакционная камера
+
+entity.ancient_golem.name=Древний голем
+entity.magma_worm.name=Магмовый червь [В разработке]
+
+death.attack.ember=%1$s был испепелен
+death.attack.ember.player=%1$s был испепелен игроком %2$s
+
+embers.research.controls=Нажмите ПКМ по записям, чтобы отметить их §a✔§r завершенными.;Категории откроются по мере выполнения записей.;;Введите текст для поиска и подсветки.;Вы можете искать записи по нескольким словам с помощью §f|§r.;Пример: §fEmber|Generator§r
+embers.research.prerequisite=Требуется для %s
+embers.research.prerequisite.locked=§4✕§8 Требуется %s
+embers.research.prerequisite.unlocked=§a✔§r Требуется %s
+
+embers.research.null=
+embers.research.world=Естественная энергия
+embers.research.mechanisms=Игра с огнем
+embers.research.metallurgy=Металлургические конструкции
+embers.research.alchemy=Трансмутация
+embers.research.materia=Загадочная материя
+embers.research.core=Свечение ядра
+embers.research.smithing=Кузнечное дело
+
+embers.research.multipage=%s (%s/%s)
+
+embers.research.page.empty.desc=
+
+embers.research.page.ores=Руды
+embers.research.page.ores.title=Сырые минералы
+embers.research.page.ores.tags=Copper;Lead;Silver;Nickel;Ferrous;Aluminum;Aluminium;Quartz;Ore;
+embers.research.page.ores.desc=Глубоко в недрах твердой земли начинающий шахтер может найти множество полезных металлов, а именно медь, свинец, серебро и кварц. Медь имеет множество применений в качестве проводника, свинец — ковкого металла, а серебро — проводника мистической энергии. Кварц также является хорошим источником сырой кристаллической материи.
+
+embers.research.page.hammer=Молот инженера
+embers.research.page.hammer.title=Дробление
+embers.research.page.hammer.tags=Hammer;Plate;Tool;
+embers.research.page.hammer.desc=Обладая тяжелым бойком из свинца и железа, молот инженера оказывается весьма удобным инструментом. Его можно использовать для сплющивания двух слитков металла в пластину. Вы также считаете, что удар им может запускать и настраивать некоторые механизмы.
+
+embers.research.page.ancient_golem=Древние конструкции
+embers.research.page.ancient_golem.title=Ветхие противники
+embers.research.page.ancient_golem.tags=Golem;Rock Goblin;Annoying;Cyclops;Archaic;
+embers.research.page.ancient_golem.desc=Изредка в мире можно встретить странные конструкции, напоминающие гуманоидов. Эти загадочные големы испускают лучи чистого тепла и обладают неестественной силой, но при этом не требуют ни топлива, ни пропитания. Как мог возникнуть такой автоматон — загадка для вас, но, возможно, неизвестные материалы и механизмы внутри него окажутся полезными.
+
+embers.research.page.gauge=Атмосферный датчик
+embers.research.page.gauge.title=Геологоразведка
+embers.research.page.gauge.tags=Ember;Gauge;Tool;Info;
+embers.research.page.gauge.desc=Судя по наличию горячего расплавленного камня глубоко в земле или светящемуся теплу, поддерживающему странных големов, вы пришли к выводу, что в центре вашего мира находится мощный источник энергии. Используя немного меди и железа, вы нашли способ создать устройство, способное измерять плотность этой энергии (далее именуемой "Эмбер") в любой точке мира.
+
+embers.research.page.caminite=Каминит
+embers.research.page.caminite.title=Прочная керамика
+embers.research.page.caminite.tags=Ceramic;Caminite;Brick;Clay;Sand;
+embers.research.page.caminite.desc=Каминит — это очень прочная керамика, замешанная из глины и песка. При обжиге эта смесь дает материал, который, по вашему мнению, отлично подойдет для ваших целей во всех ваших механических начинаниях.
+
+embers.research.page.activator=Активатор Эмбера
+embers.research.page.activator.title=Извлечение
+embers.research.page.activator.tags=Ember;Activator;Generator;
+embers.research.page.activator.desc=Активатор Эмбера — гениальное устройство, наконец-то позволяющее извлекать полезную энергию из кристаллов и осколков эмбера. Просто поместите указанные кристаллы и осколки в нижнюю часть устройства с помощью воронки или другого способа транспортировки предметов, и вскоре огненная вспышка озарит комнату, а пробужденный Эмбер потечет в клетку вверху машины.
+
+embers.research.page.crystals=Кристаллизованный Эмбер
+embers.research.page.crystals.title=Твердое тепло
+embers.research.page.crystals.tags=Ember;Crystal;Shard;Ore;
+embers.research.page.crystals.desc=Раскопки Эмбер-бура дают несколько любопытных светящихся кристаллов. Они бывают нескольких размеров: более крупный Кристалл Эмбера и более мелкий Осколок Эмбера. Эти кристаллы — ясное доказательство того, что сила Ядра мира существует и может быть косвенно использована: вы верите, что сжигая эти кристаллы, вы сможете активировать заключенную в них силу для других нужд.
+
+embers.research.page.bore=Эмбер-бур
+embers.research.page.bore.title=Путешествие к центру земли
+embers.research.page.bore.tags=Ember;Bore;Ore;
+embers.research.page.bore.desc=Хотя бедрок может остановить ваше движение вниз, он не остановит ваши машины. Эмбер-бур должен быть заправлен обычным печным топливом и располагаться там, где буровой винт будет прилегать к бедроку. При заправке бур начнет извлекать кристаллы эмбера из недр под бедроком. Для загрузки топлива и извлечения кристаллов необходимо использовать воронки или другие предметные транспортировщики.
+
+embers.research.page.pipes=Трубы
+embers.research.page.pipes.title=Транспортировка
+embers.research.page.pipes.tags=Pipe;Transport;Item;Fluid;Liquid;
+embers.research.page.pipes.desc=Один из простейших механизмов, необходимых для ваших целей — это труба, простое средство перемещения материалов. Вы разработали как железные, так и свинцовые трубы: первые можно использовать для транспортировки жидкостей, вторые — для предметов. Однако трубы могут только заталкивать ресурсы в резервуары или инвентари: для извлечения необходимо скрафтить соответствующий экстрактор, поместить его рядом с контейнером и подать сигнал редстоуна.
+embers.research.page.routing.desc=Предметы и жидкости в трубах следуют простым правилам. Они всегда двигаются вперед и никогда не возвращаются назад и тем более не вываливаются из трубы. На пересечениях они всегда отдают приоритет противоположному выходу, если другие выходы равны. Когда нужно разрешить ничью, предметы и жидкости распределяются по очереди.
+embers.research.page.valves.desc=Экстракторы обладают рядом особых свойств: Они никогда не соединяются с другими Экстракторами. В выключенном состоянии они могут принимать предметы, а не только извлекать их из контейнеров. При включении сигналом редстоуна они никогда не принимают предметы из труб. Это делает Экстракторы полезными в качестве вентилей в трубопроводных системах для контроля потока.
+embers.research.page.pipe_tools.desc=Трубы автоматически соединяются с соседними трубами. Если это не требуется, с помощью Молота инженера их можно разъединить (обратите внимание, что обе стороны могут быть разъединены отдельно). Иногда маршрутизация в сети труб может сбиться. Когда это происходит, трубы испускают дым, показывая, что они засорились. Чтобы прочистить трубу, просто нажмите по ней правой кнопкой мыши с палкой в руке.
+
+embers.research.page.requisition=Запрос предметов
+embers.research.page.requisition.title=Система хранения?
+embers.research.page.requisition.tags=Pipe;Storage;Pull;Item;Filter;
+embers.research.page.requisition.desc=Обычно система предметных труб работает только на толкание. Этот сложный узел позволяет поддерживать запас предметов в инвентаре. Просто нажмите ПКМ с предметом в руках чтобы настроить фильтр. Вы также можете связать этот узел с удаленным экстрактором предметов для автоматического извлечения предметов из него.
+
+embers.research.page.golem_eye=Око Древних
+embers.research.page.golem_eye.title=Продвинутые фильтры
+embers.research.page.golem_eye.tags=Filter;Eye;Golem;
+embers.research.page.golem_eye.desc=Иногда фильтрации по предмету недостаточно для сложных систем передачи предметов. Око голема можно получить, убив его киркой. Затем вы можете использовать око в руке, чтобы оно запомнило любые 2 предмета вместе с характеристикой фильтра, основанной на том, что общего у этих двух предметов.
+embers.research.page.filter_existing.desc=Нажав Шифт+ПКМ по узлу pапроса предметов, вы можете настроить око голема на фильтрацию предметов, которые уже существуют в подключенном инвентаре. Этот фильтр не будет работать в передатчиках предметов, так как у них нет подключенного инвентаря.
+embers.research.page.filter_not_existing.desc=Нажав Шифт+ПКМ по наковальне из зарита, вы можете настроить око голема на фильтрацию предметов, которых НЕТ в подключенном инвентаре. Этот фильтр не будет работать в передатчиках предметов, так как у них нет подключенного инвентаря.
+
+embers.research.page.tank=Резервуар для жидкости
+embers.research.page.tank.title=Жидкостный контейнер
+embers.research.page.tank.tags=Tank;Storage;Liquid;Fluid;Portable;Caminite;
+embers.research.page.tank.desc=В вашем мире часто встречаются различные жидкости, такие как вода или лава. Этот резервуар, простая конструкция из металла и каминита, способен вместить существенное количество любой жидкости и сохраняет свое содержимое при разрушении и повторной установке.
+
+embers.research.page.bin=Урна
+embers.research.page.bin.title=Контейнер для хранения
+embers.research.page.bin.tags=Bin;Chest;Storage;Item;Hopper;
+embers.research.page.bin.desc=Простая железная бочка с открытым верхом - контейнер может вмещать до одного стака любого предмета. Его также можно использовать для автоматического сбора продукции с некоторых машин.
+
+embers.research.page.boiler=Напорный очиститель
+embers.research.page.boiler.title=Паровая камера
+embers.research.page.boiler.tags=Boiler;Refinery;Ember;Pressure;Generator;Water;Steam;Heat;
+embers.research.page.boiler.desc=Хотя активатор может очищать кристаллический эмбер, он производит очень скромное его количество. Напорный очиститель — это способ получить гораздо больший выход с каждого кристалла. Он требует закачки как воды, так и эмбера, что дает базовый прирост выходящей энергии в 1.5 раза по сравнению с активатором. Однако, если поместить его на металлический блок, окруженный лавой или огнем, выход может достичь 3-кратного размера в зависимости от количества горячих блоков вокруг основания.
+
+embers.research.page.mini_boiler=Мини-бойлер
+embers.research.page.mini_boiler.title=Взрывной нагрев
+embers.research.page.mini_boiler.tags=Boiler;Pressure;Water;Steam;Heat;Explosion;Oil;Gas;
+embers.research.page.mini_boiler.desc=Эмбер — высокоэнергетическое вещество, выделяющее тепло как при потреблении, так и при производстве. Просто терять это избыточное тепло было бы неразумно. Прикрепив этот сосуд высокого давления к боковой стороне машины, потребляющей или производящей Эмбер, вы можете кипятить воду в пар для других целей. Но берегитесь: при высоком давлении бойлер может легко разорваться...
+
+embers.research.page.reaction_chamber=Реакционная камера
+embers.research.page.reaction_chamber.title=Колбастер-сосистер
+embers.research.page.reaction_chamber.tags=Boiler;Pressure;Reaction;Water;Steam;Gas;Condensation;
+embers.research.page.reaction_chamber.desc=Прикрепив свечу зажигания к полому металлическому сосуду, вы создали устройство, способное превращать одни жидкости в другие путем реакции под давлением. Его основное назначение — сжигание топливного газа с выделением большого количества пара, но эту машину также можно использовать для конденсации избыточного пара обратно в воду. Вы можете подавать реактивную жидкость с любой одной стороны и извлекать результат с любой другой. Избыток жидкости будет безопасно стравливаться.
+
+embers.research.page.dials=Счетчики
+embers.research.page.dials.title=Под линеечку
+embers.research.page.dials.tags=Info;Item;Fluid;Liquid;Ember;Dial;Gauge;
+embers.research.page.dials.desc=Счетчики — это простой способ получения информации о машинах. Существует два типа: счетчик Эмбера и счетчик жидкости. Прикрепленные к соответствующим контейнерам, они наглядно отображают содержимое этого контейнера при взгляде на них.
+
+embers.research.page.tinker_lens=Линза инженера
+embers.research.page.tinker_lens.title=Что есть что?
+embers.research.page.tinker_lens.tags=Info;Modifier;Augment;Armor;Tool;
+embers.research.page.tinker_lens.desc=Несмотря на то, что вы сами создали все эти механизмы, некоторая их функциональность иногда кажется непонятной. К счастью, вы разработали окуляр, с помощью которого можно изучать машины более детально. Держимый в любой руке, он позволит вам всегда определить назначение любой стороны машины. Учтите, что этот инструмент — не перископ, поэтому у вас могут возникнуть проблемы с механическими ядрами...
+
+embers.research.page.melter=Плавильня
+embers.research.page.melter.title=Промышленное разжижение
+embers.research.page.melter.tags=Ore;Machine;Melt;Duplication;Processing;Liquid;Fluid;Item;Multiblock;Multi Block;
+embers.research.page.melter.desc=Вы нашли способ плавить предметы используя силу активированного Эмбера. Когда нижний блок плавильни снабжен энергией, он нагревает предметы, находящиеся в верхнем отсеке. После того, как процесс завершен, жидкость можно слить по трубам.
+
+embers.research.page.geo_separator=Геологический сепаратор
+embers.research.page.geo_separator.title=Руда электрума
+embers.research.page.geo_separator.tags=Extra;Liquid;Fluid;Upgrade;
+embers.research.page.geo_separator.desc=Многие руды и минералы, найденные в земле — это не просто чистый металл. Они смешаны с примесями, такими как другие минералы. Геологический сепаратор — это улучшение для машин, разработанное для отфильтровывания некоторых из этих примесей при плавлении руд, обеспечивая тем самым немного дополнительного выхода. Для работы его необходимо разместить рядом с плавильней краном к ее нижнему блоку.
+
+embers.research.page.stamper=Штамповщик
+embers.research.page.stamper.title=Плющьте в блин
+embers.research.page.stamper.tags=Ore;Machine;Melt;Aspectus;Plate;Duplication;Processing;Stamp;Liquid;Fluid;Item;Multiblock;Multi Block;Bin;
+embers.research.page.stamper.desc=Чтобы придать расплавленному металлу полезную форму, вы разработали механический пресс. Для отпечатки понадобятся два блока: сам штамповщик и матрицу штамповщика. Разместите первый на один блок выше второго, подайте на него эмбер, а также вставьте необходимый штамп. Закачайте расплавленный металл в матрицу штамповщика, и устройство заработает. Вы можете поставить урну под матрицу для автоматического сбора продукции.
+
+embers.research.page.hearth_coil=Очаговая спираль
+embers.research.page.hearth_coil.title=Открытый огонь
+embers.research.page.hearth_coil.tags=Furnace;Coil;Hearth;Machine;Smelt;Processing;Item;Multiblock;Multi Block;
+embers.research.page.hearth_coil.desc=Прошли те времена, когда для приготовления предметов использовалось твердое топливо в каменной печи. Используя силу Эмбера, вы разработали очаговую спираль. При подаче энергии она начнет нагревается, и чем выше будет температура, тем быстрее будут переплавляться предметы, лежащие на ней. Вся продукция попадет в инвентарь спирали, откуда их можно будет откачать через блок доступа.
+
+embers.research.page.mixer=Смесительная центрифуга
+embers.research.page.mixer.title=Все в одну кучу
+embers.research.page.mixer.tags=Mix;Mixer;Melt;Machine;Processing;Liquid;Fluid;Multiblock;Multi Block;
+embers.research.page.mixer.desc=С помощью смесительной центрифуги вы сможете открыть для себя новые комбинации металлов, которые вы уже использовали для передачи Эмбера раньше. Каждая сторона нижней части устройства представляет собой отдельный резервуар. Когда жидкости в определенной комбинации закачиваются в них, а на верхний блок центрифуги подается Эмбер, создается расплавленный сплав, который можно откачать из верхнего блока.
+
+embers.research.page.access=Механический доступ
+embers.research.page.access.title=Пользовательский интерфейс
+embers.research.page.access.tags=Core;Mechanical;Proxy;Capability;Side;Port;Interface;Access;Upgrade;
+embers.research.page.access.desc=Такие машины, как Эмбер-бур или Очаговая спираль, довольно велики. Из-за этого у них есть только один порт для взаимодействия. Однако с помощью Механического ядра и Блока доступа к машине вы можете расширить этот порт: Механическое ядро будет выступать в качестве прокси для инвентаря, хранилища жидкостей или хранилища Эмбера любой крупной машины, к которой оно прикасается, а Блоки доступа могут прикрепляться к Механическому ядру, обеспечивая расширенный интерфейс.
+
+embers.research.page.reservoir=Большой резервуар
+embers.research.page.reservoir.title=Во-о-от такие бидоны!
+embers.research.page.reservoir.tags=Tank;Storage;Liquid;Fluid;Caminite;Multiblock;Multi Block;Valve;
+embers.research.page.reservoir.desc=Большой резервуар — простое средство для хранения огромных объемов жидкостей. Хотя по умолчанию он вмещает всего около 40 ведер, емкость можно увеличить, устанавливая каминитовые кольца поверх основания — по 40 ведер за каждое кольцо. Заполнять или опустошать резервуар можно только через порт в его нижней части, либо через механическое ядро или блок доступа, прикрепленный к этому порту.
+embers.research.reservoir_valve.desc=Каминитовые вентили также могут быть добавлены для удобства доступа. Они вмещают ровно столько же жидкости на слой, сколько и обычное Каминитовое кольцо, но имеют 4 дополнительных стороны для ввода и вывода жидкости.
+
+embers.research.page.transfer=Передатчик предметов
+embers.research.page.transfer.title=Фильтрация
+embers.research.page.transfer.tags=Pipe;Transport;Item;Fluid;Liquid;Filter;Transfer;Труба;Транспорт;
+embers.research.page.transfer.desc=Предметные трубы могут быть простым способом перемещения предметов, но только с разработкой передатчика предметов у вас появился способ отфильтровывать их. Это устройство работает аналогично обычной трубе, но с несколькими правилами. Оно может соединяться с трубами только спереди и сзади и имеет приоритет над всеми остальными трубами при отправке предметов. Ему также можно задать фильтр предметов, нажав ПКМ.
+embers.research.page.fluid_transfer.desc=Передатчики жидкостей — это жидкостный аналог передатчиков предметов. Они функционируют аналогично почти во всех аспектах. Единственное отличие: чтобы установить фильтр на Передатчик жидкостей, требуется ведро или другой контейнер, содержащий некоторую жидкость. Жидкость внутри контейнера при установке фильтра не расходуется.
+
+embers.research.page.breaker=Автоматический разрушитель
+embers.research.page.breaker.title=Ломать - не строить
+embers.research.page.breaker.tags=Machine;Break;Block;Item;Bin;Машина;Разрушитель;Блок;Предмет;Контейнер;
+embers.research.page.breaker.desc=Автоматический разрушитель — простое устройство. Разместите его лицевой стороной в определенном направлении, и измельчающее лезвие на его передней панели разрушит блок перед ним. По умолчанию эти блоки просто выпадают в мир, но их можно автоматически собирать, установив Контейнер позади Разрушителя.
+
+embers.research.page.pump=Механическая помпа
+embers.research.page.pump.title=Втопи-ка, шеф
+embers.research.page.pump.tags=Machine;Pump;Fluid;Liquid;Mechanical;
+embers.research.page.pump.desc=Поскольку напорный очиститель потребляет воду для увеличения производства Эмбера, вам нужен способ собирать ее автоматически. Механическая помпа вполне подойдет, но Эмбер плохо конвертируется в механическую энергию. Работа этой помпы исключительно на Эмбере будет очень медленной, поэтому, скорее всего, стоит построить несколько таких помп.
+
+embers.research.page.vacuum=Предметный вакуум
+embers.research.page.vacuum.title=Автоматический сбор
+embers.research.page.vacuum.tags=Pipe;Transport;Item;Filter;Transfer;Collect;Vacuum;Hopper;Вакуум;Предмет;Сбор;
+embers.research.page.vacuum.desc=Предметный вакуум — это средство всасывания предметов из окружающего мира. Просто подайте на него сигнал редстоуна, и он притянет все предметы в большой зоне перед собой. Он автоматически проталкивает предметы через трубы, прикрепленные к его задней грани.
+embers.research.page.vacuum_transfer.desc=Предметный вакуум не имеет внутреннего инвентаря, он напрямую проталкивает предметы в подключенную трубу или контейнер. Используя это свойство, вы можете фильтровать всасываемые предметы, прикрепив Передатчик предметов к его задней грани.
+
+embers.research.page.dropper=Раздатчик предметов
+embers.research.page.dropper.title=Сброс вниз
+embers.research.page.dropper.tags=Pipe;Transport;Item;Drop;Hopper;Trash;Void;
+embers.research.page.dropper.desc=Раздатчик предметов очень прост. Когда предметы поступают по трубе в порт на его верхней стороне, он быстро выбрасывает их вниз строго по прямой.
+
+embers.research.page.dawnstone=Зарит
+embers.research.page.dawnstone.title=Поцелованный солнцем
+embers.research.page.dawnstone.tags=Dawnstone;Alloy;Metal;Metallurgy;
+embers.research.page.dawnstone.desc=Зарит — прочный сплав золота и меди в равных пропорциях, создаваемый в смесительной центрифуге. Поскольку Эмбер вплетен в самую его природу при создании, вы верите, что этот сплав позволит вам создать материальную основу для множества продвинутых механизмов.
+
+embers.research.page.emitters=Передача Эмбера
+embers.research.page.emitters.title=Прием! Отбой!
+embers.research.page.emitters.tags=Hammer;Transfer;Transport;Ember;Receptor;Emitter;Receive;Send;Redstone;Lever;Link;Connect;
+embers.research.page.emitters.desc=Фактическое манипулирование Эмбером, получаемым из активатора или других очистителей, включает в себя два основных блока: излучатели Эмбера и приёмники Эмбера. Излучатели работают как передающая сторона. Просто поместите их на машину, и они вытянут Эмбер из машины в свой внутренний буфер. Затем, под действием редстоуна, они будут периодически выдавать Эмбер в мир.
+embers.research.page.receivers.desc=Приёмники работают в обратную сторону. Когда они получают импульс Эмбера от излучателя, то передают его в подключенную машину, не требуя сигнала редстоуна. Обратите внимание: если Эмбер получен, но приёмник не может вместить его весь, часть энергии будет потеряна. Вы поймете это оказавшись в клубах вонючего дыма и ожогах от искр.
+embers.research.page.linking.desc=Чтобы связать излучатели и приёмники вместе, просто нажмите Шифт+ПКМ по приёмнику Молотом инженера, а затем ПКМ по излучателю этим же молотом. Ограничений по расстоянию связывания нет, но после того, как импульс Эмбера находится в пути какое-то время, он может угаснуть.
+
+embers.research.page.copper_cell=Медный накопитель
+embers.research.page.copper_cell.title=Конденсатор
+embers.research.page.copper_cell.tags=Cell;Copper;Ember;Storage;Portable;Capacitor;
+embers.research.page.copper_cell.desc=Медный накопитель служит очень простой цели: хранению Эмбера. В него можно подавать Эмбер с помощью приёмника или извлекать Эмбер через излучатель. Обратите внимание, что при разрушении педный накопитель сохраняет накопленную энергию.
+
+embers.research.page.clockwork_attenuator=Счетчик частоты
+embers.research.page.clockwork_attenuator.title=Точная регулировка
+embers.research.page.clockwork_attenuator.tags=Dial;Control;Redstone;Speed;Upgrade;
+embers.research.page.clockwork_attenuator.desc=Точная настройка ваших машин затруднена, когда все они работают до тех пор, пока не закончится топливо, без компромиссов. Этот датчик может напрямую управлять скоростью машины. Он имеет две внутренние настройки, переключаемые по сигналу редстоуна: активную и неактивную. Настройки можно изменять нажатием ПКМ или Шифт+ПКМ по датчику, пока соответствующая настройка находится в действии.
+
+embers.research.page.gearbox=Редукторы
+embers.research.page.gearbox.title=Механический узел
+embers.research.page.gearbox.tags=Gear;Box;Gearbox;Mechanical;Split;Divide;Junction;Шестерня;Редуктор;Механический;
+embers.research.page.gearbox.desc=Корпуса редукторов — сердце механической передачи. С каждой стороны можно прикрепить по одной шестерне, но шестерни необходимы только с тех сторон, где прикреплены оси или другие машины. Входная сторона отмечена полосой, а все остальные стороны являются выходами. Входная мощность будет разделена между каждым используемым выходом, поэтому если прикреплены две оси, каждая получит половину мощности.
+
+embers.research.page.mergebox=Сумматоры
+embers.research.page.mergebox.title=Механическое слияние
+embers.research.page.mergebox.tags=Gear;Box;Gearbox;Mergebox;Mechanical;Merge;Fusion;
+embers.research.page.mergebox.desc=Корпуса сумматоров — еще одна важная часть механических систем. Они работают противоположно обычному редуктору: вместо разделения мощности энергия объединяется вместе. Обратите внимание, что все входы должны иметь одинаковую скорость для суммирования. Кроме того, при каждом изменении мощности сумматор на некоторое время отключает выходную шестеренку, пока внутренние передаточные числа адаптируются.
+
+embers.research.page.axle_iron=Железная ось
+embers.research.page.axle_iron.title=Передача момента
+embers.research.page.axle_iron.tags=Axle;Mechanical;Iron Axle;Transport;Transfer;Connect;
+embers.research.page.axle_iron.desc=Оси используются для передачи механической энергии между генераторами, редукторами и машинами, использующими ее. Оси не теряют мощность с расстоянием, поэтому дальность их передачи практически неограничена.
+
+embers.research.page.gear_iron=Железная шестерня
+embers.research.page.gear_iron.title=Зубья машины
+embers.research.page.gear_iron.tags=Gear;Mechanical;Iron Gear;Gold Gear;Dawnstone Gear;Attach;Interface;Cog;
+embers.research.page.gear_iron.desc=Шестерни используются в качестве интерфейсов для подключения осей к редукторам или машинам. Железные шестерни дешевы и надежны, но имеют лимит мощности. Мощность сверх лимита по большей части теряется.
+embers.research.page.gear_gold.desc=Эта шестерня практически аналогична железной, но имеет более высокий лимит мощности.
+embers.research.page.gear_redstone.desc=Эти покритые редстоуном шестерни дают возможность управлять редукторами извне. Когда на редуктор подается сигнал, редстоуновая шестерня начнет вращаться, а инвертированная редстоуновая шестерня отключится. Эти шестерни имеют лимит мощности, аналогичный золотым.
+embers.research.page.gear_dawnstone.desc=Заритовые шестерни лучше подходят для высоких скоростей вращения, у них нет лимита, присущего Железным шестерням. При высоких скоростях вращения шестерня будет визуально светиться огненно-оранжевым светом. Этот побочный эффект по большей части безвреден.
+
+embers.research.page.actuator=Механический привод
+embers.research.page.actuator.title=Альтернативная энергия
+embers.research.page.actuator.tags=Gear;Mechanical;Machine;Upgrade;Bore;Pump;Stamp;Mixer;Hammer;
+embers.research.page.actuator.desc=Некоторые машины, работающие на Эмбере, потенциально могут питаться механической энергией. Чтобы работать, привод должен быть прикреплен к машине, принимающей улучшения. Подобно редуктору, к противоположной стороне необходимо прикрепить шестерню, чтобы подключить к ней ось.
+embers.research.page.actuator_multi.desc=Эта измененная версия имеет 4 входных стороны для механической энергии. Мощность с каждой стороны объединяется внутри, но большинство машин имеют уменьшающуюся отдачу от количества подаваемой энергии, поэтому больше энергии — не всегда лучше.
+embers.research.page.actuator_bore.desc=Эмбер-бур почти полностью механический и отлично подходит для питания механической энергией. Питание его таким способом более эффективно по углю, но изначально немного медленнее.
+embers.research.page.actuator_pump.desc=Помпа — это машина, которая действительно страдает от питания Эмбером. Даже небольшое количество механической энергии значительно ускоряет ее, и её можно разогнать до очень высоких скоростей.
+embers.research.page.actuator_stamper.desc=Пресс — еще одна машина с движущимися частями, но тот факт, что Эмбер настолько энергичен, а движение Пресса так просто, означает, что прямое применение механической энергии лишь немного ускорит его. Однако это довольно эффективно с точки зрения затрат Эмбера.
+embers.research.page.actuator_mixer.desc=Смесительные центрифуги используют Эмбер и движущиеся части для связывания жидкого металла, и хотя движущиеся части определенно могут питаться механической энергией, не все технологические процессы рецептов могут работать сугубо на механике.
+embers.research.page.actuator_auto_hammer.desc=Автоматический молот очень похож на Пресс, и аналогичное ускорение и экономия Эмбера могут быть достигнуты путем подключения механической энергии.
+
+embers.research.page.steam_engine=Паровой двигатель
+embers.research.page.steam_engine.title=Промышленная революция
+embers.research.page.steam_engine.tags=Mechanical;Engine;Generator;Steam;Water;Coal;Fuel;
+embers.research.page.steam_engine.desc=Паровой двигатель — самый простой способ производства механической энергии. Все, что ему нужно — это немного горючего материала, например угля, и немного воды, и он будет создавать скромное вращение на своем выходном роторе. Хотя паровые двигатели более эффективны по топливу, чем питание Эмбер-бура тем же количеством топлива, они также могут быть расточительными при неправильном обращении: если у двигателя закончится вода во время сгорания единицы топлива, остаток этой единицы просто потеряется.
+embers.research.page.steam_engine_overclock.desc=Поскольку вы уже поэкспериментировали с производством пара из машин на Эмбере, вы можете использовать этот пар для питания своих двигателей. Прямая накачка значительно повышает эффективность двигателя, и он будет выдавать намного больше мощности, но пар будет расходоваться очень быстро, что, возможно, потребует нескольких бойлеров на один двигатель или подключения их к машинам, потребляющим много Эмбера.
+
+embers.research.page.pulser=Толкатель Эмбера
+embers.research.page.pulser.title=Разрушение на полной мощности
+embers.research.page.pulser.tags=Ember;Funnel;Ejector;Transport;Transfer;Receptor;Emitter;Receive;Send;Redstone;Lever;Link;Connect;Loss;
+embers.research.page.pulser.desc=Обычные излучатели Эмбера полезны, но иногда вам может потребоваться большая пропускная способность. Толкатель — более надежный излучатель: он функционально идентичен своему предшественнику, но способен пропускать в десять раз больше Эмбера за единицу времени. Обратите внимание, что приёмники быстро переполняются таким огромным количеством, и любой избыток Эмбера может быть потерян при передаче.
+embers.research.page.ember_funnel.desc=Поскольку терять Эмбер при передаче нехорошо, вы разработали воронку Эмбера, которая улавливает Эмбер из нескольких источников и быстро передает его в подключенную машину.
+
+embers.research.page.splitter=Разделитель луча
+embers.research.page.splitter.title=Арифметика
+embers.research.page.splitter.tags=Ember;Split;Transport;Transfer;Link;Connect;
+embers.research.page.splitter.desc=Используя новый сплав зарита, вы нашли способ делить импульсы Эмбера. Разделитель луча имеет четыре стороны: две с меньшим медным портом и две с бо́льшими портами из меди и пзарита. Каждый из больших функционирует как отдельный излучатель. Когда Эмбер подается в разделитель, то поровну разделяется между двумя портами, каждый из которых можно привязать независимо.
+
+embers.research.page.dawnstone_anvil=Заритовая наковальня
+embers.research.page.dawnstone_anvil.title=Ремонт
+embers.research.page.dawnstone_anvil.tags=Dawnstone;Anvil;Repair;Break;Damage;Hammer;
+embers.research.page.dawnstone_anvil.desc=Упругость зарита отлично подходит для использования в ковке. Наковальня из этого материала может использоваться как для ремонта предметов, так и для их разбора на составляющие части. Поместите поврежденный предмет на наковальню, затем ремонтный материал, после чего нанесите пару хороших ударов молотом инженера для ремонта. Поместите поврежденный предмет отдельно и нанесите несколько сильных ударов, и он распадется на составляющие детали.
+
+embers.research.page.autohammer=Автоматический молот
+embers.research.page.autohammer.title=Автономный инструмент
+embers.research.page.autohammer.tags=Hammer;Anvil;Machine;Processing;
+embers.research.page.autohammer.desc=Ковка металлических деталей для ваших инструментов вручную занимает очень много времени. С помощью энергии Эмбера у вас есть решение. Автоматический молот требует лишь сигнал редстоуна и немного энергии Эмбера, и он справится с ковкой на заритовой наковальне намного сильнее и быстрее, чем вы могли бы вручную.
+
+embers.research.page.crystal_cell=Кристаллический накопитель
+embers.research.page.crystal_cell.title=Массовое хранение
+embers.research.page.crystal_cell.tags=Cell;Crystal;Ember;Storage;Capacitor;
+embers.research.page.crystal_cell.desc=Ваши прошлые методы хранения Эмбера никогда не отличались большой емкостью, и кристаллический накопитель — решение этой проблемы. Накопитель начинает с малого объема; в него можно подавать и извлекать Эмбер. Также в него можно помещать предметы топлива Эмбера, такие как Кристаллы Эмбера. Каждое топливо увеличивает максимальную емкость Накопителя, со временем вызывая физический рост светящегося кристалла на нем.
+
+embers.research.page.charger=Медный зарядник
+embers.research.page.charger.title=Зарядка Эмбером
+embers.research.page.charger.tags=Charge;Ember;Machine;
+embers.research.page.charger.desc=Зарядник — очень простое устройство. Подайте на него Эмбер, и он зарядит предмет внутри, если предмет подлежит зарядке. Предмет внутри можно легко вкладывать и забирать нажатием ПКМ.
+
+embers.research.page.jars=Аккумуляторы
+embers.research.page.jars.title=Переносной Эмбер
+embers.research.page.jars.tags=Ember;Portable;Storage;Mantle;Cartridge;Jar;Battery;
+embers.research.page.jars.desc=Для полевых условий носить с собой кристаллический накопитель просто непрактично. С помощью стекла и кристалла Эмбера вы разработали батарейку и картридж расплава. Оба элемента могут содержать Эмбер и восполняться в заряднике. Однако, если батарейки расплава могут использоваться предметами на Эмбере из любого места в инвентаре, картриджы необходимо держать в одной из рук.
+
+embers.research.page.clockwork_tools=Заводные инструменты
+embers.research.page.clockwork_tools.title=Сила солнца
+embers.research.page.clockwork_tools.tags=Ember;Weapon;Tool;Clockwork;Pickaxe;Hammer;Axe;Sword;Shovel;
+embers.research.page.clockwork_tools.desc=Используя недавно открытые контейнеры Эмбера, вы создали инструменты из зарита. Все три обладают общими свойствами: для их использования требуется доступный Эмбер в вашем инвентаре, и они нерушимы. Они также имеют высокий базовый урон, что позволяет использовать их в качестве оружия. Кроме того, при питании Эмбером они поджигают пораженных врагов.
+embers.research.page.clockwork_pickaxe.desc=Заводная кирка работает одновременно как мощная кирка и лопата. Как и другим инструментам, ей нужен Эмбер для разрушения блоков или атаки врагов. Поскольку она сочетает свойства оружия, она может получать чары как для оружия, так и для инструментов.
+embers.research.page.clockwork_hammer.desc=Великий молот — мощное оружие ближнего боя. Как и другим инструментам, ему нужен Эмбер для ломания блоков или атаки. Если использовать его для разрушения блока, он полностью испепелит его, не оставляя дропа. Как и кирка, он может получать чары для оружия и инструментов, но в силу своей природы не может быть зачарован на Удачу или Шелковое касание.
+embers.research.page.clockwork_axe.desc=Заводной топор работает как мощный топор. Как и другим инструментам, ему нужен Эмбер для ломания блоков или атаки врагов. Он может получать чары для оружия и инструментов, как и остальные.
+
+embers.research.page.cinder_staff=Пепельный посох
+embers.research.page.cinder_staff.title=Магическая бомба
+embers.research.page.cinder_staff.tags=Ember;Weapon;Staff;Projectile;Missile;Cinder;
+embers.research.page.cinder_staff.desc=Удивительно, как серебряный металл может так контролировать хаотичный огонь Эмбера. Когда Пепельный посох направляет Эмбер из доступных контейнеров в вашем инвентаре, он создает большую сферу чистой энергии перед вами. Чем дольше удерживается заряд, тем больше урона нанесет сфера — вплоть до смертельного для большинства обычных монстров.
+
+embers.research.page.blazing_ray=Пламенный луч
+embers.research.page.blazing_ray.title=Магический лазер
+embers.research.page.blazing_ray.tags=Ember;Weapon;Gun;Ray;Cannon;Projectile;Missile;Blaze;Blazing;
+embers.research.page.blazing_ray.desc=Хотя пламенный луч формой может напоминать обычный огнестрел, функционально он ближе к артиллерийскому орудию. При выстреле он выпускает прямой луч чистого Эмбера, летящий до тех пор, пока не врежется в твердый блок или существо.
+
+embers.research.page.aspecti=Металлические аспекты
+embers.research.page.aspecti.title=Алхимические фокусы
+embers.research.page.aspecti.tags=Alchemy;Focus;Aspect;Aspectus;Foci;Stamp;Shard;Transmutation;
+embers.research.page.aspecti.desc=Обернув расплавленный металл вокруг Осколка Эмбера, вы создали "аспект". Эти предметы могут фокусировать алхимическую энергию, выделяемую при сжигании пепла, в определенное стихийное представление, если они помещены на алхимические пьедесталы во время трансмутации.
+
+embers.research.page.cinder_plinth=Пепельный постамент
+embers.research.page.cinder_plinth.title=Сожжение
+embers.research.page.cinder_plinth.tags=Alchemy;Machine;Ash;Processing;Void;Trash;Transmutation;Plinth;Incineration;Incinerate;Cinder;
+embers.research.page.cinder_plinth.desc=Пепельный постамент — простая машина: поместите в нее любой предмет, подайте Эмбер, и она сожжет его, оставив пепел. Она также может автоматически помещать пепел в урну, расположенный под ней. Пепел имеет несколько применений: его можно сжигать как слабое топливо, наносить на камень для изменения его цвета и текстуры, и использовать в алхимии.
+
+embers.research.page.beam_cannon=Лучевая пушка
+embers.research.page.beam_cannon.title=Стационарное оружие
+embers.research.page.beam_cannon.tags=Alchemy;Weapon;Machine;Cannon;Projectile;Beam;Ray;Transmutation;
+embers.research.page.beam_cannon.desc=Лучевая пушка, пожалуй, ваше самое опасное устройство. Прицельтесь, нажав Шифт+ПКМ Молотом инженера по целевому блоку, затем нажмите ПКМ по Пушке молотом. Когда ей будет подано достаточно Эмбера, она выстрелит лучом чистого лучистого тепла. Этот луч может убить почти любое небронированное существо, а также запустить процесс трансмутации на Плите обмена.
+
+embers.research.page.alchemy=Энергетическая алхимия
+embers.research.page.alchemy.title=Трансмутация
+embers.research.page.alchemy.tags=Alchemy;Transmutation;Tablet;Exchange;Ash;Pedestal;Aspect;Aspectus;
+embers.research.page.alchemy.desc=Алхимия Эмбера — поистине чудесное открытие. Первым ключом является плита обмена: нажимайте ПКМ по ее различным граням для вставки предметов в соответствующие слоты. Вторым ключом является алхимический пьедестал: они несут аспекты и могут содержать пепел. Для алхимического рецепта расставьте пьедесталы для каждого необходимого аспекта вокруг плиты, заполните их пеплом в пределах определенного радиуса и поразите плиту выстрелом из лучевой пушки.
+
+embers.research.page.catalytic_plug=Каталитическая заглушка
+embers.research.page.catalytic_plug.title=Форсажный впрыск
+embers.research.page.catalytic_plug.tags=Speed;Upgrade;Redstone;Alchemy;Alchemical Redstone;
+embers.research.page.catalytic_plug.desc=Каталитические заглушки — фантастическое устройство для нетерпеливых. При подключении к машине заглушка удваивает ее скорость, но только если сзади подается алхимическая суспензия, расходуемая в процессе. К одной машине можно подключить до 2 каталитических заглушек, чтобы увеличить её скорость в четыре раза.
+
+embers.research.page.ember_siphon=Сифон Эмбера
+embers.research.page.ember_siphon.title=Обращение потока
+embers.research.page.ember_siphon.tags=Upgrade;Reverse;Siphon;Ember;Charge;Discharge;
+embers.research.page.ember_siphon.desc=Сифон Эмбера — это улучшение для машин, которое можно разместить под зарядником, чтобы инвертировать его функцию. Вместо заполнения контейнера Эмбером, он опустошает его и сохраняет выкачанный Эмбер в своем внутреннем буфере. Затем Эмбер можно извлечь из зарядника или с боковых сторон сифона с помощью обычных механизмов передачи.
+
+embers.research.page.waste=Эксперименты
+embers.research.page.waste.title=Алхимический процесс
+embers.research.page.waste.tags=Waste;Alchemy;Transmutation;Experiment;Ash;Stamp;
+embers.research.page.waste.desc=Вы быстро обнаружили, что алхимические трансмутации срабатывают не всегда. Для всех комбинаций значений пепла, кроме одной единственно верной, ваша алхимия потерпит неудачу и приведет к образованию алхимических отходов. Эти отходы можно поместить в пресс, чтобы вернуть часть пепла, использованного в алхимии, и их можно наглядно проанализировать, чтобы определить, насколько далеко вы были от истинного рецепта желаемого продукта.
+
+embers.research.page.hellish_synthesis=Разнородный синтез
+embers.research.page.hellish_synthesis.title=Странные материалы
+embers.research.page.hellish_synthesis.tags=Alchemy;Transmutation;Nether;Netherrack;Soulsand;Soul;Sand;
+embers.research.page.hellish_synthesis.desc=С помощью алхимических процессов вы открыли способ создания нескольких новых веществ. К ним относятся странная красная порода и песок, которые, как вы читали в древних документах, составляют землю далекого странного измерения.
+
+embers.research.page.dwarven_oil=Гномье масло
+embers.research.page.dwarven_oil.title=Черное золото
+embers.research.page.dwarven_oil.tags=Alchemy;Nether;Soulsand;Soul;Sand;Oil;Gas;Fuel;
+embers.research.page.dwarven_oil.desc=Плавление странного коричневого песка, синтезированного ранее, дает густую черную жижу. Путем дальнейшей обработки в центрифуге с паром или другим газом вы можете превратить эту жижу в гномье масло. Это масло не расширяется так сильно при кипении, что позволяет создавать намного более безопасные бойлерные установки.
+
+embers.research.page.archaic_brick=Архаичные кирпичи
+embers.research.page.archaic_brick.title=Ветхий  материал
+embers.research.page.archaic_brick.tags=Alchemy;Transmutation;Archaic;Brick;
+embers.research.page.archaic_brick.desc=Древние стражи, бродящие по землям, часто распадаются на нечто, похожее на кирпичи. С помощью своеобразной алхимии вы обнаружили, что можете воссоздать их, пока у вас есть хотя бы один для начала. Они должны отлично сочетаться с вашими каминитовыми постройками.
+
+embers.research.page.motive_core=Движущие ядра
+embers.research.page.motive_core.title=Технология предков
+embers.research.page.motive_core.tags=Alchemy;Transmutation;Archaic;Core;Motive;Golem;
+embers.research.page.motive_core.desc=Алхимия позволяет воспроизводить не только кирпичи. Движущие ядра, похоже, являются источником жизни и искрой древних големов, и благодаря алхимии эта сила теперь находится у вас под рукой.
+
+embers.research.page.adhesive=Клей
+embers.research.page.adhesive.title=Липкое решение
+embers.research.page.adhesive.tags=Alchemy;Transmutation;Slime;Glue;Adhesive;
+embers.research.page.adhesive.desc=Своеобразные ожившие слизни, встречающиеся под землей, полезны, но слишком редки для практического использования. Синтезированный клей будет служить заменой сгусткам слизи в рецептах.
+
+embers.research.page.tyrfing=Тирфинг
+embers.research.page.tyrfing.title=Злобный клинок
+embers.research.page.tyrfing.tags=Alchemy;Transmutation;Ash;Weapon;Sword;Armor;Lead;Damage;
+embers.research.page.tyrfing.desc=Странное создание, без сомнения: Тирфинг — это пульсирующее свинцовое оружие, форма которого придана алхимией. Хотя оно слегка притуплено против большинства целей по сравнению со свинцовым мечом, использованным для его создания, его уникальная форма позволяет наносить высокий урон бронированным врагам. Чем больше брони на противнике, тем больше урона нанесет клинок.
+
+embers.research.page.ashen_cloak=Пепельная броня
+embers.research.page.ashen_cloak.title=Плащ мага
+embers.research.page.ashen_cloak.tags=Alchemy;Transmutation;Ash;Ashen;Cloak;Inflictor;Gem;Fabric;
+embers.research.page.ashen_cloak.desc=Напитав обычную ткань алхимическим пеплом, вы смогли синтезировать гибкую, но прочную пепельную ткань, из которой вы сшили броню. Сама по себе броня довольно прочна, и  выглядит весьма лихо, но у вас есть чувство, что её можно улучшить еще сильнее...
+
+embers.research.page.inflictor=Самоцвет наложения
+embers.research.page.inflictor.title=Поглощение боли
+embers.research.page.inflictor.tags=Alchemy;Transmutation;Ash;Ashen;Cloak;Inflictor;Gem;Fabric;
+embers.research.page.inflictor.desc=Самоцвет наложения — действительно странный кристалл. Когда вы держите его в руке при получении урона, он поглощает тип полученного урона. Вшив его в пепельный плащ на верстаке с помощью нити, вы уменьшите получаемый урон от этого источника примерно на треть. Их можно извлечь, поместив пепельный плащ в верстак отдельно, а всего на плащ можно поместить до семи камней одновременно.
+
+embers.research.page.glimmer=Мерцающий кристалл
+embers.research.page.glimmer.title=Свет вкл., свет выкл.
+embers.research.page.glimmer.tags=Alchemy;Transmutation;Light;Glimmer;Crystal;Tool;Quartz;Алхимия;Свет;Кристалл;Кварц;
+embers.research.page.glimmer.desc=Напитав кварц теплом и эмбером, вы создали люминесцентный материал, который, кажется, жаждет поделиться собственным свечением. Это позволяет вам размещать источники света по своему желанию, хотя это будет истощать кристалл. Однако, пока вы находитесь под солнечным светом, кристалл будет медленно восстанавливаться.
+
+embers.research.page.metallurgic_dust=Металлургическая пыль
+embers.research.page.metallurgic_dust.title=Шило на мыло
+embers.research.page.metallurgic_dust.tags=Alchemy;Transmutation;Ore;Dust;Metal;Metallurgy;
+embers.research.page.metallurgic_dust.desc=Иногда в недрах земли вы находите совсем не то, что изначально искали. И действительно, знания об алхимии могут легко решить эту проблему. При объединении трансмутационных свойств металлических семян с редстоуном и песком Эмбера получается тонкий белый порошок. При контакте с рудой он быстро трансмутирует всю жилу в другой тип. Однако часть руды может превратиться в бесполезный камень...
+
+embers.research.page.cluster=Кластер кристаллов Эмбера
+embers.research.page.cluster.title=Очищенный материал
+embers.research.page.cluster.tags=Alchemy;Transmutation;Ember;Shard;Crystal;Cluster;
+embers.research.page.cluster.desc=Более мелкие кристаллические предметы Эмбера, которые вы использовали в прошлом, удобны, но вы чувствуете, что скоро вам потребуется больше энергии. Путем алхимического сплавления нескольких кристаллов Эмбера с осколками вы создали кластер — более крупную гроздь кристаллов, которая поможет выдать энергию для будущих машин.
+
+embers.research.page.field_chart=Полевая карта
+embers.research.page.field_chart.title=Тактический обзор
+embers.research.page.field_chart.tags=Field;Chart;Ember;Gauge;Info;
+embers.research.page.field_chart.desc=Поиск мест с высокой концентрацией Эмбера может быть утомительным, когда единственным измерительным прибором является атмосферный счетчик. Однако, похоже, Эмбер резонирует сам с собой, и путем проб и ошибок вы создали карту поля — схему концентраций Эмбера для площади большей, чем можно обойти пешком.
+
+embers.research.page.wildfire=Ядро дикого огня
+embers.research.page.wildfire.title=Контроль пламени
+embers.research.page.wildfire.tags=Alchemy;Transmutation;Wildfire;Core;
+embers.research.page.wildfire.desc=Кластер кристаллов Эмбера, однако, слишком неконтролируем для прикладных целей. Хотя он подходит для сжигания предметов в камере сгорания или каталитической камере, из нее необходимо создать ядро дикого огня для более точечного использования.
+
+embers.research.page.injector=Металлические кристаллы
+embers.research.page.injector.title=Семена мира
+embers.research.page.injector.tags=Alchemy;Transmutation;Crystal;Seed;Metal;Ember;Injector;Machine;Grow;Processing;
+embers.research.page.injector.desc=Вы открыли способ синтеза металлических Кристаллических семян для различных типов металлов с помощью алхимии, а также Инжектор Эмбера — машину, предназначенную для управления ими. Разместив Кристаллическое семя в мире, а затем установив Инжекторы Эмбера лицом к нему и подав на них Эмбер, семя начнет получат питание и медленно расти. При определенном пороге семя выделит несколько металлических кусочков, которые можно собрать.
+embers.research.crystal_level.desc=При впрыскивании эмбера в кристалл, оно не только растет и производит металл, но и становится чище со временем. Чем чище кристалл, тем больше металла он производит при полном созревании. Вы можете проверить текущий уровень чистоты, осмотрев его с помощью линзы инженера. Обратите внимание, что вся чистота теряется, когда семя разрушается и переносится в другое место.
+
+embers.research.page.combustor=Камера сгорания
+embers.research.page.combustor.title=Испепеление
+embers.research.page.combustor.tags=Combustion;Combust;Machine;Reactor;Chamber;Upgrade;Multiblock;Multi Block;
+embers.research.page.combustor.desc=Камера сгорания - простая машина, которая сама по себе делает немногое. Она может просто сжигать горючее топливо. Каждое используемое топливо имеет определенный уровень мощности: Уголь имеет уровень мощности два, предметы из кирпича нижнего мира — три, а огненный порошок — четыре.
+
+embers.research.image.combustor_coal=Коэффициент: 2x
+embers.research.image.combustor_nether_brick=Коэффициент: 3x
+embers.research.image.combustor_blaze_powder=Коэффициент: 4x
+
+embers.research.page.catalyzer=Каталитическая камера
+embers.research.page.catalyzer.title=Химическая энергия
+embers.research.page.catalyzer.tags=Catalysis;Catalyst;Machine;Reactor;Chamber;Upgrade;Multiblock;Multi Block;
+embers.research.page.catalyzer.desc=Каталитическая камера — простая машина, которая сама по себе делает немногое, просто расходуя предметы-катализаторы. Каждый катализатор имеет определенный уровень: редстоун имеет уровень два, порох — три, а светопыль — четыре.
+
+embers.research.image.catalyzer_redstone=Коэффициент: 2x
+embers.research.image.catalyzer_gunpowder=Коэффициент: 3x
+embers.research.image.catalyzer_glowstone=Коэффициент: 4x
+
+embers.research.page.reactor=Огненный реактор
+embers.research.page.reactor.title=Химия Эмбера
+embers.research.page.reactor.tags=Wildfire;Core;Catalysis;Catalyst;Combustion;Combust;Generator;Reactor;Chamber;Multiblock;Multi Block;
+embers.research.page.reactor.desc=Огненный реактор — очень мощный способ очистки кристаллического Эмбера. Он должен быть размещен рядом с верхними частями как камеры сгорания, так и каталитической камеры. Когда обе из них активны, реактор будет очищать кристаллический Эмбер с множителем, равным сумме уровня топлива и уровня катализатора присоединенных камер плюс единица. Уровень катализатора и уровень сгорания также должны быть достаточно близки.
+
+embers.research.page.ember_pipe=Нестабильный проводник Эмбера
+embers.research.page.ember_pipe.title=Сконструировано с рисками
+embers.research.page.ember_pipe.tags=Ember;Pipe;Wildfire;Volatile;Conduit;Эмбер;Труба;Проводник;
+embers.research.page.ember_pipe.desc=Вы достигли точки, когда огненный реактор производит так много Эмбера, что его невозможно вовремя извлечь. Этот смехотворно дорогой проводник может питаться напрямую сигналом редстоуна для извлечения все больших и больших порций Эмбера. Но это достигается ценой полной неконтролируемости: при столкновении двух порций Эмбера сегмент проводника детонирует!
+
+embers.research.page.materia=Изолированная материя
+embers.research.page.materia.title=Универсальный ремонт
+embers.research.page.materia.tags=Alchemy;Transmutation;Repair;Metal;Materia;Isolated;Matter;Anvil;
+embers.research.page.materia.desc=Изолированная материя — своеобразный материал. Он обладает свойством превращаться в материалы других предметов при определенных обстоятельствах. На данный момент он позволит вам чинить предметы на заритовой наковальне, заменяя их ремонтный материал материей. Вы можете предвидеть его использование и в будущем...
+
+embers.research.page.stirling=Двигатель дикого огня
+embers.research.page.stirling.title=Доведение до абсурда
+embers.research.page.stirling.tags=Wildfire;Stirling;Ember;Upgrade;Steam;
+embers.research.page.stirling.desc=Эта машина является аналогом каталитической заглушки. Прикрепив ее к машине и подав пар, вы увидите, как машина уменьшит стоимость операций машины в Эмбере вдвое. Второй двигатель можно прикрепить, чтобы снизить стоимость до четверти.
+
+embers.research.page.cost_reduction=Ювелирные изделия
+embers.research.page.cost_reduction.title=Снижение затрат
+embers.research.page.cost_reduction.tags=Ember;Ring;Amulet;Belt;Bauble;
+embers.research.page.cost_reduction.desc=Использование заводных инструментов или оружия на Эмбере может быть довольно неудобным, так как батареи и картриджи необходимо периодически заправлять. Эти ювелирные изделия компенсируют это, уменьшая количество потребляемого Эмбера в разы. Кольцо, амулет и пояс имеют разные показатели снижения, но все они складываются друг с другом.
+
+embers.research.page.mantle_bulb=Лампа мантии
+embers.research.page.mantle_bulb.title=Спрятано прочь
+embers.research.page.mantle_bulb.tags=Ember;Storage;Bulb;Mantle;Bauble;Portable;Лампа;Эмбер;Хранилище;Украшение;
+embers.research.page.mantle_bulb.desc=Если ношение Картриджа мантии во второй руке или даже просто Банки мантии в инвентаре слишком неудобно для вас, это украшение поможет. Вместо хранения в инвентаре, этот контейнер Эмбера можно носить в любом слоте Baubles/украшений. Однако это дается ценой значительно меньшей емкости.
+
+embers.research.page.explosion_charm=Талисман взрывов
+embers.research.page.explosion_charm.title=Рукотворный нетицит
+embers.research.page.explosion_charm.tags=Explosion;Charm;Bauble;
+embers.research.page.explosion_charm.desc=Пока вы носите этот талисман, взрывы рядом с вами будут рассеиваться, их разрушительная сила будет поглощаться талисманом, но, к сожалению, без какого-либо другого специального эффекта.
+
+embers.research.page.explosion_pedestal=Пьедестал талисмана взрыва
+embers.research.page.explosion_pedestal.title=Сфера Вайлона
+embers.research.page.explosion_pedestal.tags=Explosion;Charm;Pedestal;Bauble;
+embers.research.page.explosion_pedestal.desc=Талисманы взрывов полезны, но обычно их можно использовать только нося с собой. Внеся незначительные изменения в пьедестал, используемый в алхимии, вы смогли подвесить на нем талисман, чтобы он выступал в роли пассивного поглотителя взрывов.
+
+embers.research.page.nonbeliever_amulet=Амулет неверующего
+embers.research.page.nonbeliever_amulet.title=И тьма рассеялась
+embers.research.page.nonbeliever_amulet.tags=Amulet;Heretic;Magic;Witch;Bauble;
+embers.research.page.nonbeliever_amulet.desc=Чертовы ведьмы и их сопротивление потустороннему... этот амулет станет мостом к тому, чтобы стать похожим на них. Когда вы получаете урон от любой магической атаки во время ношения амулета, 90%% урона будет аннулировано. Обратите внимание, однако, что вы всегда будете получать как минимум пол сердца урона от магических атак.
+
+embers.research.page.ashen_amulet=Пепельный амулет
+embers.research.page.ashen_amulet.title=Пыль к пыли
+embers.research.page.ashen_amulet.tags=Amulet;Ash;Ashen;Bauble;Амулет;Пепел;Украшение;
+embers.research.page.ashen_amulet.desc=Превращение вещей в пепел... безусловно, демонстрация силы. Не очень хорошо продуманная сила, но сила, которая тем не менее заключена в этом амулете. Когда существо убито или блок разрушен во время ношения этого амулета, объект мгновенно превратится в пепел и не выронит ничего, кроме пепла.
+
+embers.research.page.dawnstone_mail=Кольчуга из зарита
+embers.research.page.dawnstone_mail.title=Защитная стойка
+embers.research.page.dawnstone_mail.tags=Mail;Dawnstone;Knockback;Armor;Bauble;
+embers.research.page.dawnstone_mail.desc=Зарит — материал со множеством свойств, делающих его пригодным для одеяний и доспехов. Эта кольчуга защитит владельца от любого отбрасывания. Просто не задавайтесь вопросом, почему кольчуга сделана из пластин.
+
+embers.research.page.modifiers=Установка модификаторов
+embers.research.page.modifiers.title=Улучшения
+embers.research.page.modifiers.tags=Modifier;Augment;Anvil;Hammer;Level;Tool;Weapon;Armor;
+embers.research.page.modifiers.desc=Вы верите, что при наличии достаточно продвинутых механизмов сможете создавать устройства, дающие дополнительные способности вашему снаряжению. Эти предметы можно применять к броне, инструментам или оружию, и их необходимо выковывать на наковальне из предрассветного камня. Положите исходный предмет, затем модификатор, а потом ковающим ударом закрепите его. Модификаторы имеют уровни, которые повышают их силу.
+
+embers.research.page.heat=Тепло
+embers.research.page.heat.title=Закаленный
+embers.research.page.heat.tags=Modifier;Augment;Anvil;Hammer;Level;Tool;Weapon;Armor;Heat;Core;Archaic;Ancient;Motive;
+embers.research.page.heat.desc=Точно так же, как вы использовали заритовую наковальню для разборки предметов или их ремонта, вы также можете использовать ее для установки модификаторов на снаряжение. Поместите инструмент, меч или часть брони на наковальню, затем положите древнее ядро. Когда молот опустится, инструмент получит способность поглощать тепло. Это тепло накапливается при обычном использовании инструмента.
+
+embers.research.page.dismantling=Снятие модификаторов
+embers.research.page.dismantling.title=Педаль тормоза
+embers.research.page.dismantling.tags=Modifier;Augment;Anvil;Hammer;Level;Tool;Weapon;Armor;Remove;Detach;Break;
+embers.research.page.dismantling.desc=Иногда вы можете добавить улучшение к инструменту или броне и со временем обнаружить, что оно вам больше не подходит. Однако улучшения не являются постоянными, и заритовая наковальня может помочь вам с этим. Поместив инструмент или броню на наковальню без предмета сверху и ударив молотом, вы можете бесплатно снять все модификаторы. Само ядро и накопленное им тепло всегда останутся на инструменте, и такие инструменты не могут быть полностью уничтожены.
+
+embers.research.page.inferno_forge=Адская кузня
+embers.research.page.inferno_forge.title=Повышение уровня
+embers.research.page.inferno_forge.tags=Modifier;Augment;Anvil;Hammer;Level;Tool;Weapon;Armor;Heat;Inferno;Forge;Machine;Multiblock;Multi Block;
+embers.research.page.inferno_forge.desc=Как только шкала тепла предмета заполнится, его необходимо закалить. При подаче энергии Эмбера адская кузня может сделать именно это. Откройте люк наверх, бросьте предмет, наполненный теплом, а также немного кристаллического Эмбера. Чем больше кристаллов Эмбера вы положите, тем выше вероятность успеха. Как только вы повышаете уровень предмета, вы предоставляете ему слот для модификатора. Затем модификаторы могут быть прикреплены к предмету на заритовой наковальне вплоть до уровня предмета.
+
+embers.research.page.superheater=Перегреватель
+embers.research.page.superheater.title=Разогрев
+embers.research.page.superheater.tags=Modifier;Augment;Tool;Weapon;Armor;Smelt;Cook;
+embers.research.page.superheater.desc=Перегреватель — это простой модификатор, который можно применить к предметам, накопившим Тепло. При применении все разрушенные блоки и выпадающие с существ предметы будут автоматически переплавляться/жариться, а к предмету будет добавляться дополнительный урон по мере поджигания целей. Чем выше уровень модификатора, тем выше урон от горения. Для работы потребуется доступный Эмбер в вашем инвентаре.
+
+embers.research.page.cinder_jet=Пепельный реактивный сопло
+embers.research.page.cinder_jet.title=Рывок вперед
+embers.research.page.cinder_jet.tags=Modifier;Augment;Armor;Dash;Jet;Cinder;
+embers.research.page.cinder_jet.desc=Пепельный реактивный сопло — это модификатор брони, позволяющий выполнять рывок. При применении, каждый раз когда вы начинаете спринт и в инвентаре есть доступный Эмбер, он будет продвигать своего владельца вперед с возрастающей скоростью в зависимости от уровня модификатора.
+
+embers.research.page.blasting_core=Взрывное ядро
+embers.research.page.blasting_core.title=Взрывоопасный
+embers.research.page.blasting_core.tags=Modifier;Augment;Tool;Weapon;Armor;Explosion;
+embers.research.page.blasting_core.desc=Взрывное ядро — это модификатор, создающий взрывы. При применении к инструментам он будет разрушать близлежащие блоки каждый раз, когда инструментом разрушается блок. При применении к оружию произойдет взрыв, наносящий урон близлежащим существам. При применении к броне взрыв произойдет при получении урона броней, отбрасывая близлежащих существ. Все три эффекта увеличивают силу с уровнем модификатора.
+
+embers.research.page.caster_orb=Сфера заклинателя
+embers.research.page.caster_orb.title=Излучатель Эмбера
+embers.research.page.caster_orb.tags=Modifier;Augment;Tool;Weapon;Projectile;Missile;
+embers.research.page.caster_orb.desc=Сфера заклинателя — это модификатор инструмента и оружия, создающий снаряды из активированного Эмбера. Всякий раз, когда предмет с этим модификатором взмахивается, и в инвентаре есть достаточное количество Эмбера, вперед будет выпущен небольшой снаряд Эмбера. Размер и урон этого снаряда увеличиваются с уровнем модификатора.
+embers.research.page.caster_orb_addendum.desc=Поскольку Сфера заклинателя позволяет инструментам и оружию стрелять снарядами из Эмбера, инструмент или оружие с этим модификатором также могут принимать модификаторы, изменяющие снаряды.
+
+embers.research.page.flame_barrier=Пламенный барьер
+embers.research.page.flame_barrier.title=Огненная защита
+embers.research.page.flame_barrier.tags=Modifier;Augment;Armor;Fire;Shield;Barrier;Defense;
+embers.research.page.flame_barrier.desc=Пламенный барьер — это модификатор брони, создающий щит из пламени вокруг владельца при ударе. При получении удара, если этот модификатор присутствует на броне игрока, нападающий поджигается и получает урон. Каждая вспышка пламени требует немного Эмбера. Этот урон увеличивается с уровнем модификатора.
+
+embers.research.page.eldritch_insignia=Жуткая эмблема
+embers.research.page.eldritch_insignia.title=Клеймо беды
+embers.research.page.eldritch_insignia.tags=Modifier;Augment;Armor;Fear;Eerie;
+embers.research.page.eldritch_insignia.desc=Пока модификатор «Жуткая эмблема» размещен на вашей броне, определенные мобы будут бояться вас. Вы получите способность запугивать существ, которые иначе атаковали бы вас, до подчинения, и они будут атаковать только в ответ при провокации. Доля существ, которые будут бояться носителя этих символов, увеличивается с уровнем модификатора.
+
+embers.research.page.intelligent_apparatus=Разумный аппарат
+embers.research.page.intelligent_apparatus.title=Падшая мудрость
+embers.research.page.intelligent_apparatus.tags=Modifier;Augment;Armor;Experience;Wisdom;
+embers.research.page.intelligent_apparatus.desc=Разумный аппарат — это простой модификатор брони, увеличивающий количество опыта, получаемого от существ, убитых владельцем такой модифицированной брони. Количество выпадающего дополнительного опыта увеличивается с уровнем модификатора.
+
+embers.research.page.resonating_bell=Резонирующий колокол
+embers.research.page.resonating_bell.title=Вибрации
+embers.research.page.resonating_bell.tags=Modifier;Augment;Tool;Weapon;Light;Bell;
+embers.research.page.resonating_bell.desc=Резонирующий колокол позволяет инструменту или оружию заставлять блоки отзываться гулом и находить определенные объекты. Нажав ПКМ по блоку, близлежащие блоки этого типа подсветятся светом, если только блок не являлся уже значительной частью окружающего материала. Область действия резонанса увеличивается с уровнем модификатора.
+
+embers.research.page.tinker_lens_augment=Линза инженера
+embers.research.page.tinker_lens_augment.title=Что есть что
+embers.research.page.tinker_lens_augment.tags=Modifier;Augment;Armor;Info;
+embers.research.page.tinker_lens_augment.desc=Постоянно держать эту вещь в руке неудобно. К счастью, вы можете применить её к шлему, чтобы получать эффект удержания постоянно, пока носите шлем. Этот модификатор не занимает слотов, но сначала к нему нужно применить Движущее ядро.
+
+embers.research.page.anti_tinker_lens=Дымчатая линза инженера
+embers.research.page.anti_tinker_lens.title=Не вижу зла
+embers.research.page.anti_tinker_lens.tags=Modifier;Augment;Armor;Info;
+embers.research.page.anti_tinker_lens.desc=Иногда избыток информации может быть проклятием. Некоторые шлемы, такие как пепельные очки, могут предоставлять информацию о блоках, как линза инженера, но это не всегда желательно. Этот модификатор, надеваемый на такой шлем, отключает эту информацию. Этот модификатор не занимает слотов, но сначала к нему нужно применить движущее ядро.
+
+embers.research.page.mystical_mechanics=Mystical Mechanics
+embers.research.page.mystical_mechanics.title=Не тот мод, который вы ищете
+embers.research.page.mystical_mechanics.tags=Mechanical;Gear;Axle;Engine;
+embers.research.page.mystical_mechanics.desc=Embers имеет совместимость с Mystical Mechanics, но это необязательная зависимость, и в настоящее время она либо отключена в конфиге, либо Mystical Mechanics не установлен.
+
+embers.research.page.baubles=Baubles
+embers.research.page.baubles.title=Не тот мод, который вы ищете
+embers.research.page.baubles.tags=Bauble;Amulet;Ring;Belt;Charm;
+embers.research.page.baubles.desc=Embers имеет совместимость с Baubles, но это необязательная зависимость, и в настоящее время она либо отключена в конфиге, либо Baubles не установлен.
+
+embers.research.page.diffraction_barrel=Дифракционный барабан
+embers.research.page.diffraction_barrel.title=Это... моя бабаха!
+embers.research.page.diffraction_barrel.tags=Modifier;Augment;Weapon;Projectile;Gun;Shotgun;Spread;
+embers.research.page.diffraction_barrel.desc=Пламенный луч может быть довольно неточным оружием при быстрой стрельбе. Этот модификатор ствола можно поместить не только на пламенный луч, но и на любое оружие снарядов Эмбера, фактически превращая его в своего рода дробовик. Обратите внимание, что вместо одного луча пламенный луч будет стрелять веером снарядов.
+
+embers.research.page.focal_lens=Фокусирующая линза
+embers.research.page.focal_lens.title=Пронизывающее пламя
+embers.research.page.focal_lens.tags=Modifier;Augment;Weapon;Projectile;Homing;Pierce;
+embers.research.page.focal_lens.desc=Модификатор «Фокусирующая линза» может сильно помочь в точности стрельбы при использовании оружия Эмбера. В зависимости от того, поместите ли вы её на оружие, стреляющее огненными шарами или лучами, она создаст либо самонаводящиеся снаряды, либо пробивающий луч.
+
+embers.research.page.winding_gears=Подвижные шестерни
+embers.research.page.winding_gears.title=Заводная игрушка
+embers.research.page.winding_gears.tags=Modifier;Augment;Armor;Tool;Weapon;Gear;Wind;Spool;Bounce;
+embers.research.page.winding_gears.desc=При применении подвижных шестерен к инструменту на вашем HUD вместо полосы опыта появится катушка, показывающая, насколько он заведен. Заводка инструмента нажатием ПКМ даст вам автоатаку (удерживайте ЛКМ для непрерывной атаки). Однако со временем инструмент будет медленно разряжаться. Заводка также оказывает и другие эффекты, подробно описанные на следующих страницах.
+embers.research.page.winding_gears_boots.desc=Заводные шестерни также можно применить к вашим ботинкам. Вы будете прыгать намного выше в зависимости от заряда, оставшегося в пружине. Вы также будете отскакивать без получения урона от падения при ударе о землю. Кроме того, если вы разбежитесь перед прыжком, вы преодолеете гораздо большее расстояние. Чтобы использовать эти эффекты, вы также должны держать в руке заведенный инструмент.
+
+embers.research.page.shifting_scales=Подвижные чешуйки
+embers.research.page.shifting_scales.title=Внешняя броня
+embers.research.page.shifting_scales.tags=Modifier;Augment;Armor;Scale;Heart;Health;Defense;Чешуя;Броня;Защита;
+embers.research.page.shifting_scales.desc=Подвижные чешуйки можно применить к любой части брони. Пока вы носите броню и находитесь в состоянии покоя (не двигаетесь и не подвергались атакам в последнее время), у вас вырастет одна треть защитной чешуйки. При каждом получаемом ударе часть чешуек будет отламываться, защищая вас от большинства внешних повреждений, но не от урона от голода или утопления.
+
+embers.research.page.pipes_category=Трубы
+embers.research.page.mystical_mechanics_category=Mystical Mechanics
+embers.research.page.simple_alchemy_category=Простая алхимия
+embers.research.page.wildfire_category=Ядро дикого огня
+embers.research.page.baubles_category=Baubles
+embers.research.page.weapon_augments_category=Модификаторы оружия
+embers.research.page.armor_augments_category=Модификаторы брони
+embers.research.page.projectile_augments_category=Модификаторы снарядов
+embers.research.page.misc_augments_category=Другие модификаторы
+
+embers.commands.fill.usage=/ember-fill <x> <z> <set|add|query> ...
+embers.commands.fill.usage.add=/ember-fill <x> <z> add <значение>
+embers.commands.fill.usage.set=/ember-fill <x> <z> set <значение>
+embers.commands.fill.failed=Отсутствуют данные Эмбера в чанке [%s, %s] (по x %s, z %s)
+embers.commands.fill.added=Добавлено %s к уровню Эмбера (теперь %s) в чанке [%s, %s] (по x %s, z %s)
+embers.commands.fill.set=Уровень Эмбера установлен на %s в чанке [%s, %s] (по x %s, z %s)
+embers.commands.fill.query=Уровень Эмбера составляет %s в чанке [%s, %s] (по x %s, z %s)
+
+subtitles.block.alchemy.fail=Процесс потерпел неудачу...
+subtitles.block.alchemy.success=Процесс завершился успешно!
+subtitles.block.alchemy.start=Процесс инициирован
+subtitles.block.beam_cannon.fire=Лучевая пушка стреляет
+subtitles.block.beam_cannon.hit=Луч попадает в цель
+subtitles.block.activator.plume=Активатор Эмбера высвобождает Эмбер
+subtitles.block.boiler.plume=Напорный очиститель высвобождает Эмбер
+subtitles.block.ignem_reactor.plume=Реактор Ignem высвобождает Эмбер
+subtitles.block.stamp.down=Штамп с грохотом опускается
+subtitles.block.stamp.up=Штамп поднимается
+subtitles.block.bore.start=Эмбер-бур гудит, оживая
+subtitles.block.bore.stop=Эмбер-бур вздыхает и останавливается
+subtitles.block.catalytic_plug.start=Каталитическая заглушка начинает впрыск катализатора
+subtitles.block.catalytic_plug.stop=Каталитическая заглушка пуста
+subtitles.block.metal_seed.ping=Металлическое семя отщепляет кусочки
+subtitles.block.inferno_forge.fail=Перековка потерпела неудачу...
+subtitles.block.inferno_forge.success=Перековка завершилась успешно!
+subtitles.block.inferno_forge.start=Адская кузня начинает ковку
+subtitles.block.inferno_forge.open=Адская кузня открывается
+subtitles.block.inferno_forge.close=Адская кузня закрывается
+subtitles.block.steam_engine.start_steam=Паровой двигатель набирает обороты
+subtitles.block.steam_engine.start_burn=Паровой двигатель начинает сжигать топливо
+subtitles.block.steam_engine.stop=Паровой двигатель дребезжит и останавливается
+subtitles.block.mini_boiler.rupture=Мини-бойлер жестоко разрывается
+subtitles.block.pump.slow=Механическая помпа скрежещет
+subtitles.block.pump.mid=Механическая помпа качает
+subtitles.block.pump.fast=Механическая помпа качает на невероятно высокой скорости
+subtitles.block.pipe.connect=Труба подключена
+subtitles.block.pipe.disconnect=Труба отключена
+subtitles.ember_transfer.emit.small=Импульс Эмбера выпущен
+subtitles.ember_transfer.emit.big=Большой импульс Эмбера выпущен
+subtitles.ember_transfer.receive.small=Импульс Эмбера получен
+subtitles.ember_transfer.receive.big=Большой импульс Эмбера получен
+subtitles.ember_transfer.relay=Импульс Эмбера ретранслирован
+subtitles.fireball.small.fire=Огненный шар выпущен
+subtitles.fireball.small.hit=Огненный шар врезается
+subtitles.fireball.big.fire=Большой огненный шар вырывается
+subtitles.fireball.big.hit=Большой огненный шар врезается
+subtitles.blazing_ray.fire=Пламенный луч стреляет
+subtitles.blazing_ray.empty=Пламенный луч щелкает
+subtitles.heated.level_up=Уровень предмета повышается
+subtitles.cinder_staff.charge=Пепельный посох заряжается
+subtitles.cinder_staff.fail=Пепельный посох шипит и гаснет
+subtitles.cinder_jet.boost=Пепельное реактивное сопло ускоряет
+subtitles.resonating_bell.ring=Резонирующий колокол звонит
+subtitles.inflictor_gem.absorb=Наносящий драгоценный камень поглощает урон
+subtitles.metallurgic_dust.convert=Металлургическая пыль трансмутирует руду
+subtitles.metallurgic_dust.fail=Металлургическая пыль превращает руду в бесполезный материал
+subtitles.ash_amulet.burn=Предмет сгорает в пепел
+subtitles.explosion_charm.absorb=Взрыв поглощен
+subtitles.ancient_golem.death=Древний голем уничтожен
+subtitles.ancient_golem.hurt=Древний голем ранен
+subtitles.ancient_golem.punch=Древний голем бьет
+subtitles.ancient_golem.step=Древний голем шагает
+
+# GroovyScript Wiki
+groovyscript.wiki.embers.melter.title=Плавильня
+groovyscript.wiki.embers.melter.description=Преобразует входной предмет в выходной стек жидкости в Плавальне с возможностью иметь вторичный выходной стек жидкости путем добавления Геологического сепаратора.
+groovyscript.wiki.embers.stamper.title=Пресс
+groovyscript.wiki.embers.stamper.description=Преобразует входную жидкость в выходной предмет с помощью предоставленного штампа в Прессе.
+groovyscript.wiki.embers.stamper.stamp.required=Требуется штамп
+groovyscript.wiki.embers.stamper.stamp.value=Задает штамп, используемый для рецепта
+groovyscript.wiki.embers.mixer.title=Смеситель
+groovyscript.wiki.embers.mixer.description=Преобразует до 3 входных стеков жидкости в один выходной стек жидкости в Смесителе. Если установлен мод Mystical Mechanics, Механический привод можно использовать для уменьшения затрат Эмбера на рецепт.
+groovyscript.wiki.embers.mixer.powerratio.value=Устанавливает процент Эмбера, требуемый при питании через Механический привод, где 0 означает, что Эмбер не расходуется, а значение больше 1 означает, что расходуется больше Эмбера.
+groovyscript.wiki.embers.heat_coil.title=Очаговая спираль
+groovyscript.wiki.embers.heat_coil.description=Преобразует входной предмет в выходной предмет в Очаговой спирали.
+groovyscript.wiki.embers.alchemy.title=Алхимия
+groovyscript.wiki.embers.alchemy.description=Преобразует входные предметы в выходной предмет на Плите обмена.
+groovyscript.wiki.embers.alchemy.aspects.value=Устанавливает, какие аспекты являются частью рецепта, и их минимальное/максимальное значение
+groovyscript.wiki.embers.alchemy.getaspect=Возвращает название аспекта предмета
+groovyscript.wiki.embers.alchemy.addaspect=Регистрирует данный аспект с данным IIngredient
+groovyscript.wiki.embers.alchemy.removeaspect=Удаляет данный аспект
+groovyscript.wiki.embers.alchemy.removebycenter=Удаляет все рецепты с центральным предметом, соответствующим данному IIngredient
+groovyscript.wiki.embers.reaction_chamber.title=Реакционная камера
+groovyscript.wiki.embers.reaction_chamber.description=Преобразует входной стек жидкости в выходной стек жидкости в Реакционной камере.
+groovyscript.wiki.embers.reaction_chamber.red.value=Устанавливает красное значение цвета
+groovyscript.wiki.embers.reaction_chamber.blue.value=Устанавливает синее значение цвета
+groovyscript.wiki.embers.reaction_chamber.green.value=Устанавливает зеленое значение цвета
+
+# WIP - Stuff
+tile.seed_mithril.name=Семя мифрилового кристалла
+tile.seed_alchemic.name=Семя алхимического кристалла
+tile.caminite_large_brick.name=Крупные каминитовые кирпичи
+tile.block_astralite.name=Астралитовый блок
+tile.block_umber_steel.name=Блок из умбер-стали
+tile.archaic_geysir.name=Архаичный гейзер
+tile.archaic_mech_edge.name=Архаичный механический край
+
+item.ingot_astralite.name=Астралитовый слиток
+item.plate_astralite.name=Астралитовая пластина
+item.nugget_astralite.name=Астралитовый кусочек
+item.ingot_umber_steel.name=Слиток из умбер-стали
+item.plate_umber_steel.name=Пластина из умбер-стали
+item.nugget_umber_steel.name=Кусочек умбер-стали
+item.fulgurite.name=Фульгурит
+item.aster.name=Астра
+item.shard_aster.name=Осколок астры
+item.alchemic_chunk.name=Алхимический кусок
+item.alchemic_cluster.name=Алхимическая друза
+item.alchemic_mote.name=Алхимическая пылинка
+item.alchemic_piece.name=Алхимический фрагмент
+item.alchemic_seed.name=Алхимическое семя
+item.alchemic_shard.name=Алхимический осколок
+item.burst_emitter.name=Импульсный излучатель
+item.crystal_lens.name=Кристаллическая линза
+item.eyepiece.name=Окуляр
+item.glimmer_charm.name=Мерцающий талисман
+item.intelligent_eye.name=Разумное око
+item.karma_charm.name=Талисман кармы
+item.mass_caldera.name=Массивная кальдера
+item.radiant_crown.name=Сияющая корона
+item.sigil_cross.name=Крестообразная сигила
+item.sigil_empty.name=Пустая сигила
+item.sigil_explosion.name=Сигила взрыва
+item.sigil_eye.name=Сигила ока
+item.sigil_fork.name=Вильчатая сигила
+item.sigil_home.name=Сигила дома
+item.sigil_ring.name=Кольцевая сигила
+item.sigil_skull.name=Сигила черепа
+item.sigil_sun.name=Сигила солнца
+item.silver_eye_closed.name=Закрытое серебряное око
+item.silver_eye_open.name=Открытое серебряное око
+item.truemetal_clump.name=Самородок изолированной материи
+item.sulfur_dust.name=Серная пыль
+
+# Compat
+item.embers.tiered_ember_caster.thaumium.name=Таумиевая заводная перчатка заклинателя
+item.embers.tiered_ember_caster.void.name=Пустотная заводная перчатка заклинателя
